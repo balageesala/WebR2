@@ -1,0 +1,221 @@
+﻿
+
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,img		{ margin:0; padding:0;}
+body		{font-family: 'Open Sans', sans-serif;}
+
+a			{ text-decoration:none;}
+ul, li		{ list-style:none;}
+.fl			{ float:left !important;}
+.fr			{ float:right !important;}
+.clear		{ clear:both; display:block;}
+input		{ border:0 none;}
+
+
+
+.popup						{ background:#202020; padding:20px 0; min-height:600px;}
+
+	/*--------------- Popup-Chat with Me page Start  -------------*/
+
+.chatwithme					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; /*width:498px; height:418px;*/ width:630px; margin:0px auto 0px; border-radius:6px; }
+.chatwithme .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height: 17px; display:block; float:right; margin:4px 4px 4px 0; cursor:pointer; border-radius:3px;}
+.chatwithme .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px;  line-height:27px;text-align:center; display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px; cursor:pointer; padding:0px 11px 0px 12px;}
+.chatme_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:0px 0 14px 28px; /*width:400px;*/ padding:15px 20px 20px;  width:532px;}
+.chatme_cont h3				{ margin:0 0 10px 10px; font-size: 16px; color: #0F0F0F; font-weight: 600; opacity: 0.8;}
+/*.chatme_cont textarea		{ width:92%; border:1px solid #e5e5e5; color:#838383;font-size:13px; font-weight:300; font-family: 'Open Sans', sans-serif; font-style:italic; line-height:17px; padding:10px 15px; border-radius:4px; margin:5px 0 0 0; resize:none;}*/
+.chatme_cont .text			{font-size: 13px; color: #6B6969; font-weight: 400; line-height: 14px; margin: 0px; word-break: break-all; margin:-8px 0px 10px 10px; width:510px;} 
+.chatme_cont textarea 		{border:1px solid #b7b7b7; position:relative; width:510px; height:60px; border-radius:5px; padding:10px 10px 10px 10px; font-family: 'Open Sans', sans-serif; font-size:13px; color:#000000; font-weight:400; opacity:0.8; resize:none; margin:0 0 0 10px;line-height:15px;  /*letter-spacing:-1px;*/ word-break:break-all; margin:5px 0 0 0; }
+.chatme_cont .chatme_chat	{ margin:0 0 7px 0;}
+.chatme_cont .chatme_chat img{ float:left; margin:0 18px 0 0;}
+.chatme_cont .chatme_chat .chatme_type	{ float:left; width:310px;}
+.chatme_cont .chatme_chat .chatme_type h4{color:#303030;font-size:14px; font-weight:400;}
+.chatme_cont .chatme_chat .chatme_type h5{color:#c1272d;font-size:14px; font-weight:400; line-height:15px; margin:0 0 5px 0;}
+.chatme_cont .chatme_chat .chatme_type p{color:#303030;font-size:13px; font-weight:400; /*font-style:italic;*/ line-height:14px;}
+
+.pop_descript				{ min-height:0px !important; height:auto;}
+.pop_descript_hy				{ min-height:0px !important; }
+
+
+	/*--------------- Popup-Chat with Me page end  -------------*/
+
+	/*--------------- Popup-Compose page Start 19-2,3 -------------*/
+
+.compose					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; /*width:498px;height:418px;*/ width:588px;  margin:0px auto 0px; border-radius:6px; }
+.compose .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px;line-height:17px; text-align:center;  display:block; float:right; margin:4px 4px 4px 0; border-radius:3px;}
+.compose .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; line-height:27px; text-align:center; display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px;  padding:0px 11px 0px 12px; cursor:pointer;}
+.compose_cont				{ /*background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:400px; padding:15px 20px 18px; min-height:275px;*/}
+/*.compose_cont textarea				{color:#303030;font-size:13px; font-weight:400; font-family: 'Open Sans', sans-serif; font-style:italic; line-height:20px; margin:0 0 18px 0; background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:400px; padding:15px 20px 18px; min-height:275px; resize:none;}*/
+
+
+
+.compose_cont textarea			{ border:1px solid #b7b7b7; position:relative; width:510px; height:120px; border-radius:5px; padding:10px 10px 10px 10px; font-family: 'Open Sans', sans-serif; font-size:13px; color:#000000; font-weight:400; opacity:0.8; resize:none; margin:0px 0 14px 28px;line-height:15px;  /*letter-spacing:-1px;*/ word-break:break-all;}
+
+
+.compose_cont_msg				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:0px 0 14px 28px; width:532px; /*width:400px;*/ padding:20px 20px 20px; min-height:275px; position:relative;}
+.compose_cont_msg h3			{color:#2d2929;font-size:18px; font-weight:600; opacity:0.7;}
+.compose_cont_msg p				{color:#2d2929;font-size:13px; font-weight:400; opacity:0.7; text-align:justify;}
+.compose_cont_msg textarea		{/*color:#303030;font-size:13px; font-weight:400; opacity:0.6; font-family: 'Open Sans', sans-serif; font-style:italic; line-height:20px;  background:#ffffff; border:1px solid #e5e5e5; border-radius:5px; margin:1px 0 10px 0px;width:510px; /*width:380px;* padding:10px;  resize:none;  position:absolute; bottom:10px;*/ border: 1px solid #B7B7B7; width: 510px; height: 60px; border-radius: 5px; padding: 10px; font-family: "Open Sans",sans-serif; font-size: 13px; color: #000; font-weight: 400; opacity: 0.8; resize: none; margin:10px 0 0px 0px; line-height: 15px; word-break: break-all;}
+
+.compose_hy					{ width:630px; height:auto; background:#f5f5f5 !important; }
+.compose_cont_msg .imag			{ }
+.compose_cont_msg .imag img		{ display:block; margin:0px;}
+.compose_cont_msg h4			{ margin:10px 0px 2px; font-size: 16px; color: #0F0F0F; font-weight: 600; opacity: 0.8; }
+.compose_cont_msg span			{color:#303030;font-size:13px; font-weight:400; opacity:0.9; /*font-style:italic;*/ display:block; line-height:16px;}
+
+
+
+
+
+	/*--------------- Popup-Compose page end  -------------*/
+
+	/*--------------- Popup-Upload (06) Image page Start  -------------*/
+
+.upload_image					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; width:699px; /*height:418px; */margin:0px auto 20px; border-radius:6px; }
+.upload_image .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border-radius:3px;}
+.upload_image .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px;line-height:27px; text-align:center;  display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px; padding:0px 11px 0px 11px; cursor:pointer;}
+.upload_image_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:0px 0 14px 28px; width:621px; padding:10px 10px 18px; min-height:275px;}
+.upload_image_cont img				{ margin:0 5px 0 0;}
+
+	/*--------------- Popup-Upload Image (06) page end  -------------*/
+
+	/*--------------- Popup-Criteria page Start  CriteriaQuestionEditPopup-------------*/
+
+.criteria					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; width:699px; /*height:450px;*/ margin:0px auto 20px; border-radius:6px; background-size:cover; }
+.criteria_1					{ }
+.criteria .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border-radius:3px;}
+.criteria .clear_answer	{ float:left;color:#0f0f0f;font-size:13px; font-weight:400; text-decoration:underline; margin:14px 0 0 28px;}
+.criteria .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; line-height:27px; text-align:center; display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px; cursor:pointer; padding:0px 11px 0px 11px;}
+.criteria_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:610px; padding:10px 10px 18px; min-height:275px;}
+.upload_image_cont img				{ margin:0 5px 0 0;}
+.upload_image_cont .browse	{ background:url(../images/uploadImages_pic-c.jpg) no-repeat left top; background-color:inherit; width:99px; height:116px;}
+
+	/*--------------- Popup-Criteria page end  -------------*/
+
+	/*--------------- Popup-Questions page Start  -------------*/
+
+.questions					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; width:699px; /*height:475px;*/ margin:0px auto 20px; border-radius:6px; background-size:cover;}
+.questions .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border:0 none; cursor:pointer; border-radius:3px;}
+.questions .clear_answer	{ float:left;color:#0f0f0f;font-size:13px; font-weight:400; text-decoration:underline; margin:16px 0 0 28px;}
+.questions .send			{background:#C1272D; color: #FFF; font-size: 14px; font-weight: 400; padding: 0px 12px 0px 11px; line-height: 27px; text-align: center; display: block; float: right; margin: 0px 28px 28px 0px; border-radius: 2px; border: 0px none; cursor: pointer; height: 30px;}
+.questions_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:610px; padding:10px 10px 18px; min-height:275px;}
+
+.popup .tabs_matter			{ width:585px; border-radius:5px 5px 5px 5px; border:1px solid #ccc; padding:1% 4% 2% 4%; background:#ffffff; margin:0 0 8px 27px;}
+.popup .tabs_matter h2		{font-size:16px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_matter h3		{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_left			{ float:left; margin:0 13% 0 0; width:250px !important;}
+.popup .tabs_left h5			{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_left ul			{}
+.popup .tabs_left ul li		{ list-style:none;font-size:12px; color:#2d2929; font-weight:400; font-family: 'Open Sans', sans-serif; margin:0 0 10px 0;}
+.popup .tabs_left ul li label	{ margin:0px;}
+.popup .tabs_left ul li input{ margin:0 10px 0 0; position:relative; top:1px;}
+.popup .tabs_left ul li span	{}
+.popup .marg_no	{ margin:0px !important;}
+
+.popup .numbers				{ margin:6px 0 10px 0;}
+.popup .numbers ul			{}
+.popup .numbers ul li		{ float:left; display:inline;}
+.popup .numbers ul li a		{ display:inline-block;font-size:12px; color:#0f0f0f; font-weight:400; font-family: 'Open Sans', sans-serif; background:#e5e5e5; width:50px; height:38px; margin:1px 1px 0 0; line-height:35px; text-align:center; text-decoration:none;}
+.popup .numbers ul li a:hover	{background:#c1272d; color:#ffffff;}
+
+.popup .comment					{ float:left; width:335px;}
+.popup .comment textarea			{border-radius:5px; border:1px solid #8f8f8f; padding:10px; margin:0; font-size:13px; color:#0F0F0F; font-weight:400; font-family: 'Open Sans', sans-serif; line-height:14px; width:310px; resize:none; resize:none; word-break:break-all; }
+
+.popup .two_dates				{ float:left; margin:0 10% 0% 0; width:50%;}
+.popup .two_dates h5			{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .two_dates ul			{ /*display:inline-block;*/}
+.popup .two_dates ul li		{ float:left; list-style:none;}
+.popup .two_dates ul li select{ background:#cfcfcf; border:0px none; padding:4px 10px; margin:0px 4px 4px 0px; width:80px; border-radius:3px}
+.popup .two_dates input		{ color:#c8c7c7;font-size:18px;font-weight:400; border:1px solid #7d7d7d; width:90px; padding:1px 0 1px 5px; border-radius:3px;}
+
+.popup .two_days				{ float:left; margin:0 0% 20% 0; width:40%;}
+.popup .two_days h5			{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .two_days ul			{ /*display:inline-block;*/}
+.popup .two_days ul li		{ float:left; list-style:none;}
+.popup .two_days ul li select{ background:#cfcfcf; border:0px none; padding:4px 8px; margin:0px 4px 4px 0px; width:80px; border-radius:3px;}
+.popup .two_days .two_field	{ width:240px;}
+.popup .two_days input		{ color:#A1A1A1;font-size:18px;font-weight:400; border:1px solid #7d7d7d; width:68px; padding:1px 0 1px 5px; border-radius:3px; margin-bottom:5px;}
+.popup .two_days .to		{ color:#6b6969;font-size:16px;font-weight:400;  padding:1px 12px;}
+
+.popup .two_dates .dd .ddChild li{ float:none;}
+.popup .two_dates .dd .ddTitle	{ background:#DADADA; color:#000000;}
+.popup .two_dates .dd .ddArrow{width:8px;height:6px; margin-top:-2px; background:url(../images/16_dd_gray_arrow.png) no-repeat;}
+
+.popup .two_days .dd .ddChild li{ float:none;}
+.popup .two_days .dd .ddTitle	{ background:#DADADA; color:#000000; font-size:14px; padding:0px;}
+.popup .two_days .dd .ddArrow{width:8px;height:6px; margin-top:-2px; background:url(../images/16_dd_gray_arrow.png) no-repeat}
+
+
+.check						{ float:right;font-size:14px; color:#8f8f8f; font-weight:400; font-family: 'Open Sans', sans-serif; margin:0px; }
+.check label				{ margin:0px;}
+.check input				{}
+.check span					{font-size:14px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#000000; padding:0 7px; border-radius:11px;}
+.buttons					{ float:right; }
+.buttons .skip				{font-size:16px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#000000; padding:6px 20px; border-radius:5px; text-decoration:none; display:inline-block; margin:20px 0 0 0;}
+.buttons .submit			{font-size:16px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#c1272d; padding:6px 20px; border-radius:5px; text-decoration:none;}
+
+	/*--------------- Popup-Questions page end  -------------*/
+
+	/*--------------- Popup-Passport page Start  -------------*/
+
+.passport					{  margin:0px auto 20px; border-radius:6px; }
+
+.passport .student	{width:268px; border:1px solid #bfbfbf; padding:5px; margin:11px 0px 5px 0px;}
+.passport .student .photo	{ float:left; width:70px; margin:0 5px 0 0;}
+.passport .student .photo img{ box-shadow:3px 3px 2px #DBDBDB;}
+.passport .student .photo p{font-size:14px; color:#1c1c1e; font-weight:600;}
+.passport .student .text	{ float:right; width:190px;}
+.passport .student .text ul{ margin:9px 0 28px 0;}
+.passport .student .text ul li{ float:left; line-height:10px; list-style:none;}
+.passport .student .text ul .point{ width:60px;font-size:12px; color:#1c1c1e; font-weight:400;}
+.passport .student .text ul .line_bar{ width:82px; background:#d6d6d6; height:10px; display:inline-block; margin:0px 6px 0px 0px;}
+.passport .student .text ul .line_bar .over{ width:60px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .line_bar .home{ width:30px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .line_bar .exam{ width:50px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .percent{ width:40px;font-size:12px; color:#1c1c1e; font-weight:600;}
+.passport .student  p{font-size:14px; color:#1c1c1e; font-weight:600; line-height:17px;}
+
+
+	/*--------------- Popup-Passport page end  -------------*/
+
+	/*--------------- (Popup Photo shows) PhotoPopup page Start  -------------*/
+
+.photo_showup			{ width:950px; background:#0f0f0f; padding:28px; border:1px solid #000000; box-shadow:0 0 3px #0F0F0F; margin:0 auto;}
+.photoup_left			{ /*width:616px;*/ float:left;}
+.photous_arrows			{ width:30%; margin:5px auto 0px;}
+.photous_arrows p		{font-size:16px; color:#ffffff; font-weight:600; float:left; margin:5px 15px 0px;}
+.photous_arrows p span	{font-size:16px; color:#858585; font-weight:400; margin:0 5px;}
+.photoup_left .photos_left_arrow	{ /*margin:1% 15% 0 35%;*/ display:inline-block; float:left;}
+.photoup_left .photos_right_arrow	{ float:left;}
+
+.photoup_right			{ float:right; width:300px;}
+.photoup_right p		{font-size:13px; color:#858585; font-weight:400; text-align:justify; line-height:15px; margin:0 0 20px 0;}
+.photoup_right textarea	{font-size:13px; color:#717171; font-weight:400; border:1px solid #272727; background:#1a1a1a; font-family: 'Open Sans', sans-serif; padding:5px 10px; border-radius:2px; resize:none; width:275px;}
+.photoup_right input	{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; line-height:27px; text-align:center; display:block; float:right; margin:15px 0px 0px 0px; border-radius:2px; cursor:pointer; padding:0px 12px 0px 11px;}
+
+	/*--------------- Popup Photo shows page end  -------------*/
+
+	/*		Popup 30 checks start		*/
+
+
+.checks					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; width:699px; /*height:475px;*/ margin:0px auto 20px;   border-radius:6px; background-size:cover;}
+.checks .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border-radius:3px;}
+.checks .clear_answer	{ float:left;color:#0f0f0f;font-size:13px; font-weight:400; text-decoration:underline; margin:22px 0 0 29px;}
+.checks .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; text-align:center; line-height:27px; display:block; float:right; margin:0px 28px 28px 0px; border-radius:5px; border:0 none; cursor:pointer; padding:0 11px 0 11px;}
+.checks_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:610px; padding:10px 10px 18px; min-height:275px;}
+
+.popup .tabs_matter			{ /*width:642px !important;*/ width:586px; border-radius:5px 5px 5px 5px; border:1px solid #ccc; padding:1% 4% 2% 4%; background:#ffffff; margin:0 0 14px 28px;}
+.popup .tabs_matter h2		{font-size:16px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_matter h3		{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_left_3			{ float:left; margin:0 1% 0 0; width:190px;}
+.popup .tabs_left_3 h5			{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.popup .tabs_left_3 ul			{}
+.popup .tabs_left_3 ul li		{ list-style:none;font-size:12px; color:#2d2929; font-weight:400; font-family: 'Open Sans', sans-serif; margin:0 0 10px 0; display:block;}
+.popup .tabs_left_3 ul li label	{ margin:0px; display:block;}
+.popup .tabs_left_3 ul li input{ margin:0 10px 0 0; position:relative; top:1px; float:left; display:block;}
+.popup .tabs_left_3 ul li span	{ display:inline-block; width:87%;}
+.popup .marg_no	{ margin:0px !important;}
+
+
+
+	/*		Popup 30 checks end		*/
+
+

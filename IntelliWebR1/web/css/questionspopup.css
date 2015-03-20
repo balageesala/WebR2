@@ -1,0 +1,73 @@
+﻿.eleven				{ float:left; background:#ffffff; width:740px; padding:12px 0 2% 0; min-height:660px;}
+.four				{}
+.generally			{ margin:5px 0 0 0;}
+.four .nav			{ display:inline-block;}
+.four .nav li		{ display:inline; float:left; border-left:1px solid #ccc; margin:0px 8px 0 0; padding:0 0 0 14px;}
+.four .nav li a		{ display:inline-block; font-size:14px; color:#000000; font-weight:400; text-decoration:none;font-family: 'Open Sans', sans-serif;}
+.four .nav li a:hover, .four .nav li .active{ color:#c1272d;}
+.four .nav li:nth-child(1){ border-left:0px;}
+
+
+.four  ul {margin: 0px;padding: 0px;}
+.eleven_middle				{width:618px;margin:20px auto 0%;}
+
+.four .tabs_matter			{ width:580px; border-radius:5px 5px 5px 5px; border:1px solid #ccc; padding:10px 19px 15px;min-height:324px; max-height:400px;overflow-y:auto;}
+.four .tabs_matter h2		{font-size:16px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+
+.four .tabs_left			{ float:left; margin:0 1% 0 0; width:260px;}
+.four .tabs_left h5			{font-size:14px; color:#2d2929; font-weight:600; font-family: 'Open Sans', sans-serif; margin:0 0 20px 0;}
+.four .tabs_left ul			{}
+.four .tabs_left ul li		{ list-style:none;font-size:12px; color:#2d2929; font-weight:400; font-family: 'Open Sans', sans-serif; margin:0 0 8px 0;}
+.four .tabs_left ul li input{ margin:0 10px 0 0; position:relative; top:2px;}
+.four .marg_no				{ margin:0px !important;}
+
+.four .numbers				{ margin:6px 0 10px 0;}
+.four .numbers ul			{}
+.four .numbers ul li		{ float:left; display:inline;}
+.four .numbers ul li a		{ display:inline-block;font-size:12px; color:#0f0f0f; font-weight:400; font-family: 'Open Sans', sans-serif; background:#e5e5e5; width:50px; height:38px; margin:1px 1px 0 0; line-height:35px; text-align:center; text-decoration:none;}
+.four .numbers ul li a:hover	{background:#c1272d; color:#ffffff;}
+
+.comment					{ float:left; width:310px;}
+.comment textarea			{border-radius:2px; min-height:60px; border:1px solid #8f8f8f; padding:10px; margin:0; font-size:13px; color:#0F0F0F; font-weight:400; font-family: 'Open Sans', sans-serif; line-height:14px; width:327px; resize:none;word-break:break-all; overflow-y:scroll;}
+
+.check						{ float:right;font-size:14px; color:#8f8f8f; font-weight:400; font-family: 'Open Sans', sans-serif; }
+.check label				{ display:inline;}
+.check input				{}
+.check span					{font-size:14px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#000000; padding:0 7px; border-radius:11px;}
+
+.buttons					{ float:right; }
+.buttons .skip				{font-size:16px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#000000; /*padding:6px 20px;*/ padding:0px !important; border-radius:5px; text-decoration:none; display:inline-block; margin:20px 0 0 0;width:90px; height:40px; text-align:center; line-height:38px;}
+.buttons .submit			{font-size:16px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#c1272d; padding:6px 20px; border-radius:2px; text-decoration:none;}
+.btnsubmit{font-size:16px; color:#ffffff; font-weight:400; font-family: 'Open Sans', sans-serif; background:#c1272d; padding:6px 20px; border-radius:2px; text-decoration:none;}
+.close			{font-family: 'Open Sans', sans-serif; background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border:0 none; cursor:pointer; border-radius:3px;}
+.rating-c		{ margin:10px 0 0 0;float: left;}
+
+.popupqtn{
+    background: url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top;
+   width: 672px;
+margin: 0px auto 20px;
+border-radius: 6px;
+background-size: cover;
+height: 450px !important;
+
+}
+
+  .Disabled {
+        background-color: #999;
+    }
+
+/*
+::-webkit-scrollbar {
+width: 12px;
+}
+
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+}
+    */

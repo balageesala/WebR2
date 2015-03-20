@@ -1,0 +1,2520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84202744-E99C-49D9-9DED-D68F3A5B785E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntelliWebR1</RootNamespace>
+    <AssemblyName>IntelliWebR1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Braintree-2.40.0">
+      <HintPath>..\packages\Braintree.2.40.0\lib\Braintree-2.40.0.dll</HintPath>
+    </Reference>
+    <Reference Include="EcmaScript.NET, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EcmaScript.Net.1.0.1.0\lib\net20\EcmaScript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Learnings\vijay\KDE_3.5v1.0_30\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.2.0.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.2\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.2\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IntellidateR1\IntellidateR1\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Device" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IntellidateR1\IntellidateR1\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IntellidateR1\IntellidateR1\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IntellidateR1\IntellidateR1\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Yahoo.Yui.Compressor">
+      <HintPath>..\packages\YUICompressor.NET.2.7.0.0\lib\NET20\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ProfileCompletion.xml" />
+    <Content Include="css\default.css" />
+    <Content Include="css\discription.css" />
+    <Content Include="css\intelliwindow.css" />
+    <Content Include="css\jquery.custombox.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\popups.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmailVerification.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\01_line-shadow.jpg" />
+    <Content Include="images\02_back.png" />
+    <Content Include="images\05_box_shadows.png" />
+    <Content Include="images\05_cloud.png" />
+    <Content Include="images\05_content_pic.png" />
+    <Content Include="images\05_dropbox.png" />
+    <Content Include="images\05_facebook.png" />
+    <Content Include="images\05_google_drive.png" />
+    <Content Include="images\05_hard_disk.png" />
+    <Content Include="images\05_intigram.png" />
+    <Content Include="images\08_img-1.jpg" />
+    <Content Include="images\08_img-2.jpg" />
+    <Content Include="images\08_img-3.jpg" />
+    <Content Include="images\08_img-4.jpg" />
+    <Content Include="images\08_img-5.jpg" />
+    <Content Include="images\08_img-6.jpg" />
+    <Content Include="images\09_cont_calen.png" />
+    <Content Include="images\09_cont_close.png" />
+    <Content Include="images\09_cont_note.png" />
+    <Content Include="images\09_head_calen.png" />
+    <Content Include="images\09_head_close.png" />
+    <Content Include="images\09_head_note.png" />
+    <Content Include="images\10_dd_arrow.png" />
+    <Content Include="images\10_head_lock.png" />
+    <Content Include="images\10_head_save.png" />
+    <Content Include="images\10_info_lock.png" />
+    <Content Include="images\10_info_save.png" />
+    <Content Include="images\14_col1_a.jpg" />
+    <Content Include="images\14_col1_b.jpg" />
+    <Content Include="images\14_col2_a.jpg" />
+    <Content Include="images\14_col2_b.jpg" />
+    <Content Include="images\14_col2_c.jpg" />
+    <Content Include="images\14_col3_a.jpg" />
+    <Content Include="images\14_col3_b.jpg" />
+    <Content Include="images\14_col4_a.jpg" />
+    <Content Include="images\14_col4_b.jpg" />
+    <Content Include="images\15_blace_note.png" />
+    <Content Include="images\15_doubt.png" />
+    <Content Include="images\15_eye.png" />
+    <Content Include="images\15_massage.png" />
+    <Content Include="images\15_star.png" />
+    <Content Include="images\15_student.jpg" />
+    <Content Include="images\15_teacher.jpg" />
+    <Content Include="images\15_white_note.png" />
+    <Content Include="images\16_dd_gray_arrow.png" />
+    <Content Include="images\16_edit.png" />
+    <Content Include="images\16_female_pic.jpg" />
+    <Content Include="images\16_male_pic.jpg" />
+    <Content Include="images\17-1_student_1.jpg" />
+    <Content Include="images\17-1_student_2.jpg" />
+    <Content Include="images\17-1_teacher_1.jpg" />
+    <Content Include="images\17.0_student_1.jpg" />
+    <Content Include="images\26A-2_dummy_pic.png" />
+    <Content Include="images\26_blur_bg.png" />
+    <Content Include="images\26_current_a.jpg" />
+    <Content Include="images\26_current_b.jpg" />
+    <Content Include="images\26_current_c.jpg" />
+    <Content Include="images\26_current_d.jpg" />
+    <Content Include="images\26_current_e.jpg" />
+    <Content Include="images\26_current_f.jpg" />
+    <Content Include="images\26_current_g.jpg" />
+    <Content Include="images\26_past_rematch_btn.jpg" />
+    <Content Include="images\26_past_row1_a.jpg" />
+    <Content Include="images\26_past_row1_b.jpg" />
+    <Content Include="images\26_past_row1_c.jpg" />
+    <Content Include="images\26_past_row1_d.jpg" />
+    <Content Include="images\26_past_row1_e.jpg" />
+    <Content Include="images\26_past_row1_f.jpg" />
+    <Content Include="images\26_past_row1_g.jpg" />
+    <Content Include="images\26_past_row2_a.jpg" />
+    <Content Include="images\26_past_row2_b.jpg" />
+    <Content Include="images\26_past_row2_c.jpg" />
+    <Content Include="images\26_past_row2_d.jpg" />
+    <Content Include="images\26_past_row2_e.jpg" />
+    <Content Include="images\26_past_row2_f.jpg" />
+    <Content Include="images\26_past_row2_g.jpg" />
+    <Content Include="images\26_they_a.jpg" />
+    <Content Include="images\26_today_bg.png" />
+    <Content Include="images\26_you_a.jpg" />
+    <Content Include="images\26_you_b.jpg" />
+    <Content Include="images\26_you_c.jpg" />
+    <Content Include="images\26_you_d.jpg" />
+    <Content Include="images\26_you_e.jpg" />
+    <Content Include="images\26_you_f.jpg" />
+    <Content Include="images\26_you_g.jpg" />
+    <Content Include="images\abuse.png" />
+    <Content Include="images\back_btn-2.png" />
+    <Content Include="images\back_btn.png" />
+    <Content Include="images\bell.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bin-pic.jpg" />
+    <Content Include="images\border-anim-h.gif" />
+    <Content Include="images\border-anim-v.gif" />
+    <Content Include="images\border-h.gif" />
+    <Content Include="images\border-v.gif" />
+    <Content Include="images\ChatWithMe_bg_bar.jpg" />
+    <Content Include="images\ChatWithMe_female.png" />
+    <Content Include="images\ChatWithMe_male.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\closebox.png" />
+    <Content Include="images\close_white.png" />
+    <Content Include="images\computer-0.png" />
+    <Content Include="images\computer-0_hover.png" />
+    <Content Include="images\computer.png" />
+    <Content Include="images\computer_hover.png" />
+    <Content Include="images\DisablePage-1_footer_light_bg.png" />
+    <Content Include="images\envelope.png" />
+    <Content Include="images\error-4-img.png" />
+    <Content Include="images\f-register.png" />
+    <Content Include="images\grid\0.jpg" />
+    <Content Include="images\grid\1.jpg" />
+    <Content Include="images\grid\10.jpg" />
+    <Content Include="images\grid\11.jpg" />
+    <Content Include="images\grid\12.jpg" />
+    <Content Include="images\grid\13.jpg" />
+    <Content Include="images\grid\14.jpg" />
+    <Content Include="images\grid\15.jpg" />
+    <Content Include="images\grid\16.jpg" />
+    <Content Include="images\grid\17.jpg" />
+    <Content Include="images\grid\18.jpg" />
+    <Content Include="images\grid\19.jpg" />
+    <Content Include="images\grid\2.jpg" />
+    <Content Include="images\grid\20.jpg" />
+    <Content Include="images\grid\21.jpg" />
+    <Content Include="images\grid\22.jpg" />
+    <Content Include="images\grid\23.jpg" />
+    <Content Include="images\grid\24.jpg" />
+    <Content Include="images\grid\25.jpg" />
+    <Content Include="images\grid\26.jpg" />
+    <Content Include="images\grid\27.jpg" />
+    <Content Include="images\grid\28.jpg" />
+    <Content Include="images\grid\29.jpg" />
+    <Content Include="images\grid\3.jpg" />
+    <Content Include="images\grid\30.jpg" />
+    <Content Include="images\grid\31.jpg" />
+    <Content Include="images\grid\32.jpg" />
+    <Content Include="images\grid\33.jpg" />
+    <Content Include="images\grid\34.jpg" />
+    <Content Include="images\grid\35.jpg" />
+    <Content Include="images\grid\36.jpg" />
+    <Content Include="images\grid\37.jpg" />
+    <Content Include="images\grid\38.jpg" />
+    <Content Include="images\grid\39.jpg" />
+    <Content Include="images\grid\4.jpg" />
+    <Content Include="images\grid\40.jpg" />
+    <Content Include="images\grid\41.jpg" />
+    <Content Include="images\grid\42.jpg" />
+    <Content Include="images\grid\43.jpg" />
+    <Content Include="images\grid\44.jpg" />
+    <Content Include="images\grid\45.jpg" />
+    <Content Include="images\grid\46.jpg" />
+    <Content Include="images\grid\47.jpg" />
+    <Content Include="images\grid\48.jpg" />
+    <Content Include="images\grid\49.jpg" />
+    <Content Include="images\grid\5.jpg" />
+    <Content Include="images\grid\50.jpg" />
+    <Content Include="images\grid\51.jpg" />
+    <Content Include="images\grid\52.jpg" />
+    <Content Include="images\grid\53.jpg" />
+    <Content Include="images\grid\54.jpg" />
+    <Content Include="images\grid\55.jpg" />
+    <Content Include="images\grid\56.jpg" />
+    <Content Include="images\grid\57.jpg" />
+    <Content Include="images\grid\58.jpg" />
+    <Content Include="images\grid\59.jpg" />
+    <Content Include="images\grid\6.jpg" />
+    <Content Include="images\grid\60.jpg" />
+    <Content Include="images\grid\61.jpg" />
+    <Content Include="images\grid\62.jpg" />
+    <Content Include="images\grid\63.jpg" />
+    <Content Include="images\grid\64.jpg" />
+    <Content Include="images\grid\65.jpg" />
+    <Content Include="images\grid\66.jpg" />
+    <Content Include="images\grid\67.jpg" />
+    <Content Include="images\grid\68.jpg" />
+    <Content Include="images\grid\69.jpg" />
+    <Content Include="images\grid\7.jpg" />
+    <Content Include="images\grid\70.jpg" />
+    <Content Include="images\grid\71.jpg" />
+    <Content Include="images\grid\72.jpg" />
+    <Content Include="images\grid\73.jpg" />
+    <Content Include="images\grid\74.jpg" />
+    <Content Include="images\grid\75.jpg" />
+    <Content Include="images\grid\76.jpg" />
+    <Content Include="images\grid\77.jpg" />
+    <Content Include="images\grid\78.jpg" />
+    <Content Include="images\grid\79.jpg" />
+    <Content Include="images\grid\8.jpg" />
+    <Content Include="images\grid\80.jpg" />
+    <Content Include="images\grid\81.jpg" />
+    <Content Include="images\grid\82.jpg" />
+    <Content Include="images\grid\83.jpg" />
+    <Content Include="images\grid\84.jpg" />
+    <Content Include="images\grid\85.jpg" />
+    <Content Include="images\grid\86.jpg" />
+    <Content Include="images\grid\87.jpg" />
+    <Content Include="images\grid\88.jpg" />
+    <Content Include="images\grid\89.jpg" />
+    <Content Include="images\grid\9.jpg" />
+    <Content Include="images\grid\90.jpg" />
+    <Content Include="images\grid\91.jpg" />
+    <Content Include="images\grid\92.jpg" />
+    <Content Include="images\grid\93.jpg" />
+    <Content Include="images\grid\94.jpg" />
+    <Content Include="images\grid\95.jpg" />
+    <Content Include="images\grid\male003.jpg" />
+    <Content Include="images\grid\male004.jpg" />
+    <Content Include="images\grid\male005.jpg" />
+    <Content Include="images\grid\male006.jpg" />
+    <Content Include="images\grid\male007.jpg" />
+    <Content Include="images\grid\male008.jpg" />
+    <Content Include="images\grid\male009.jpg" />
+    <Content Include="images\grid\male010.jpg" />
+    <Content Include="images\grid\male011.jpg" />
+    <Content Include="images\grid\male012.jpg" />
+    <Content Include="images\grid\male013.jpg" />
+    <Content Include="images\grid\male014.jpg" />
+    <Content Include="images\grid\male015.jpg" />
+    <Content Include="images\grid\male016.jpg" />
+    <Content Include="images\grid\male017.jpg" />
+    <Content Include="images\grid\male018.jpg" />
+    <Content Include="images\grid\male019.jpg" />
+    <Content Include="images\grid\male020.jpg" />
+    <Content Include="images\grid\male021.jpg" />
+    <Content Include="images\grid\male022.jpg" />
+    <Content Include="images\grid\male023.jpg" />
+    <Content Include="images\grid\male024.jpg" />
+    <Content Include="images\grid\male025.jpg" />
+    <Content Include="images\grid\male026.jpg" />
+    <Content Include="images\grid\male027.jpg" />
+    <Content Include="images\grid\male028.jpg" />
+    <Content Include="images\grid\male029.jpg" />
+    <Content Include="images\grid\male030.jpg" />
+    <Content Include="images\grid\male031.jpg" />
+    <Content Include="images\grid\male032.jpg" />
+    <Content Include="images\grid\male033.jpg" />
+    <Content Include="images\grid\male034.jpg" />
+    <Content Include="images\grid\male035.jpg" />
+    <Content Include="images\grid\male036.jpg" />
+    <Content Include="images\grid\male037.jpg" />
+    <Content Include="images\grid\male038.jpg" />
+    <Content Include="images\grid\male039.jpg" />
+    <Content Include="images\grid\male040.jpg" />
+    <Content Include="images\grid\male041.jpg" />
+    <Content Include="images\grid\male042.jpg" />
+    <Content Include="images\grid\male043.jpg" />
+    <Content Include="images\grid\male044.jpg" />
+    <Content Include="images\grid\male045.jpg" />
+    <Content Include="images\grid\male046.jpg" />
+    <Content Include="images\grid\male047.jpg" />
+    <Content Include="images\grid\male048.jpg" />
+    <Content Include="images\grid\male049.jpg" />
+    <Content Include="images\grid\male050.jpg" />
+    <Content Include="images\grid\male051.jpg" />
+    <Content Include="images\grid\male052.jpg" />
+    <Content Include="images\grid\male053.jpg" />
+    <Content Include="images\grid\male054.jpg" />
+    <Content Include="images\grid\male055.jpg" />
+    <Content Include="images\grid\male056.jpg" />
+    <Content Include="images\grid\male057.jpg" />
+    <Content Include="images\grid\male058.jpg" />
+    <Content Include="images\grid\male059.jpg" />
+    <Content Include="images\grid\male060.jpg" />
+    <Content Include="images\grid\male061.jpg" />
+    <Content Include="images\grid\male062.jpg" />
+    <Content Include="images\grid\male063.jpg" />
+    <Content Include="images\grid\male064.jpg" />
+    <Content Include="images\grid\male065.jpg" />
+    <Content Include="images\grid\male066.jpg" />
+    <Content Include="images\grid\male067.jpg" />
+    <Content Include="images\grid\male068.jpg" />
+    <Content Include="images\grid\male069.jpg" />
+    <Content Include="images\grid\male070.jpg" />
+    <Content Include="images\grid\male071.jpg" />
+    <Content Include="images\grid\male072.jpg" />
+    <Content Include="images\grid\male073.jpg" />
+    <Content Include="images\grid\male074.jpg" />
+    <Content Include="images\grid\male075.jpg" />
+    <Content Include="images\grid\male076.jpg" />
+    <Content Include="images\grid\male077.jpg" />
+    <Content Include="images\grid\male078.jpg" />
+    <Content Include="images\grid\male079.jpg" />
+    <Content Include="images\grid\male080.jpg" />
+    <Content Include="images\grid\male081.jpg" />
+    <Content Include="images\grid\male082.jpg" />
+    <Content Include="images\grid\male083.jpg" />
+    <Content Include="images\grid\male084.jpg" />
+    <Content Include="images\grid\male085.jpg" />
+    <Content Include="images\grid\male086.jpg" />
+    <Content Include="images\grid\male087.jpg" />
+    <Content Include="images\grid\male088.jpg" />
+    <Content Include="images\grid\male089.jpg" />
+    <Content Include="images\grid\male090.jpg" />
+    <Content Include="images\head_lock.png" />
+    <Content Include="images\head_lock_hover-1.png" />
+    <Content Include="images\head_lock_hover.png" />
+    <Content Include="images\head_nav_-alert.png" />
+    <Content Include="images\head_nav_-alert_hover.png" />
+    <Content Include="images\head_nav_envelop.png" />
+    <Content Include="images\head_nav_envelop_hover.png" />
+    <Content Include="images\head_nav_feedback.png" />
+    <Content Include="images\head_nav_legand.png" />
+    <Content Include="images\head_nav_legand_hover.png" />
+    <Content Include="images\head_nav_logout.png" />
+    <Content Include="images\head_nav_logout_hover.png" />
+    <Content Include="images\head_nav_rematch.png" />
+    <Content Include="images\head_nav_rematch_hover.png" />
+    <Content Include="images\head_nav_sapart.png" />
+    <Content Include="images\head_nav_setting.png" />
+    <Content Include="images\head_nav_setting_hover.png" />
+    <Content Include="images\head_nav_viewed.png" />
+    <Content Include="images\head_nav_viewed_hover.png" />
+    <Content Include="images\icon-curve.png" />
+    <Content Include="images\icon-dropbox.png" />
+    <Content Include="images\icon-facebook.png" />
+    <Content Include="images\icon-googledrive.png" />
+    <Content Include="images\icon-harddisk.png" />
+    <Content Include="images\icon-instagram.png" />
+    <Content Include="images\icon-onedrive.png" />
+    <Content Include="images\icon_calender.png" />
+    <Content Include="images\icon_close.png" />
+    <Content Include="images\icon_cont_calen.png" />
+    <Content Include="images\icon_cont_close.png" />
+    <Content Include="images\icon_cont_note.png" />
+    <Content Include="images\icon_cont_save.png" />
+    <Content Include="images\icon_info_lock.png" />
+    <Content Include="images\icon_lock.png" />
+    <Content Include="images\icon_note.png" />
+    <Content Include="images\icon_save.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\left1.png" />
+    <Content Include="images\leftarraw.jpg" />
+    <Content Include="images\leftone.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\maintainance_sorry.jpg" />
+    <Content Include="images\notification_black_close.jpg" />
+    <Content Include="images\PaymentGateway_paynote.png" />
+    <Content Include="images\PaymentGateway_paypal.png" />
+    <Content Include="images\person-info.jpg" />
+    <Content Include="images\person-pic.jpg" />
+    <Content Include="images\person.jpg" />
+    <Content Include="images\photo.jpg" />
+    <Content Include="images\pic_drive.png" />
+    <Content Include="images\pic_drive_hover.png" />
+    <Content Include="images\pic_dropbox.png" />
+    <Content Include="images\pic_dropbox_hover.png" />
+    <Content Include="images\pic_instagram-0.png" />
+    <Content Include="images\pic_instagram-0_hover.png" />
+    <Content Include="images\pic_instagram.png" />
+    <Content Include="images\pic_instagram_hover.png" />
+    <Content Include="images\popup_arrow_left.png" />
+    <Content Include="images\popup_arrow_right.png" />
+    <Content Include="images\popup_photo_show.jpg" />
+    <Content Include="images\ProfileCompletion_minus-icon.png" />
+    <Content Include="images\ProfileCompletion_plus-icon.png" />
+    <Content Include="images\profile_head.png" />
+    <Content Include="images\profile_info_pic.jpg" />
+    <Content Include="images\receive_msg_conv_img.jpg" />
+    <Content Include="images\regi_pop_back_bg.jpg" />
+    <Content Include="images\right.png" />
+    <Content Include="images\right1.png" />
+    <Content Include="images\rightone.png" />
+    <Content Include="images\sett_man.png" />
+    <Content Include="images\sett_man_hover.png" />
+    <Content Include="images\sett_woman.png" />
+    <Content Include="images\sett_woman_hover.png" />
+    <Content Include="images\set_man.png" />
+    <Content Include="images\set_man_hover.png" />
+    <Content Include="images\set_woman.png" />
+    <Content Include="images\set_woman_hover.png" />
+    <Content Include="images\signout.png" />
+    <Content Include="images\sqclose.png" />
+    <Content Include="images\SubscriptionPlans_cent_pic.jpg" />
+    <Content Include="images\Subscription_anonimity.png" />
+    <Content Include="images\Subscription_deleted.png" />
+    <Content Include="images\Subscription_face,link.png" />
+    <Content Include="images\Subscription_face.png" />
+    <Content Include="images\Subscription_matched_1.png" />
+    <Content Include="images\Subscription_rematch.png" />
+    <Content Include="images\Subscription_report.png" />
+    <Content Include="images\Subscription_tik.png" />
+    <Content Include="images\Subscription_x.png" />
+    <Content Include="images\teacher_1.jpg" />
+    <Content Include="images\teacher_2.jpg" />
+    <Content Include="images\teacher_3.jpg" />
+    <Content Include="images\teacher_4.jpg" />
+    <Content Include="images\teacher_5.jpg" />
+    <Content Include="images\teacher_6.jpg" />
+    <Content Include="images\tresh_pic.jpg" />
+    <Content Include="images\uploadImages_pic-a.jpg" />
+    <Content Include="images\uploadImages_pic-b.jpg" />
+    <Content Include="images\uploadImages_pic-c.jpg" />
+    <Content Include="images\white_edit_icon.png" />
+    <Content Include="images\wrench.png" />
+    <Content Include="inner\fbregister.aspx" />
+    <Content Include="inner\forgotpassword.aspx" />
+    <Content Include="inner\login.aspx" />
+    <Content Include="inner\register.aspx" />
+    <Content Include="post\et.aspx" />
+    <Content Include="Scripts\ajaxjquery.min.js" />
+    <Content Include="Scripts\fbregister.js" />
+    <Content Include="Scripts\intelliCheckbox.js" />
+    <Content Include="Scripts\IntelliPin.js" />
+    <Content Include="web\ActivateAccount.aspx" />
+    <Content Include="web\BuyRematchPopup.html" />
+    <Content Include="web\ChatConversation.aspx" />
+    <Content Include="web\ConversationView.aspx" />
+    <Content Include="web\Criteria.aspx" />
+    <Content Include="web\CriteriaPoints.aspx" />
+    <Content Include="web\cssold\chatwindows.css" />
+    <Content Include="web\cssold\circle_style_1.css" />
+    <Content Include="web\cssold\circle_style_2.css" />
+    <Content Include="web\cssold\criteria.css" />
+    <Content Include="web\cssold\dd.css" />
+    <Content Include="web\cssold\examples.css" />
+    <Content Include="web\cssold\font-awesome.css" />
+    <Content Include="web\cssold\font-awesome.min.css" />
+    <Content Include="web\cssold\jquery.circliful.css" />
+    <Content Include="web\cssold\main.css" />
+    <Content Include="web\cssold\master.css" />
+    <Content Include="web\cssold\popups.css" />
+    <Content Include="web\cssold\responsive.css" />
+    <Content Include="web\cssold\site.css" />
+    <Content Include="web\cssold\style.css" />
+    <Content Include="web\cssold\tabModule.css" />
+    <Content Include="web\css\criteria.css" />
+    <Content Include="web\css\imgareaselect-default.css" />
+    <Content Include="web\css\master.css" />
+    <Content Include="web\css\messages.css" />
+    <Content Include="web\css\messagespassport.css" />
+    <Content Include="web\css\passport.css" />
+    <Content Include="web\css\popups.css" />
+    <Content Include="web\css\questionspopup.css" />
+    <Content Include="web\css\rating.css" />
+    <Content Include="web\css\site.css" />
+    <Content Include="web\help\css\circle_style_1.css" />
+    <Content Include="web\help\css\circle_style_2.css" />
+    <Content Include="web\help\css\criteria.css" />
+    <Content Include="web\help\css\dd.css" />
+    <Content Include="web\help\css\examples.css" />
+    <Content Include="web\help\css\jquery.circliful.css" />
+    <Content Include="web\help\css\main.css" />
+    <Content Include="web\help\css\master.css" />
+    <Content Include="web\help\css\popups.css" />
+    <Content Include="web\help\css\site-2.css" />
+    <Content Include="web\help\css\site.css" />
+    <Content Include="web\help\css\style.css" />
+    <Content Include="web\help\images\01_line-shadow.jpg" />
+    <Content Include="web\help\images\02_back.png" />
+    <Content Include="web\help\images\05_box_shadows.png" />
+    <Content Include="web\help\images\05_cloud.png" />
+    <Content Include="web\help\images\05_content_pic.png" />
+    <Content Include="web\help\images\05_dropbox.png" />
+    <Content Include="web\help\images\05_facebook.png" />
+    <Content Include="web\help\images\05_google_drive.png" />
+    <Content Include="web\help\images\05_hard_disk.png" />
+    <Content Include="web\help\images\05_intigram.png" />
+    <Content Include="web\help\images\08_img-1.jpg" />
+    <Content Include="web\help\images\08_img-2.jpg" />
+    <Content Include="web\help\images\08_img-3.jpg" />
+    <Content Include="web\help\images\08_img-4.jpg" />
+    <Content Include="web\help\images\08_img-5.jpg" />
+    <Content Include="web\help\images\08_img-6.jpg" />
+    <Content Include="web\help\images\09_cont_calen.png" />
+    <Content Include="web\help\images\09_cont_close.png" />
+    <Content Include="web\help\images\09_cont_note.png" />
+    <Content Include="web\help\images\09_head_calen.png" />
+    <Content Include="web\help\images\09_head_close.png" />
+    <Content Include="web\help\images\09_head_note.png" />
+    <Content Include="web\help\images\10_dd_arrow.png" />
+    <Content Include="web\help\images\10_head_lock.png" />
+    <Content Include="web\help\images\10_head_save.png" />
+    <Content Include="web\help\images\10_info_lock.png" />
+    <Content Include="web\help\images\10_info_save.png" />
+    <Content Include="web\help\images\14_col1_a.jpg" />
+    <Content Include="web\help\images\14_col1_b.jpg" />
+    <Content Include="web\help\images\14_col2_a.jpg" />
+    <Content Include="web\help\images\14_col2_b.jpg" />
+    <Content Include="web\help\images\14_col2_c.jpg" />
+    <Content Include="web\help\images\14_col3_a.jpg" />
+    <Content Include="web\help\images\14_col3_b.jpg" />
+    <Content Include="web\help\images\14_col4_a.jpg" />
+    <Content Include="web\help\images\14_col4_b.jpg" />
+    <Content Include="web\help\images\15_blace_note.png" />
+    <Content Include="web\help\images\15_doubt.png" />
+    <Content Include="web\help\images\15_eye.png" />
+    <Content Include="web\help\images\15_massage.png" />
+    <Content Include="web\help\images\15_star.png" />
+    <Content Include="web\help\images\15_student.jpg" />
+    <Content Include="web\help\images\15_teacher.jpg" />
+    <Content Include="web\help\images\15_white_note.png" />
+    <Content Include="web\help\images\16_dd_gray_arrow.png" />
+    <Content Include="web\help\images\16_edit.png" />
+    <Content Include="web\help\images\16_female_pic.jpg" />
+    <Content Include="web\help\images\16_male_pic.jpg" />
+    <Content Include="web\help\images\17-1_student_1.jpg" />
+    <Content Include="web\help\images\17-1_student_2.jpg" />
+    <Content Include="web\help\images\17-1_teacher_1.jpg" />
+    <Content Include="web\help\images\17.0_student_1.jpg" />
+    <Content Include="web\help\images\26A-2_dummy_pic.png" />
+    <Content Include="web\help\images\26_blur_bg.png" />
+    <Content Include="web\help\images\26_current_a.jpg" />
+    <Content Include="web\help\images\26_current_b.jpg" />
+    <Content Include="web\help\images\26_current_c.jpg" />
+    <Content Include="web\help\images\26_current_d.jpg" />
+    <Content Include="web\help\images\26_current_e.jpg" />
+    <Content Include="web\help\images\26_current_f.jpg" />
+    <Content Include="web\help\images\26_current_g.jpg" />
+    <Content Include="web\help\images\26_past_rematch_btn.jpg" />
+    <Content Include="web\help\images\26_past_row1_a.jpg" />
+    <Content Include="web\help\images\26_past_row1_b.jpg" />
+    <Content Include="web\help\images\26_past_row1_c.jpg" />
+    <Content Include="web\help\images\26_past_row1_d.jpg" />
+    <Content Include="web\help\images\26_past_row1_e.jpg" />
+    <Content Include="web\help\images\26_past_row1_f.jpg" />
+    <Content Include="web\help\images\26_past_row1_g.jpg" />
+    <Content Include="web\help\images\26_past_row2_a.jpg" />
+    <Content Include="web\help\images\26_past_row2_b.jpg" />
+    <Content Include="web\help\images\26_past_row2_c.jpg" />
+    <Content Include="web\help\images\26_past_row2_d.jpg" />
+    <Content Include="web\help\images\26_past_row2_e.jpg" />
+    <Content Include="web\help\images\26_past_row2_f.jpg" />
+    <Content Include="web\help\images\26_past_row2_g.jpg" />
+    <Content Include="web\help\images\26_they_a.jpg" />
+    <Content Include="web\help\images\26_today_bg.png" />
+    <Content Include="web\help\images\26_you_a.jpg" />
+    <Content Include="web\help\images\26_you_b.jpg" />
+    <Content Include="web\help\images\26_you_c.jpg" />
+    <Content Include="web\help\images\26_you_d.jpg" />
+    <Content Include="web\help\images\26_you_e.jpg" />
+    <Content Include="web\help\images\26_you_f.jpg" />
+    <Content Include="web\help\images\26_you_g.jpg" />
+    <Content Include="web\help\images\back_btn.png" />
+    <Content Include="web\help\images\bell.png" />
+    <Content Include="web\help\images\bin-pic.jpg" />
+    <Content Include="web\help\images\ChatWithMe_bg_bar.jpg" />
+    <Content Include="web\help\images\ChatWithMe_female.png" />
+    <Content Include="web\help\images\ChatWithMe_male.png" />
+    <Content Include="web\help\images\DisablePage-1_footer_light_bg.png" />
+    <Content Include="web\help\images\envelope.png" />
+    <Content Include="web\help\images\error-4-img.png" />
+    <Content Include="web\help\images\head_lock.png" />
+    <Content Include="web\help\images\head_nav_-alert.png" />
+    <Content Include="web\help\images\head_nav_-alert_hover.png" />
+    <Content Include="web\help\images\head_nav_envelop.png" />
+    <Content Include="web\help\images\head_nav_envelop_hover.png" />
+    <Content Include="web\help\images\head_nav_feedback.png" />
+    <Content Include="web\help\images\head_nav_legand.png" />
+    <Content Include="web\help\images\head_nav_legand_hover.png" />
+    <Content Include="web\help\images\head_nav_logout.png" />
+    <Content Include="web\help\images\head_nav_logout_hover.png" />
+    <Content Include="web\help\images\head_nav_rematch.png" />
+    <Content Include="web\help\images\head_nav_rematch_hover.png" />
+    <Content Include="web\help\images\head_nav_sapart.png" />
+    <Content Include="web\help\images\head_nav_setting.png" />
+    <Content Include="web\help\images\head_nav_setting_hover.png" />
+    <Content Include="web\help\images\head_nav_viewed.png" />
+    <Content Include="web\help\images\head_nav_viewed_hover.png" />
+    <Content Include="web\help\images\icon-curve.png" />
+    <Content Include="web\help\images\icon-dropbox.png" />
+    <Content Include="web\help\images\icon-facebook.png" />
+    <Content Include="web\help\images\icon-googledrive.png" />
+    <Content Include="web\help\images\icon-harddisk.png" />
+    <Content Include="web\help\images\icon-instagram.png" />
+    <Content Include="web\help\images\icon-onedrive.png" />
+    <Content Include="web\help\images\icon_calender.png" />
+    <Content Include="web\help\images\icon_close.png" />
+    <Content Include="web\help\images\icon_cont_calen.png" />
+    <Content Include="web\help\images\icon_cont_close.png" />
+    <Content Include="web\help\images\icon_cont_note.png" />
+    <Content Include="web\help\images\icon_cont_save.png" />
+    <Content Include="web\help\images\icon_info_lock.png" />
+    <Content Include="web\help\images\icon_lock.png" />
+    <Content Include="web\help\images\icon_note.png" />
+    <Content Include="web\help\images\icon_save.png" />
+    <Content Include="web\help\images\logo.png" />
+    <Content Include="web\help\images\maintainance_sorry.jpg" />
+    <Content Include="web\help\images\notification_black_close.jpg" />
+    <Content Include="web\help\images\person-info.jpg" />
+    <Content Include="web\help\images\person-pic.jpg" />
+    <Content Include="web\help\images\person.jpg" />
+    <Content Include="web\help\images\popup_arrow_left.png" />
+    <Content Include="web\help\images\popup_arrow_right.png" />
+    <Content Include="web\help\images\popup_photo_show.jpg" />
+    <Content Include="web\help\images\profile_head.png" />
+    <Content Include="web\help\images\profile_info_pic.jpg" />
+    <Content Include="web\help\images\signout.png" />
+    <Content Include="web\help\images\SubscriptionPlans_cent_pic.jpg" />
+    <Content Include="web\help\images\Subscription_anonimity.png" />
+    <Content Include="web\help\images\Subscription_deleted.png" />
+    <Content Include="web\help\images\Subscription_face,link.png" />
+    <Content Include="web\help\images\Subscription_face.png" />
+    <Content Include="web\help\images\Subscription_matched_1.png" />
+    <Content Include="web\help\images\Subscription_rematch.png" />
+    <Content Include="web\help\images\Subscription_report.png" />
+    <Content Include="web\help\images\Subscription_tik.png" />
+    <Content Include="web\help\images\Subscription_x.png" />
+    <Content Include="web\help\images\teacher_1.jpg" />
+    <Content Include="web\help\images\teacher_2.jpg" />
+    <Content Include="web\help\images\teacher_3.jpg" />
+    <Content Include="web\help\images\teacher_4.jpg" />
+    <Content Include="web\help\images\teacher_5.jpg" />
+    <Content Include="web\help\images\teacher_6.jpg" />
+    <Content Include="web\help\images\tresh_pic.jpg" />
+    <Content Include="web\help\images\uploadImages_pic-a.jpg" />
+    <Content Include="web\help\images\uploadImages_pic-b.jpg" />
+    <Content Include="web\help\images\uploadImages_pic-c.jpg" />
+    <Content Include="web\help\images\wrench.png" />
+    <Content Include="web\help\help_home.html" />
+    <Content Include="web\help\js\circliful.min.js" />
+    <Content Include="web\help\js\jquery-1.8.3.js" />
+    <Content Include="web\Home.aspx" />
+    <Content Include="web\images\01_line-shadow.jpg" />
+    <Content Include="web\images\02_back.png" />
+    <Content Include="web\images\05_box_shadows.png" />
+    <Content Include="web\images\05_cloud.png" />
+    <Content Include="web\images\05_content_pic.png" />
+    <Content Include="web\images\05_dropbox.png" />
+    <Content Include="web\images\05_facebook.png" />
+    <Content Include="web\images\05_google_drive.png" />
+    <Content Include="web\images\05_hard_disk.png" />
+    <Content Include="web\images\05_intigram.png" />
+    <Content Include="web\images\08_img-1.jpg" />
+    <Content Include="web\images\08_img-2.jpg" />
+    <Content Include="web\images\08_img-3.jpg" />
+    <Content Include="web\images\08_img-4.jpg" />
+    <Content Include="web\images\08_img-5.jpg" />
+    <Content Include="web\images\08_img-6.jpg" />
+    <Content Include="web\images\09_cont_calen.png" />
+    <Content Include="web\images\09_cont_close.png" />
+    <Content Include="web\images\09_cont_note.png" />
+    <Content Include="web\images\09_head_calen.png" />
+    <Content Include="web\images\09_head_close.png" />
+    <Content Include="web\images\09_head_note.png" />
+    <Content Include="web\images\10_dd_arrow.png" />
+    <Content Include="web\images\10_head_lock.png" />
+    <Content Include="web\images\10_head_save.png" />
+    <Content Include="web\images\10_info_lock.png" />
+    <Content Include="web\images\10_info_save.png" />
+    <Content Include="web\images\14_col1_a.jpg" />
+    <Content Include="web\images\14_col1_b.jpg" />
+    <Content Include="web\images\14_col2_a.jpg" />
+    <Content Include="web\images\14_col2_b.jpg" />
+    <Content Include="web\images\14_col2_c.jpg" />
+    <Content Include="web\images\14_col3_a.jpg" />
+    <Content Include="web\images\14_col3_b.jpg" />
+    <Content Include="web\images\14_col4_a.jpg" />
+    <Content Include="web\images\14_col4_b.jpg" />
+    <Content Include="web\images\15_blace_note.png" />
+    <Content Include="web\images\15_doubt.png" />
+    <Content Include="web\images\15_eye.png" />
+    <Content Include="web\images\15_massage.png" />
+    <Content Include="web\images\15_star.png" />
+    <Content Include="web\images\15_student.jpg" />
+    <Content Include="web\images\15_teacher.jpg" />
+    <Content Include="web\images\15_white_note.png" />
+    <Content Include="web\images\16_dd_gray_arrow.png" />
+    <Content Include="web\images\16_edit.png" />
+    <Content Include="web\images\16_female_pic.jpg" />
+    <Content Include="web\images\16_male_pic.jpg" />
+    <Content Include="web\images\17-1_student_1.jpg" />
+    <Content Include="web\images\17-1_student_2.jpg" />
+    <Content Include="web\images\17-1_teacher_1.jpg" />
+    <Content Include="web\images\17.0_student_1.jpg" />
+    <Content Include="web\images\26A-2_dummy_pic.png" />
+    <Content Include="web\images\26_blur_bg.png" />
+    <Content Include="web\images\26_current_a.jpg" />
+    <Content Include="web\images\26_current_b.jpg" />
+    <Content Include="web\images\26_current_c.jpg" />
+    <Content Include="web\images\26_current_d.jpg" />
+    <Content Include="web\images\26_current_e.jpg" />
+    <Content Include="web\images\26_current_f.jpg" />
+    <Content Include="web\images\26_current_g.jpg" />
+    <Content Include="web\images\26_past_rematch_btn.jpg" />
+    <Content Include="web\images\26_past_row1_a.jpg" />
+    <Content Include="web\images\26_past_row1_b.jpg" />
+    <Content Include="web\images\26_past_row1_c.jpg" />
+    <Content Include="web\images\26_past_row1_d.jpg" />
+    <Content Include="web\images\26_past_row1_e.jpg" />
+    <Content Include="web\images\26_past_row1_f.jpg" />
+    <Content Include="web\images\26_past_row1_g.jpg" />
+    <Content Include="web\images\26_past_row2_a.jpg" />
+    <Content Include="web\images\26_past_row2_b.jpg" />
+    <Content Include="web\images\26_past_row2_c.jpg" />
+    <Content Include="web\images\26_past_row2_d.jpg" />
+    <Content Include="web\images\26_past_row2_e.jpg" />
+    <Content Include="web\images\26_past_row2_f.jpg" />
+    <Content Include="web\images\26_past_row2_g.jpg" />
+    <Content Include="web\images\26_they_a.jpg" />
+    <Content Include="web\images\26_today_bg.png" />
+    <Content Include="web\images\26_you_a.jpg" />
+    <Content Include="web\images\26_you_b.jpg" />
+    <Content Include="web\images\26_you_c.jpg" />
+    <Content Include="web\images\26_you_d.jpg" />
+    <Content Include="web\images\26_you_e.jpg" />
+    <Content Include="web\images\26_you_f.jpg" />
+    <Content Include="web\images\26_you_g.jpg" />
+    <Content Include="web\images\back_btn.png" />
+    <Content Include="web\images\bell.png" />
+    <Content Include="web\images\bin-pic.jpg" />
+    <Content Include="web\images\ChatWithMe_bg_bar.jpg" />
+    <Content Include="web\images\ChatWithMe_female.png" />
+    <Content Include="web\images\ChatWithMe_male.png" />
+    <Content Include="web\images\checkbox_c.png" />
+    <Content Include="web\images\checkbox_nc.png" />
+    <Content Include="web\images\computer.png" />
+    <Content Include="web\images\computer_hover.png" />
+    <Content Include="web\images\DisablePage-1_footer_light_bg.png" />
+    <Content Include="web\images\Discuss94.png" />
+    <Content Include="web\images\downloadicon.png" />
+    <Content Include="web\images\envelope.png" />
+    <Content Include="web\images\error-4-img.png" />
+    <Content Include="web\images\head_lock.png" />
+    <Content Include="web\images\head_nav_-alert.png" />
+    <Content Include="web\images\head_nav_-alert_hover.png" />
+    <Content Include="web\images\head_nav_envelop.png" />
+    <Content Include="web\images\head_nav_envelop_hover.png" />
+    <Content Include="web\images\head_nav_feedback.png" />
+    <Content Include="web\images\head_nav_legand.png" />
+    <Content Include="web\images\head_nav_legand_hover.png" />
+    <Content Include="web\images\head_nav_logout.png" />
+    <Content Include="web\images\head_nav_logout_hover.png" />
+    <Content Include="web\images\head_nav_rematch.png" />
+    <Content Include="web\images\head_nav_rematch_hover.png" />
+    <Content Include="web\images\head_nav_sapart.png" />
+    <Content Include="web\images\head_nav_setting.png" />
+    <Content Include="web\images\head_nav_setting_hover.png" />
+    <Content Include="web\images\head_nav_viewed.png" />
+    <Content Include="web\images\head_nav_viewed_hover.png" />
+    <Content Include="web\images\icon_calender.png" />
+    <Content Include="web\images\icon_close.png" />
+    <Content Include="web\images\icon_cont_calen.png" />
+    <Content Include="web\images\icon_cont_close.png" />
+    <Content Include="web\images\icon_cont_note.png" />
+    <Content Include="web\images\icon_cont_save.png" />
+    <Content Include="web\images\icon_info_lock.png" />
+    <Content Include="web\images\icon_lock.png" />
+    <Content Include="web\images\icon_note.png" />
+    <Content Include="web\images\icon_save.png" />
+    <Content Include="web\images\logo.png" />
+    <Content Include="web\images\maintainance_sorry.jpg" />
+    <Content Include="web\images\person-info.jpg" />
+    <Content Include="web\images\person-pic.jpg" />
+    <Content Include="web\images\person.jpg" />
+    <Content Include="web\images\pic_dropbox.png" />
+    <Content Include="web\images\pic_dropbox_hover.png" />
+    <Content Include="web\images\pic_instagram.png" />
+    <Content Include="web\images\pic_instagram_hover.png" />
+    <Content Include="web\images\popup_arrow_left.png" />
+    <Content Include="web\images\popup_arrow_right.png" />
+    <Content Include="web\images\popup_photo_show.jpg" />
+    <Content Include="web\images\profile_head.png" />
+    <Content Include="web\images\profile_info_pic.jpg" />
+    <Content Include="web\images\rematch.png" />
+    <Content Include="web\images\signout.png" />
+    <Content Include="web\images\subscribe.png" />
+    <Content Include="web\images\SubscriptionPlans_cent_pic.jpg" />
+    <Content Include="web\images\Subscription_anonimity.png" />
+    <Content Include="web\images\Subscription_deleted.png" />
+    <Content Include="web\images\Subscription_face,link.png" />
+    <Content Include="web\images\Subscription_face.png" />
+    <Content Include="web\images\Subscription_matched_1.png" />
+    <Content Include="web\images\Subscription_rematch.png" />
+    <Content Include="web\images\Subscription_report.png" />
+    <Content Include="web\images\Subscription_tik.png" />
+    <Content Include="web\images\Subscription_x.png" />
+    <Content Include="web\images\teacher_1.jpg" />
+    <Content Include="web\images\teacher_2.jpg" />
+    <Content Include="web\images\teacher_3.jpg" />
+    <Content Include="web\images\teacher_4.jpg" />
+    <Content Include="web\images\teacher_5.jpg" />
+    <Content Include="web\images\teacher_6.jpg" />
+    <Content Include="web\images\tresh_pic.jpg" />
+    <Content Include="web\images\uploadImages_pic-a.jpg" />
+    <Content Include="web\images\uploadImages_pic-b.jpg" />
+    <Content Include="web\images\uploadImages_pic-c.jpg" />
+    <Content Include="web\images\viewedme.png" />
+    <Content Include="web\images\white_edit_icon.png" />
+    <Content Include="web\images\wrench.png" />
+    <Content Include="web\inner\aboutmediscuss.aspx" />
+    <Content Include="web\inner\addcontact.aspx" />
+    <Content Include="web\inner\compatibilityreportcart.aspx" />
+    <Content Include="web\inner\confirmsubscription.aspx" />
+    <Content Include="web\inner\importcontacts.aspx" />
+    <Content Include="web\inner\instagrampop.aspx" />
+    <Content Include="web\inner\leftrematch.aspx" />
+    <Content Include="web\inner\loadphoto.aspx" />
+    <Content Include="web\inner\loadquestion.aspx" />
+    <Content Include="web\inner\loadwritten.aspx" />
+    <Content Include="web\inner\messagepassport.aspx" />
+    <Content Include="web\inner\photopopup.aspx" />
+    <Content Include="web\inner\profilequestionsfilter.aspx" />
+    <Content Include="web\inner\questionsfilter.aspx" />
+    <Content Include="web\inner\rematchuser.aspx" />
+    <Content Include="web\inner\rightrematch.aspx" />
+    <Content Include="web\inner\theirpassport.aspx" />
+    <Content Include="web\inner\viewphoto.aspx" />
+    <Content Include="web\js\chatwindows.js" />
+    <Content Include="web\js\chatconversationview.js" />
+    <Content Include="web\js\circliful.min.js" />
+    <Content Include="web\js\conversationview.js" />
+    <Content Include="web\js\html5shiv.js" />
+    <Content Include="web\js\jquery-1.8.3.js" />
+    <Content Include="web\js\jquery.barrating.js" />
+    <Content Include="web\js\jquery.barrating.min.js" />
+    <Content Include="web\js\jquery.circliful.js" />
+    <Content Include="web\js\jquery.circliful.min.js" />
+    <Content Include="web\js\jquery.localtime.js" />
+    <Content Include="web\js\respond.min.js" />
+    <Content Include="web\ko\tempalte_conversationview.ascx" />
+    <Content Include="web\ko\template_chatconversation.ascx" />
+    <Content Include="web\ko\template_criteria.ascx" />
+    <Content Include="web\ko\template_currentmatchs.ascx" />
+    <Content Include="web\ko\template_pastmatchs.ascx" />
+    <Content Include="web\ko\template_questionscheck.ascx" />
+    <Content Include="web\ko\template_sexquestions.ascx" />
+    <Content Include="web\ko\template_todaymatch.ascx" />
+    <Content Include="web\LogOut.aspx" />
+    <Content Include="web\MatchHistory.aspx" />
+    <Content Include="web\MatchProfile.aspx" />
+    <Content Include="web\Messages.aspx" />
+    <Content Include="web\MyProfileAboutme.aspx" />
+    <Content Include="web\MyProfileCriteria.aspx" />
+    <Content Include="web\MyProfilePhotos.aspx" />
+    <Content Include="web\MyProfileQuestions.aspx" />
+    <Content Include="web\Notifications.aspx" />
+    <Content Include="web\PageNotFound.aspx" />
+    <Content Include="web\PhotoUpload.aspx" />
+    <Content Include="web\Profile.aspx" />
+    <Content Include="web\ProfilePercentage.aspx" />
+    <Content Include="web\ProfileView.aspx" />
+    <Content Include="web\scripts\circliful.min.js" />
+    <Content Include="web\scripts\html5shiv.js" />
+    <Content Include="web\scripts\jquery-1.8.3.js" />
+    <Content Include="web\scripts\jquery.barrating.js" />
+    <Content Include="web\scripts\jquery.barrating.min.js" />
+    <Content Include="web\scripts\jquery.circliful.js" />
+    <Content Include="web\scripts\jquery.circliful.min.js" />
+    <Content Include="web\scripts\jquery.dd.js" />
+    <Content Include="web\scripts\respond.min.js" />
+    <Content Include="web\scripts\tabModule.js" />
+    <Content Include="web\scripts\tabModule.min.js" />
+    <Content Include="web\service\DrawPercentage.aspx" />
+    <Content Include="web\service\LoadUserPhoto.aspx" />
+    <Content Include="web\Settings.aspx" />
+    <Content Include="web\Subscribe.aspx" />
+    <Content Include="web\uc\convuserpic.ascx" />
+    <Content Include="web\uc\headermenu.ascx" />
+    <Content Include="web\uc\matchprofilemenu.ascx" />
+    <Content Include="web\uc\otheruserpic.ascx" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.0.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Scripts\keyboard.js" />
+    <Content Include="Scripts\Sliderjquery-1.10.2.js" />
+    <Content Include="Scripts\sliderjquery-ui.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
+    <Content Include="Terms.aspx" />
+    <Content Include="web\chatbox\boilerplate.css" />
+    <Content Include="web\chatbox\chatwindows.js" />
+    <Content Include="web\chatbox\close-icon.png" />
+    <Content Include="web\chatbox\close.gif" />
+    <Content Include="web\chatbox\close_window-26.png" />
+    <Content Include="web\chatbox\headset-26.png" />
+    <Content Include="web\chatbox\respond.min.js" />
+    <Content Include="web\chatbox\smile.jpg" />
+    <Content Include="web\chatbox\styles_chat.css" />
+    <Content Include="web\chatbox\user-48.png" />
+    <Content Include="web\chatbox\video_call.png" />
+    <Content Include="web\chatbox\voicecall.jpg" />
+    <Content Include="web\cssold\chatwindow.css" />
+    <Content Include="web\cssold\imgareaselect-default.css" />
+    <Content Include="web\cssold\messages.css" />
+    <Content Include="web\cssold\myprofilewritten.css" />
+    <Content Include="web\cssold\passport.css" />
+    <Content Include="web\cssold\photoupload.css" />
+    <Content Include="web\images\10.jpg" />
+    <Content Include="web\images\arrow_left.png" />
+    <Content Include="web\images\arrow_right.png" />
+    <Content Include="web\images\border-anim-h.gif" />
+    <Content Include="web\images\border-anim-v.gif" />
+    <Content Include="web\images\border-h.gif" />
+    <Content Include="web\images\border-v.gif" />
+    <Content Include="web\images\browse.jpg" />
+    <Content Include="web\images\calender_icon.png" />
+    <Content Include="web\images\calender_item.png" />
+    <Content Include="web\images\calender_title.png" />
+    <Content Include="web\images\chat-icon.png" />
+    <Content Include="web\images\comment_item.png" />
+    <Content Include="web\images\comment_title.png" />
+    <Content Include="web\images\completionMeter.jpg" />
+    <Content Include="web\images\F.png" />
+    <Content Include="web\images\glassy_button_green.png" />
+    <Content Include="web\images\glassy_button_grey.png" />
+    <Content Include="web\images\icon-user.png" />
+    <Content Include="web\images\M.png" />
+    <Content Include="web\images\offline.gif" />
+    <Content Include="web\images\online.gif" />
+    <Content Include="web\images\Pointer.png" />
+    <Content Include="web\images\privacy_item.png" />
+    <Content Include="web\images\privacy_title.png" />
+    <Content Include="web\images\result.png" />
+    <Content Include="web\images\sentemail.jpg" />
+    <Content Include="web\images\file-icon.png" />
+    <Content Include="web\images\inbox-black.png" />
+    <Content Include="web\images\googledrive.png" />
+    <Content Include="web\images\close.png" />
+    <Content Include="web\images\close_white.png" />
+    <Content Include="web\images\icon-curve.png" />
+    <Content Include="web\images\icon-dropbox.png" />
+    <Content Include="web\images\icon-facebook.png" />
+    <Content Include="web\images\icon-googledrive.png" />
+    <Content Include="web\images\icon-harddisk.png" />
+    <Content Include="web\images\icon-instagram.png" />
+    <Content Include="web\images\del-icon.png" />
+    <Content Include="web\images\icon-onedrive.png" />
+    <Content Include="web\images\icon_logout.png" />
+    <Content Include="web\images\icon_messages.png" />
+    <Content Include="web\images\icon_notificattions.png" />
+    <Content Include="web\images\icon_saveprofile.png" />
+    <Content Include="web\images\icon_search.png" />
+    <Content Include="web\images\icon_settings.png" />
+    <Content Include="web\images\icon_views.png" />
+    <Content Include="web\images\left.png" />
+    <Content Include="web\images\loading-bar-gif.gif" />
+    <Content Include="web\images\loadingicon.gif" />
+    <Content Include="web\images\matchPercentPic.jpg" />
+    <Content Include="web\images\messageicon.png" />
+    <Content Include="web\images\onedrive.png" />
+    <Content Include="web\images\percentage.png" />
+    <Content Include="web\images\photoicon.png" />
+    <Content Include="web\images\radio.png" />
+    <Content Include="web\images\right.png" />
+    <Content Include="web\images\sent-black.png" />
+    <Content Include="web\images\sex_item.png" />
+    <Content Include="web\images\sex_title.png" />
+    <Content Include="web\images\shadow.jpg" />
+    <Content Include="web\images\shadow.png" />
+    <Content Include="web\images\icon_video.png" />
+    <Content Include="web\images\SpeedoMeter.png" />
+    <Content Include="web\inner\answerquestion.aspx" />
+    <Content Include="web\inner\criteriaedit.aspx" />
+    <Content Include="web\inner\criteriapoints.aspx" />
+    <Content Include="web\inner\discusscompose.aspx" />
+    <Content Include="web\inner\emailprofile.aspx" />
+    <Content Include="web\inner\makeascoverphoto.aspx" />
+    <Content Include="web\inner\multiplephotoupload.aspx" />
+    <Content Include="web\inner\myprofilequestionscmw.aspx" />
+    <Content Include="web\inner\myprofilerankorder.aspx" />
+    <Content Include="web\inner\myprofilesexquestions.aspx" />
+    <Content Include="web\inner\password.aspx" />
+    <Content Include="web\inner\photofullview.aspx" />
+    <Content Include="web\inner\photoupload.aspx" />
+    <Content Include="web\inner\instagram.aspx" />
+    <Content Include="web\inner\profilematchp.aspx" />
+    <Content Include="web\inner\questionsedit.aspx" />
+    <Content Include="web\inner\questionssinglematch.aspx" />
+    <Content Include="web\inner\reportphoto.aspx" />
+    <Content Include="web\inner\reportprofile.aspx" />
+    <Content Include="web\inner\sexquestionsmatchp.aspx" />
+    <Content Include="web\inner\trashchatview.aspx" />
+    <Content Include="web\inner\trashconversationview.aspx" />
+    <Content Include="web\js\addphotos\addphotos.js" />
+    <Content Include="web\js\addphotos\dropbox.js" />
+    <Content Include="web\js\addphotos\fbphotos.js" />
+    <Content Include="web\js\addphotos\fbphotoselector.css" />
+    <Content Include="web\js\addphotos\fbphotoselector.js" />
+    <Content Include="web\js\addphotos\google.js" />
+    <Content Include="web\js\addphotos\instafeed.js" />
+    <Content Include="web\js\addphotos\instagram.js" />
+    <Content Include="web\js\addphotos\oauth.js" />
+    <Content Include="web\js\addphotos\onedrive.js" />
+    <Content Include="web\js\addphotos\onedrive_wl.js" />
+    <Content Include="web\js\analytics.js" />
+    <Content Include="web\js\compose.js" />
+    <Content Include="web\js\criteriapoints.js" />
+    <Content Include="web\js\criteriaquestions.js" />
+    <Content Include="web\js\discusscompose.js" />
+    <Content Include="web\js\iconsmenu.js" />
+    <Content Include="web\js\jquery.imgareaselect.min.js" />
+    <Content Include="web\js\load-image.min.js" />
+    <Content Include="web\js\master.js" />
+    <Content Include="web\js\messagesmenu.js" />
+    <Content Include="web\js\myprofilemenu.js" />
+    <Content Include="web\js\myprofilesexquestions.js" />
+    <Content Include="web\js\profilemenu.js" />
+    <Content Include="web\js\philosophy.js" />
+    <Content Include="web\js\photoupload.js" />
+    <Content Include="web\js\photoupload\dropbox.js" />
+    <Content Include="web\js\photoupload\fbphotoselector.css" />
+    <Content Include="web\js\photoupload\fbphotoselector.js" />
+    <Content Include="web\js\photoupload\fbphotos.js" />
+    <Content Include="web\js\photoupload\google.js" />
+    <Content Include="web\js\photoupload\instafeed.js" />
+    <Content Include="web\js\photoupload\instagram.js" />
+    <Content Include="web\js\photoupload\oauth.js" />
+    <Content Include="web\js\photoupload\onedrive.js" />
+    <Content Include="web\js\questions.js" />
+    <Content Include="web\js\savedmemenu.js" />
+    <Content Include="web\js\server.js" />
+    <Content Include="web\js\topmenustrip.js" />
+    <Content Include="web\js\viewedmemenu.js" />
+    <Content Include="web\ko\template_chatmessage.ascx" />
+    <Content Include="web\ko\template_criteriaedit.ascx" />
+    <Content Include="web\ko\template_criteriapoint.ascx" />
+    <Content Include="web\ko\template_criteriaquestion.ascx" />
+    <Content Include="web\ko\template_deletedquestions.ascx" />
+    <Content Include="web\ko\template_filteredmessage.ascx" />
+    <Content Include="web\ko\template_myprofilecriteria.ascx" />
+    <Content Include="web\ko\template_myprofilephoto.ascx" />
+    <Content Include="web\ko\template_myprofilequestions.ascx" />
+    <Content Include="web\ko\template_myprofilewritten.ascx" />
+    <Content Include="web\ko\template_philosophyquestion.ascx" />
+    <Content Include="web\ko\template_profilewritten.ascx" />
+    <Content Include="web\ko\template_questionsedit.ascx" />
+    <Content Include="web\ko\template_receivedmessage.ascx" />
+    <Content Include="web\ko\template_trashmessage.ascx" />
+    <Content Include="web\service\CriteriaPosition.aspx" />
+    <Content Include="web\service\LoadControl.aspx" />
+    <Content Include="web\service\MakeProfilePhoto.aspx" />
+    <Content Include="web\service\MultiPhotoUpload.aspx" />
+    <Content Include="web\service\OverallMatchImage.aspx" />
+    <Content Include="web\service\PercentageMeter.aspx" />
+    <Content Include="web\service\PhilosophyPosition.aspx" />
+    <Content Include="web\service\PhotoUpload.aspx" />
+    <Content Include="web\service\PhotoView.aspx" />
+    <Content Include="web\service\UrlUpload.aspx" />
+    <Content Include="web\service\UserPhoto.aspx" />
+    <Content Include="web\uc\chatwindows.ascx" />
+    <Content Include="web\uc\iconsmenu.ascx" />
+    <Content Include="web\uc\messagesmenu.ascx" />
+    <Content Include="web\uc\myprofilemenu.ascx" />
+    <Content Include="web\uc\myprofilequestionsmenu.ascx" />
+    <Content Include="web\uc\passport.ascx" />
+    <Content Include="web\uc\profilemenu.ascx" />
+    <Content Include="web\uc\profilequestionsmenu.ascx" />
+    <Content Include="web\uc\savedmemenu.ascx" />
+    <Content Include="web\uc\userimage.ascx" />
+    <Content Include="web\uc\userphoto.ascx" />
+    <None Include="Properties\PublishProfiles\webr1.pubxml" />
+    <Content Include="intelli\c.aspx" />
+    <Content Include="Scripts\default.js" />
+    <Content Include="Scripts\forgotpassword.js" />
+    <Content Include="Scripts\intelliwindow.js" />
+    <Content Include="Scripts\js_fun.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\register.js" />
+    <Content Include="Stub.aspx" />
+    <Content Include="web\cssold\intellidate.css" />
+    <Content Include="web\images\delete.gif" />
+    <Content Include="web\images\logout.png" />
+    <Content Include="web\images\messages.png" />
+    <Content Include="web\images\noti.png" />
+    <Content Include="web\images\profilesave.png" />
+    <Content Include="web\images\profileview.png" />
+    <Content Include="web\images\settings.png" />
+    <Content Include="web\inner\accountsettings.aspx" />
+    <Content Include="web\inner\basicsettings.aspx" />
+    <Content Include="web\inner\chatconversationview.aspx" />
+    <Content Include="web\inner\chatmsgs.aspx" />
+    <Content Include="web\inner\chatwindow.aspx" />
+    <Content Include="web\inner\compose.aspx" />
+    <Content Include="web\inner\conversationview.aspx" />
+    <Content Include="web\inner\criteriaquestion.aspx" />
+    <Content Include="web\inner\emailsettings.aspx" />
+    <Content Include="web\inner\filteredinbox.aspx" />
+    <Content Include="web\inner\msgfiltersettings.aspx" />
+    <Content Include="web\inner\myprofilephotos.aspx" />
+    <Content Include="web\inner\myprofilequestions.aspx" />
+    <Content Include="web\inner\myprofilewritten.aspx" />
+    <Content Include="web\inner\previousmatches.aspx" />
+    <Content Include="web\inner\profilecompletion.aspx" />
+    <Content Include="web\inner\profilecriteria.aspx" />
+    <Content Include="web\inner\profilephotos.aspx" />
+    <Content Include="web\inner\profilequestions.aspx" />
+    <Content Include="web\inner\profilewritten.aspx" />
+    <Content Include="web\inner\receivedmsgs.aspx" />
+    <Content Include="web\inner\sentmsgs.aspx" />
+    <Content Include="web\inner\trashmsgs.aspx" />
+    <Content Include="web\inner\whoisaved.aspx" />
+    <Content Include="web\inner\whoiviewed.aspx" />
+    <Content Include="web\inner\whosavedme.aspx" />
+    <Content Include="web\inner\whoviewedme.aspx" />
+    <Content Include="web\js\chatmsgs.js" />
+    <Content Include="web\js\myprofilecriteria.js" />
+    <Content Include="web\js\myprofilephotos.js" />
+    <Content Include="web\js\myprofilewritten.js" />
+    <Content Include="web\js\filteredinbox.js" />
+    <Content Include="web\js\previousmatches.js" />
+    <Content Include="web\js\profilecriteria.js" />
+    <Content Include="web\js\profilephotos.js" />
+    <Content Include="web\js\profilequestions.js" />
+    <Content Include="web\js\profilewritten.js" />
+    <Content Include="web\js\receivedmsgs.js" />
+    <Content Include="web\js\sentmsgs.js" />
+    <Content Include="web\js\trashmsgs.js" />
+    <Content Include="web\js\whoisaved.js" />
+    <Content Include="web\js\whoiviewed.js" />
+    <Content Include="web\js\whosavedme.js" />
+    <Content Include="web\js\whoviewedme.js" />
+    <Content Include="web\ko\template_sentmessage.ascx" />
+    <Content Include="post\login.aspx" />
+    <Content Include="post\register.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="web\Site.Master" />
+    <Content Include="web\Intelli.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\Criteria\AddCriteriaUserAnswerController.cs" />
+    <Compile Include="API\Criteria\AsyncCriteriaAnswersController.cs" />
+    <Compile Include="API\Criteria\CheckHasUserAnsweredController.cs" />
+    <Compile Include="API\Criteria\ClearCriteriaController.cs" />
+    <Compile Include="API\Criteria\CriteriaiPositionController.cs" />
+    <Compile Include="API\Criteria\CriteriaPointsController.cs" />
+    <Compile Include="API\Criteria\GetCriteriaListController.cs" />
+    <Compile Include="API\Criteria\GetCriteriaUserAnswerController.cs" />
+    <Compile Include="API\Criteria\GetEditCriteriaListController.cs" />
+    <Compile Include="API\Criteria\GetMyProfileCriteriaListController.cs" />
+    <Compile Include="API\Criteria\GetZipCodeAddressController.cs" />
+    <Compile Include="API\Criteria\PostCriteriaUserAnswerController.cs" />
+    <Compile Include="API\Match\GetCurrentMatchsController.cs" />
+    <Compile Include="API\Match\GetPastMatchsController.cs" />
+    <Compile Include="API\Match\GetThisDayMatchController.cs" />
+    <Compile Include="API\Match\TodayTheyRematchController.cs" />
+    <Compile Include="API\Match\TodayYouRematchController.cs" />
+    <Compile Include="API\Match\YesterdayTheyRematchController.cs" />
+    <Compile Include="API\Match\YesterdayYouRematchController.cs" />
+    <Compile Include="API\Mobile\AboutmeController.cs" />
+    <Compile Include="API\Other\DeleteNotificationController.cs" />
+    <Compile Include="API\Messages\ComposeController.cs" />
+    <Compile Include="API\Messages\DeleteChatController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\Messages\DeleteIMConversationController.cs" />
+    <Compile Include="API\Messages\FilteredInboxController.cs" />
+    <Compile Include="API\Messages\GetChatController.cs" />
+    <Compile Include="API\Messages\GetChatWindowController.cs" />
+    <Compile Include="API\Messages\GetConversationController.cs" />
+    <Compile Include="API\Messages\GetFilterSettingsController.cs" />
+    <Compile Include="API\Messages\GetIMController.cs" />
+    <Compile Include="API\Messages\GetIMConversationController.cs" />
+    <Compile Include="API\Messages\GetTrashConversationController.cs" />
+    <Compile Include="API\Messages\GetTrashIMController.cs" />
+    <Compile Include="API\Messages\GetUnreadMessagesCountController.cs" />
+    <Compile Include="API\Messages\InboxController.cs" />
+    <Compile Include="API\Messages\InstantMessengerController.cs" />
+    <Compile Include="API\Messages\IsOtherUserOnlineController.cs" />
+    <Compile Include="API\Messages\IsUserAbleToChatController.cs" />
+    <Compile Include="API\Messages\PostFilterSettingsController.cs" />
+    <Compile Include="API\Messages\PostIMController.cs" />
+    <Compile Include="API\Messages\SentBoxController.cs" />
+    <Compile Include="API\Messages\TrashController.cs" />
+    <Compile Include="API\Messages\TrsahChatController.cs" />
+    <Compile Include="API\Other\ActivateUserController.cs" />
+    <Compile Include="API\Other\BlockUserProfileController.cs" />
+    <Compile Include="API\Other\CheckSecurityCodeController.cs" />
+    <Compile Include="API\Other\EmailProfileController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\Other\GetTabNamesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\Other\GetUnreadNotificationCountController.cs" />
+    <Compile Include="API\Other\GetUserImageUrlController.cs" />
+    <Compile Include="API\Other\GrabController.cs" />
+    <Compile Include="API\Other\HasUserBlockedController.cs" />
+    <Compile Include="API\Other\HasUserReportedAlreadyController.cs" />
+    <Compile Include="API\Other\ISCheckExistingEmailAddressController.cs" />
+    <Compile Include="API\Other\LetThemInterestedController.cs" />
+    <Compile Include="API\Other\LogoutController.cs" />
+    <Compile Include="API\Other\ReportUserProfileController.cs" />
+    <Compile Include="API\Other\ResetMatchPercentagesController.cs" />
+    <Compile Include="API\Other\SavedProfilesController.cs" />
+    <Compile Include="API\Other\SessionCheckController.cs" />
+    <Compile Include="API\Other\ValidateDOBController.cs" />
+    <Compile Include="API\Other\VerifyEmailAddressController.cs" />
+    <Compile Include="API\Other\ViewedProfilesController.cs" />
+    <Compile Include="API\Other\ZipCodeController.cs" />
+    <Compile Include="API\Philosophy\AddPhilosophyUserAnswerController.cs" />
+    <Compile Include="API\Philosophy\CheckUserHasAnsweredPhilosophyController.cs" />
+    <Compile Include="API\Philosophy\GetEditPhilosophyListController.cs" />
+    <Compile Include="API\Philosophy\GetPhilosophyListController.cs" />
+    <Compile Include="API\Philosophy\GetPhilosphyUserAnswerController.cs" />
+    <Compile Include="API\Photos\AddCaptionController.cs" />
+    <Compile Include="API\Photos\CalculateDimensionsController.cs" />
+    <Compile Include="API\Photos\DeletePhotoController.cs" />
+    <Compile Include="API\Photos\EncryptController.cs" />
+    <Compile Include="API\Photos\GetOtherUserPhotosController.cs" />
+    <Compile Include="API\Photos\GetPhotosController.cs" />
+    <Compile Include="API\Photos\PhotosController.cs" />
+    <Compile Include="API\Photos\PhotoViewController.cs" />
+    <Compile Include="API\Photos\ReportPhotoController.cs" />
+    <Compile Include="API\Photos\SetDefaultPhotoController.cs" />
+    <Compile Include="API\Profile\MemoController.cs" />
+    <Compile Include="API\Profile\RecentlyViewedController.cs" />
+    <Compile Include="API\Profile\SaveProfileController.cs" />
+    <Compile Include="API\Questions\AnswerQuestionController.cs" />
+    <Compile Include="API\Questions\CheckHasUserAnsweredQuestionController.cs" />
+    <Compile Include="API\Questions\DeleteQuestionController.cs" />
+    <Compile Include="API\Questions\EditUserAnswerController.cs" />
+    <Compile Include="API\Questions\GetAllQuestionAnswersController.cs" />
+    <Compile Include="API\Questions\GetAllQuestionsController.cs" />
+    <Compile Include="API\Questions\GetAllSexQuestionsController.cs" />
+    <Compile Include="API\Questions\GetDeletedQuestionsController.cs" />
+    <Compile Include="API\Questions\GetQuestionController.cs" />
+    <Compile Include="API\Questions\GetRankOrderQuestionsController.cs" />
+    <Compile Include="API\Questions\GetUnAnswredQuestionController.cs" />
+    <Compile Include="API\Questions\RankOrderQAController.cs" />
+    <Compile Include="API\Questions\SetRankOrderController.cs" />
+    <Compile Include="API\Questions\ThisUserHasSexQuestionsController.cs" />
+    <Compile Include="API\Settings\AccountSettingsController.cs" />
+    <Compile Include="API\Settings\PasswordController.cs" />
+    <Compile Include="API\Settings\SetFemaleMessageLimitController.cs" />
+    <Compile Include="API\Settings\UpdateAccountSettingsController.cs" />
+    <Compile Include="API\Settings\UserNameController.cs" />
+    <Compile Include="API\User\AddContactController.cs" />
+    <Compile Include="API\User\AuthenticateUserController.cs" />
+    <Compile Include="API\User\CheckDateOfBirthController.cs" />
+    <Compile Include="API\User\CheckExistingEmailAddressController.cs" />
+    <Compile Include="API\User\CheckExistingLoginNameController.cs" />
+    <Compile Include="API\User\DeleteUserContactController.cs" />
+    <Compile Include="API\User\EmailAddressController.cs" />
+    <Compile Include="API\User\ForgotPasswordController.cs" />
+    <Compile Include="API\User\GenderController.cs" />
+    <Compile Include="API\User\GetAccountSettingsController.cs" />
+    <Compile Include="API\User\GetNewUserTodayMatchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\User\GetUserDetailsController.cs" />
+    <Compile Include="API\User\GetUserGenderController.cs" />
+    <Compile Include="API\User\HasUserAnsweredPhilosophyController.cs" />
+    <Compile Include="API\User\LoginDetailsController.cs" />
+    <Compile Include="API\User\LogOutController.cs" />
+    <Compile Include="API\User\PasswordConfirmController.cs" />
+    <Compile Include="API\User\RegisterUserController.cs" />
+    <Compile Include="API\User\UpdateContactController.cs" />
+    <Compile Include="API\User\UserDisplayPicController.cs" />
+    <Compile Include="API\User\UserDOBController.cs" />
+    <Compile Include="API\WrittenDesc\DescriptionController.cs" />
+    <Compile Include="API\WrittenDesc\ProfileWrittenController.cs" />
+    <Compile Include="API\WrittenDesc\SetWrittnPriorityController.cs" />
+    <Compile Include="App_Code\AuthenticationResponse.cs" />
+    <Compile Include="App_Code\Distance.cs" />
+    <Compile Include="App_Code\ErrorHandlingPipelineModule.cs" />
+    <Compile Include="App_Code\Helper.cs" />
+    <Compile Include="App_Code\ImageUtilities.cs" />
+    <Compile Include="EmailVerification.aspx.cs">
+      <DependentUpon>EmailVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailVerification.aspx.designer.cs">
+      <DependentUpon>EmailVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntelliHub.cs" />
+    <Compile Include="App_Code\UploadResponse.cs" />
+    <Compile Include="App_Code\Utils.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="inner\fbregister.aspx.cs">
+      <DependentUpon>fbregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner\fbregister.aspx.designer.cs">
+      <DependentUpon>fbregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inner\forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner\forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inner\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inner\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="intelli\c.aspx.cs">
+      <DependentUpon>c.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="intelli\c.aspx.designer.cs">
+      <DependentUpon>c.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="post\et.aspx.cs">
+      <DependentUpon>et.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="post\et.aspx.designer.cs">
+      <DependentUpon>et.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="post\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="post\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="post\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="post\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Stub.aspx.cs">
+      <DependentUpon>Stub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stub.aspx.designer.cs">
+      <DependentUpon>Stub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ActivateAccount.aspx.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ActivateAccount.aspx.designer.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ChatConversation.aspx.cs">
+      <DependentUpon>ChatConversation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ChatConversation.aspx.designer.cs">
+      <DependentUpon>ChatConversation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ConversationView.aspx.cs">
+      <DependentUpon>ConversationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ConversationView.aspx.designer.cs">
+      <DependentUpon>ConversationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Criteria.aspx.cs">
+      <DependentUpon>Criteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Criteria.aspx.designer.cs">
+      <DependentUpon>Criteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\CriteriaPoints.aspx.cs">
+      <DependentUpon>CriteriaPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\CriteriaPoints.aspx.designer.cs">
+      <DependentUpon>CriteriaPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\aboutmediscuss.aspx.cs">
+      <DependentUpon>aboutmediscuss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\aboutmediscuss.aspx.designer.cs">
+      <DependentUpon>aboutmediscuss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\accountsettings.aspx.cs">
+      <DependentUpon>accountsettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\accountsettings.aspx.designer.cs">
+      <DependentUpon>accountsettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\addcontact.aspx.cs">
+      <DependentUpon>addcontact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\addcontact.aspx.designer.cs">
+      <DependentUpon>addcontact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\answerquestion.aspx.cs">
+      <DependentUpon>answerquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\answerquestion.aspx.designer.cs">
+      <DependentUpon>answerquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\basicsettings.aspx.cs">
+      <DependentUpon>basicsettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\basicsettings.aspx.designer.cs">
+      <DependentUpon>basicsettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\chatconversationview.aspx.cs">
+      <DependentUpon>chatconversationview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\chatconversationview.aspx.designer.cs">
+      <DependentUpon>chatconversationview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\chatmsgs.aspx.cs">
+      <DependentUpon>chatmsgs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\chatmsgs.aspx.designer.cs">
+      <DependentUpon>chatmsgs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\chatwindow.aspx.cs">
+      <DependentUpon>chatwindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\chatwindow.aspx.designer.cs">
+      <DependentUpon>chatwindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\compatibilityreportcart.aspx.cs">
+      <DependentUpon>compatibilityreportcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\compatibilityreportcart.aspx.designer.cs">
+      <DependentUpon>compatibilityreportcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\compose.aspx.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\compose.aspx.designer.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\confirmsubscription.aspx.cs">
+      <DependentUpon>confirmsubscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\confirmsubscription.aspx.designer.cs">
+      <DependentUpon>confirmsubscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\conversationview.aspx.cs">
+      <DependentUpon>conversationview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\conversationview.aspx.designer.cs">
+      <DependentUpon>conversationview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\criteriaedit.aspx.cs">
+      <DependentUpon>criteriaedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\criteriaedit.aspx.designer.cs">
+      <DependentUpon>criteriaedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\criteriapoints.aspx.cs">
+      <DependentUpon>criteriapoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\criteriapoints.aspx.designer.cs">
+      <DependentUpon>criteriapoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\criteriaquestion.aspx.cs">
+      <DependentUpon>criteriaquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\criteriaquestion.aspx.designer.cs">
+      <DependentUpon>criteriaquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\discusscompose.aspx.cs">
+      <DependentUpon>discusscompose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\discusscompose.aspx.designer.cs">
+      <DependentUpon>discusscompose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\emailprofile.aspx.cs">
+      <DependentUpon>emailprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\emailprofile.aspx.designer.cs">
+      <DependentUpon>emailprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\emailsettings.aspx.cs">
+      <DependentUpon>emailsettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\emailsettings.aspx.designer.cs">
+      <DependentUpon>emailsettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\filteredinbox.aspx.cs">
+      <DependentUpon>filteredinbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\filteredinbox.aspx.designer.cs">
+      <DependentUpon>filteredinbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\importcontacts.aspx.cs">
+      <DependentUpon>importcontacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\importcontacts.aspx.designer.cs">
+      <DependentUpon>importcontacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\instagrampop.aspx.cs">
+      <DependentUpon>instagrampop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\instagrampop.aspx.designer.cs">
+      <DependentUpon>instagrampop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\leftrematch.aspx.cs">
+      <DependentUpon>leftrematch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\leftrematch.aspx.designer.cs">
+      <DependentUpon>leftrematch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\loadphoto.aspx.cs">
+      <DependentUpon>loadphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\loadphoto.aspx.designer.cs">
+      <DependentUpon>loadphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\loadquestion.aspx.cs">
+      <DependentUpon>loadquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\loadquestion.aspx.designer.cs">
+      <DependentUpon>loadquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\loadwritten.aspx.cs">
+      <DependentUpon>loadwritten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\loadwritten.aspx.designer.cs">
+      <DependentUpon>loadwritten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\makeascoverphoto.aspx.cs">
+      <DependentUpon>makeascoverphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\makeascoverphoto.aspx.designer.cs">
+      <DependentUpon>makeascoverphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\messagepassport.aspx.cs">
+      <DependentUpon>messagepassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\messagepassport.aspx.designer.cs">
+      <DependentUpon>messagepassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\msgfiltersettings.aspx.cs">
+      <DependentUpon>msgfiltersettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\msgfiltersettings.aspx.designer.cs">
+      <DependentUpon>msgfiltersettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\multiplephotoupload.aspx.cs">
+      <DependentUpon>multiplephotoupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\multiplephotoupload.aspx.designer.cs">
+      <DependentUpon>multiplephotoupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilephotos.aspx.cs">
+      <DependentUpon>myprofilephotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilephotos.aspx.designer.cs">
+      <DependentUpon>myprofilephotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilequestions.aspx.cs">
+      <DependentUpon>myprofilequestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilequestions.aspx.designer.cs">
+      <DependentUpon>myprofilequestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilequestionscmw.aspx.cs">
+      <DependentUpon>myprofilequestionscmw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilequestionscmw.aspx.designer.cs">
+      <DependentUpon>myprofilequestionscmw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilerankorder.aspx.cs">
+      <DependentUpon>myprofilerankorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilerankorder.aspx.designer.cs">
+      <DependentUpon>myprofilerankorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilesexquestions.aspx.cs">
+      <DependentUpon>myprofilesexquestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilesexquestions.aspx.designer.cs">
+      <DependentUpon>myprofilesexquestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\myprofilewritten.aspx.cs">
+      <DependentUpon>myprofilewritten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\myprofilewritten.aspx.designer.cs">
+      <DependentUpon>myprofilewritten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\photofullview.aspx.cs">
+      <DependentUpon>photofullview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\photofullview.aspx.designer.cs">
+      <DependentUpon>photofullview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\photopopup.aspx.cs">
+      <DependentUpon>photopopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\photopopup.aspx.designer.cs">
+      <DependentUpon>photopopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\photoupload.aspx.cs">
+      <DependentUpon>photoupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\photoupload.aspx.designer.cs">
+      <DependentUpon>photoupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\previousmatches.aspx.cs">
+      <DependentUpon>previousmatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\previousmatches.aspx.designer.cs">
+      <DependentUpon>previousmatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilecompletion.aspx.cs">
+      <DependentUpon>profilecompletion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilecompletion.aspx.designer.cs">
+      <DependentUpon>profilecompletion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilecriteria.aspx.cs">
+      <DependentUpon>profilecriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilecriteria.aspx.designer.cs">
+      <DependentUpon>profilecriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilematchp.aspx.cs">
+      <DependentUpon>profilematchp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilematchp.aspx.designer.cs">
+      <DependentUpon>profilematchp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilephotos.aspx.cs">
+      <DependentUpon>profilephotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilephotos.aspx.designer.cs">
+      <DependentUpon>profilephotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilequestions.aspx.cs">
+      <DependentUpon>profilequestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilequestions.aspx.designer.cs">
+      <DependentUpon>profilequestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilequestionsfilter.aspx.cs">
+      <DependentUpon>profilequestionsfilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilequestionsfilter.aspx.designer.cs">
+      <DependentUpon>profilequestionsfilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\profilewritten.aspx.cs">
+      <DependentUpon>profilewritten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\profilewritten.aspx.designer.cs">
+      <DependentUpon>profilewritten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\questionsedit.aspx.cs">
+      <DependentUpon>questionsedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\questionsedit.aspx.designer.cs">
+      <DependentUpon>questionsedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\questionsfilter.aspx.cs">
+      <DependentUpon>questionsfilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\questionsfilter.aspx.designer.cs">
+      <DependentUpon>questionsfilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\questionssinglematch.aspx.cs">
+      <DependentUpon>questionssinglematch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\questionssinglematch.aspx.designer.cs">
+      <DependentUpon>questionssinglematch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\receivedmsgs.aspx.cs">
+      <DependentUpon>receivedmsgs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\receivedmsgs.aspx.designer.cs">
+      <DependentUpon>receivedmsgs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\rematchuser.aspx.cs">
+      <DependentUpon>rematchuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\rematchuser.aspx.designer.cs">
+      <DependentUpon>rematchuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\reportphoto.aspx.cs">
+      <DependentUpon>reportphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\reportphoto.aspx.designer.cs">
+      <DependentUpon>reportphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\reportprofile.aspx.cs">
+      <DependentUpon>reportprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\reportprofile.aspx.designer.cs">
+      <DependentUpon>reportprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\rightrematch.aspx.cs">
+      <DependentUpon>rightrematch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\rightrematch.aspx.designer.cs">
+      <DependentUpon>rightrematch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\sentmsgs.aspx.cs">
+      <DependentUpon>sentmsgs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\sentmsgs.aspx.designer.cs">
+      <DependentUpon>sentmsgs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\sexquestionsmatchp.aspx.cs">
+      <DependentUpon>sexquestionsmatchp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\sexquestionsmatchp.aspx.designer.cs">
+      <DependentUpon>sexquestionsmatchp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\theirpassport.aspx.cs">
+      <DependentUpon>theirpassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\theirpassport.aspx.designer.cs">
+      <DependentUpon>theirpassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\trashchatview.aspx.cs">
+      <DependentUpon>trashchatview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\trashchatview.aspx.designer.cs">
+      <DependentUpon>trashchatview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\trashconversationview.aspx.cs">
+      <DependentUpon>trashconversationview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\trashconversationview.aspx.designer.cs">
+      <DependentUpon>trashconversationview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\trashmsgs.aspx.cs">
+      <DependentUpon>trashmsgs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\trashmsgs.aspx.designer.cs">
+      <DependentUpon>trashmsgs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\viewphoto.aspx.cs">
+      <DependentUpon>viewphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\viewphoto.aspx.designer.cs">
+      <DependentUpon>viewphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\whoisaved.aspx.cs">
+      <DependentUpon>whoisaved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\whoisaved.aspx.designer.cs">
+      <DependentUpon>whoisaved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\whoiviewed.aspx.cs">
+      <DependentUpon>whoiviewed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\whoiviewed.aspx.designer.cs">
+      <DependentUpon>whoiviewed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\whosavedme.aspx.cs">
+      <DependentUpon>whosavedme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\whosavedme.aspx.designer.cs">
+      <DependentUpon>whosavedme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\whoviewedme.aspx.cs">
+      <DependentUpon>whoviewedme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\whoviewedme.aspx.designer.cs">
+      <DependentUpon>whoviewedme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\instagram.aspx.cs">
+      <DependentUpon>instagram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\instagram.aspx.designer.cs">
+      <DependentUpon>instagram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Intelli.Master.cs">
+      <DependentUpon>Intelli.Master</DependentUpon>
+    </Compile>
+    <Compile Include="web\Intelli.Master.designer.cs">
+      <DependentUpon>Intelli.Master</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\tempalte_conversationview.ascx.cs">
+      <DependentUpon>tempalte_conversationview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\tempalte_conversationview.ascx.designer.cs">
+      <DependentUpon>tempalte_conversationview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_chatconversation.ascx.cs">
+      <DependentUpon>template_chatconversation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_chatconversation.ascx.designer.cs">
+      <DependentUpon>template_chatconversation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_chatmessage.ascx.cs">
+      <DependentUpon>template_chatmessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_chatmessage.ascx.designer.cs">
+      <DependentUpon>template_chatmessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteria.ascx.cs">
+      <DependentUpon>template_criteria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteria.ascx.designer.cs">
+      <DependentUpon>template_criteria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaedit.ascx.cs">
+      <DependentUpon>template_criteriaedit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaedit.ascx.designer.cs">
+      <DependentUpon>template_criteriaedit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteriapoint.ascx.cs">
+      <DependentUpon>template_criteriapoint.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_criteriapoint.ascx.designer.cs">
+      <DependentUpon>template_criteriapoint.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaquestion.ascx.cs">
+      <DependentUpon>template_criteriaquestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaquestion.ascx.designer.cs">
+      <DependentUpon>template_criteriaquestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_currentmatchs.ascx.cs">
+      <DependentUpon>template_currentmatchs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_currentmatchs.ascx.designer.cs">
+      <DependentUpon>template_currentmatchs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_deletedquestions.ascx.cs">
+      <DependentUpon>template_deletedquestions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_deletedquestions.ascx.designer.cs">
+      <DependentUpon>template_deletedquestions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_filteredmessage.ascx.cs">
+      <DependentUpon>template_filteredmessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_filteredmessage.ascx.designer.cs">
+      <DependentUpon>template_filteredmessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilecriteria.ascx.cs">
+      <DependentUpon>template_myprofilecriteria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilecriteria.ascx.designer.cs">
+      <DependentUpon>template_myprofilecriteria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilephoto.ascx.cs">
+      <DependentUpon>template_myprofilephoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilephoto.ascx.designer.cs">
+      <DependentUpon>template_myprofilephoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilequestions.ascx.cs">
+      <DependentUpon>template_myprofilequestions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilequestions.ascx.designer.cs">
+      <DependentUpon>template_myprofilequestions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilewritten.ascx.cs">
+      <DependentUpon>template_myprofilewritten.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_myprofilewritten.ascx.designer.cs">
+      <DependentUpon>template_myprofilewritten.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_pastmatchs.ascx.cs">
+      <DependentUpon>template_pastmatchs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_pastmatchs.ascx.designer.cs">
+      <DependentUpon>template_pastmatchs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_philosophyquestion.ascx.cs">
+      <DependentUpon>template_philosophyquestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_philosophyquestion.ascx.designer.cs">
+      <DependentUpon>template_philosophyquestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_profilewritten.ascx.cs">
+      <DependentUpon>template_profilewritten.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_profilewritten.ascx.designer.cs">
+      <DependentUpon>template_profilewritten.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_questionscheck.ascx.cs">
+      <DependentUpon>template_questionscheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_questionscheck.ascx.designer.cs">
+      <DependentUpon>template_questionscheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_questionsedit.ascx.cs">
+      <DependentUpon>template_questionsedit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_questionsedit.ascx.designer.cs">
+      <DependentUpon>template_questionsedit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_receivedmessage.ascx.cs">
+      <DependentUpon>template_receivedmessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_receivedmessage.ascx.designer.cs">
+      <DependentUpon>template_receivedmessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_sentmessage.ascx.cs">
+      <DependentUpon>template_sentmessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_sentmessage.ascx.designer.cs">
+      <DependentUpon>template_sentmessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_sexquestions.ascx.cs">
+      <DependentUpon>template_sexquestions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_sexquestions.ascx.designer.cs">
+      <DependentUpon>template_sexquestions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_todaymatch.ascx.cs">
+      <DependentUpon>template_todaymatch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_todaymatch.ascx.designer.cs">
+      <DependentUpon>template_todaymatch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_trashmessage.ascx.cs">
+      <DependentUpon>template_trashmessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ko\template_trashmessage.ascx.designer.cs">
+      <DependentUpon>template_trashmessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MatchHistory.aspx.cs">
+      <DependentUpon>MatchHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MatchHistory.aspx.designer.cs">
+      <DependentUpon>MatchHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MatchProfile.aspx.cs">
+      <DependentUpon>MatchProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MatchProfile.aspx.designer.cs">
+      <DependentUpon>MatchProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Messages.aspx.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Messages.aspx.designer.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MyProfileAboutme.aspx.cs">
+      <DependentUpon>MyProfileAboutme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MyProfileAboutme.aspx.designer.cs">
+      <DependentUpon>MyProfileAboutme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MyProfileCriteria.aspx.cs">
+      <DependentUpon>MyProfileCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MyProfileCriteria.aspx.designer.cs">
+      <DependentUpon>MyProfileCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MyProfilePhotos.aspx.cs">
+      <DependentUpon>MyProfilePhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MyProfilePhotos.aspx.designer.cs">
+      <DependentUpon>MyProfilePhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\MyProfileQuestions.aspx.cs">
+      <DependentUpon>MyProfileQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\MyProfileQuestions.aspx.designer.cs">
+      <DependentUpon>MyProfileQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\PhotoUpload.aspx.cs">
+      <DependentUpon>PhotoUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\PhotoUpload.aspx.designer.cs">
+      <DependentUpon>PhotoUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ProfilePercentage.aspx.cs">
+      <DependentUpon>ProfilePercentage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ProfilePercentage.aspx.designer.cs">
+      <DependentUpon>ProfilePercentage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ProfileView.aspx.cs">
+      <DependentUpon>ProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ProfileView.aspx.designer.cs">
+      <DependentUpon>ProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\CriteriaPosition.aspx.cs">
+      <DependentUpon>CriteriaPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\CriteriaPosition.aspx.designer.cs">
+      <DependentUpon>CriteriaPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\DrawPercentage.aspx.cs">
+      <DependentUpon>DrawPercentage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\DrawPercentage.aspx.designer.cs">
+      <DependentUpon>DrawPercentage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\LoadControl.aspx.cs">
+      <DependentUpon>LoadControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\LoadControl.aspx.designer.cs">
+      <DependentUpon>LoadControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\LoadUserPhoto.aspx.cs">
+      <DependentUpon>LoadUserPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\LoadUserPhoto.aspx.designer.cs">
+      <DependentUpon>LoadUserPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\MakeProfilePhoto.aspx.cs">
+      <DependentUpon>MakeProfilePhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\MakeProfilePhoto.aspx.designer.cs">
+      <DependentUpon>MakeProfilePhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\MultiPhotoUpload.aspx.cs">
+      <DependentUpon>MultiPhotoUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\MultiPhotoUpload.aspx.designer.cs">
+      <DependentUpon>MultiPhotoUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\OverallMatchImage.aspx.cs">
+      <DependentUpon>OverallMatchImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\OverallMatchImage.aspx.designer.cs">
+      <DependentUpon>OverallMatchImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\PercentageMeter.aspx.cs">
+      <DependentUpon>PercentageMeter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\PercentageMeter.aspx.designer.cs">
+      <DependentUpon>PercentageMeter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\PhilosophyPosition.aspx.cs">
+      <DependentUpon>PhilosophyPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\PhilosophyPosition.aspx.designer.cs">
+      <DependentUpon>PhilosophyPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\PhotoUpload.aspx.cs">
+      <DependentUpon>PhotoUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\PhotoUpload.aspx.designer.cs">
+      <DependentUpon>PhotoUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\PhotoView.aspx.cs">
+      <DependentUpon>PhotoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\PhotoView.aspx.designer.cs">
+      <DependentUpon>PhotoView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\UrlUpload.aspx.cs">
+      <DependentUpon>UrlUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\UrlUpload.aspx.designer.cs">
+      <DependentUpon>UrlUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\service\UserPhoto.aspx.cs">
+      <DependentUpon>UserPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\service\UserPhoto.aspx.designer.cs">
+      <DependentUpon>UserPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="web\Subscribe.aspx.cs">
+      <DependentUpon>Subscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Subscribe.aspx.designer.cs">
+      <DependentUpon>Subscribe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\chatwindows.ascx.cs">
+      <DependentUpon>chatwindows.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\chatwindows.ascx.designer.cs">
+      <DependentUpon>chatwindows.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\convuserpic.ascx.cs">
+      <DependentUpon>convuserpic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\convuserpic.ascx.designer.cs">
+      <DependentUpon>convuserpic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\headermenu.ascx.cs">
+      <DependentUpon>headermenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\headermenu.ascx.designer.cs">
+      <DependentUpon>headermenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\iconsmenu.ascx.cs">
+      <DependentUpon>iconsmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\iconsmenu.ascx.designer.cs">
+      <DependentUpon>iconsmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\matchprofilemenu.ascx.cs">
+      <DependentUpon>matchprofilemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\matchprofilemenu.ascx.designer.cs">
+      <DependentUpon>matchprofilemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\messagesmenu.ascx.cs">
+      <DependentUpon>messagesmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\messagesmenu.ascx.designer.cs">
+      <DependentUpon>messagesmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\myprofilemenu.ascx.cs">
+      <DependentUpon>myprofilemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\myprofilemenu.ascx.designer.cs">
+      <DependentUpon>myprofilemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\myprofilequestionsmenu.ascx.cs">
+      <DependentUpon>myprofilequestionsmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\myprofilequestionsmenu.ascx.designer.cs">
+      <DependentUpon>myprofilequestionsmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\otheruserpic.ascx.cs">
+      <DependentUpon>otheruserpic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\otheruserpic.ascx.designer.cs">
+      <DependentUpon>otheruserpic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\passport.ascx.cs">
+      <DependentUpon>passport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\passport.ascx.designer.cs">
+      <DependentUpon>passport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\profilemenu.ascx.cs">
+      <DependentUpon>profilemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\profilemenu.ascx.designer.cs">
+      <DependentUpon>profilemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\profilequestionsmenu.ascx.cs">
+      <DependentUpon>profilequestionsmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\profilequestionsmenu.ascx.designer.cs">
+      <DependentUpon>profilequestionsmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\savedmemenu.ascx.cs">
+      <DependentUpon>savedmemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\savedmemenu.ascx.designer.cs">
+      <DependentUpon>savedmemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\userimage.ascx.cs">
+      <DependentUpon>userimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\userimage.ascx.designer.cs">
+      <DependentUpon>userimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\uc\userphoto.ascx.cs">
+      <DependentUpon>userphoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\uc\userphoto.ascx.designer.cs">
+      <DependentUpon>userphoto.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\underscore.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="web\csvfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IntellidateR1\IntellidateR1\IntellidateR1\IntellidateR1.csproj">
+      <Project>{06b4efe1-336c-46f8-b9ae-51c99557f10b}</Project>
+      <Name>IntellidateR1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56266</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://192.168.1.115:8010/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

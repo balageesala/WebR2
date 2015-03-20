@@ -1,0 +1,189 @@
+﻿/*@charset "utf-8"; CSS for master page */
+
+/*@charset "utf-8"; CSS for master page */
+
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,img		{ margin:0; padding:0;}
+body		{font-family: 'Open Sans', sans-serif;}
+
+a			{ text-decoration:none;}
+ul, li		{ list-style:none;}
+.fl			{ float:left !important;}
+.fr			{ float:right !important;}
+.clear		{ clear:both; display:block;}
+
+.wrapper			{ position:relative;  }
+section				{}
+header				{ background:#c1272d; position:fixed; z-index:100; width:100%; height:90px; min-width:980px;}
+.header_center		{ width:938px; margin:0 auto;}
+.logo				{ float:left; font-family: 'Lobster', cursive;color:#ffffff; font-size:33px;font-family: 'Lobster', cursive; cursor:default; margin:21px 0px 0px 0;}
+.logo a, .logo a:hover	{ color:#ffffff; font-size:33px;font-family: 'Lobster', cursive;}
+
+.header_min			{ min-width:1000px;}
+
+.disable_logo		{ width:530px; margin:0 auto;}
+.disable_logo a		{ color:#ffffff; font-size:33px; font-family: 'Lobster', cursive;}
+.disable_logo p		{ color:#ffffff; font-size:14px; font-weight:400; font-family:arial; opacity:0.5; margin:4% 0 0 0; position:relative; left:19%;}
+
+nav					{ float:right; margin:25px 0px 0px;}
+nav ul				{}
+nav ul li			{ float:left; display:inline-block; background:url(../images/head_nav_sapart.png) no-repeat left center; margin:0 0 0 15px; padding:4px 0 0 15px; height:25px; position:relative;}
+nav ul li a			{ opacity:1;}
+nav ul li a:hover	{ opacity:1;}
+nav ul .no_bg		{ background:none !important; margin:0px;}
+nav ul .pic			{ margin:-20% 0% -20% !important; background:none !important;}
+nav ul .space		{ margin:0 0 0 50px;}
+nav ul .no_space		{ margin:0 0 0 -5px;}
+
+nav ul li .subscribe	{font-size:16px; color:#ffffff; font-weight:400; background:#262626;}
+nav ul li .rematch	{ background:url(../images/head_nav_rematch.png) no-repeat left top; width:22px; height:26px; display:block; background-size:100% 100%;}
+nav ul li .rematch:hover{ background:url(../images/head_nav_rematch_hover.png) no-repeat left top; width:22px; height:26px; background-size:100% 100%;}
+
+nav ul li .envelop	{ background:url(../images/head_nav_envelop.png) no-repeat left top; width:24px; height:28px; display:block; background-size:100% 100%;}
+nav ul li .envelop:hover{ background:url(../images/head_nav_envelop_hover.png) no-repeat left top; width:24px; height:28px; display:block; background-size:100% 100%;}
+nav ul li small	{background:#ffffff;font-size:12px; color:#c1272d; font-weight:600; /*width:16px;*/ height:16px; text-align:center; display:block; position:absolute; top:-2px; left:27px; padding:0 2px;}
+
+nav ul li .viewed	{ background:url(../images/head_nav_viewed.png) no-repeat left top; width:22px; height:26px; display:block; background-size:100% 100%;}
+nav ul li .viewed:hover{ background:url(../images/head_nav_viewed_hover.png) no-repeat left top; width:22px; height:25px; display:block; background-size:100% 100%;}
+
+nav ul li .alert	{ background:url(../images/head_nav_-alert.png) no-repeat left top; width:22px; height:25px; display:block; background-size:100% 100%;}
+nav ul li .alert:hover{ background:url(../images/head_nav_-alert_hover.png) no-repeat left top; width:22px; height:25px; display:block; background-size:100% 100%;}
+
+nav ul li .lock	{ background:url(../images/head_lock.png) no-repeat left top; width:20px; height:21px; display:block; background-size:100% 100%; background-size:100% 100%;}
+nav ul li .lock:hover{ background:url(../images/head_lock.png) no-repeat left top; width:20px; height:21px; display:block; background-size:100% 100%;}
+
+nav ul li .legand	{ background:url(../images/head_nav_legand.png) no-repeat left top; width:20px; height:25px; display:block; background-size:100% 100%;}
+nav ul li .legand:hover{ background:url(../images/head_nav_legand_hover.png) no-repeat left top; width:20px; height:25px; display:block; background-size:100% 100%;}
+
+nav ul li .setting	{ background:url(../images/head_nav_setting.png) no-repeat left top; width:20px; height:25px; display:block; background-size:100% 100%;}
+nav ul li .setting:hover{ background:url(../images/head_nav_setting_hover.png) no-repeat left top; width:20px; height:25px; display:block; background-size:100% 100%;}
+
+nav ul li .logout	{ background:url(../images/head_nav_logout.png) no-repeat left top; width:27px; height:32px; display:block; background-size:100% 100%;}
+nav ul li .logout:hover{ background:url(../images/head_nav_logout_hover.png) no-repeat left top; width:27px; height:32px; display:block; background-size:100% 100%;}
+
+nav ul li .feed	{ background:url(../images/head_nav_feedback.png) no-repeat left top; width:27px; height:32px; display:block; background-size:100% 100%;}
+nav ul li .feed:hover{ background:url(../images/head_nav_feedback.png) no-repeat left top; width:27px; height:32px; display:block; background-size:100% 100%;}
+nav ul li span		{ position:relative; right:60px; top:1px; color:#ffffff;}
+
+nav ul li .percent	{ /*background:url(../images/head_nav_setting.png) no-repeat left top;*/ color:#000; width:60px; height:25px; display:block; background-size:100% 100%;}
+nav ul li .percent:hover{ /*background:url(../images/head_nav_setting_hover.png) no-repeat left top;*/ color:#fff; width:60px; height:25px; display:block; background-size:100% 100%;}
+
+
+.container			{ background:#d8d8d8; position:relative; top:90px; min-height:580px;}
+.center_content		{  width:980px; margin:0 auto;}
+.center_content2	{  width:980px; margin:0 auto; background:#ffffff;}
+.middle_content		{  margin:0 auto; background:#0f0f0f; /*background:#ffffff;min-height:800px;*/ margin:0 20px;  }
+.middle_content2	{ width:940px; margin:0px auto 0px; background:#ffffff; padding:10px 0px 100px; }
+
+article				{ float:left; background:#ffffff; width:72.2%;}
+.person				{ margin:12px; display:none;}
+
+aside						{ float:right; background:#0f0f0f; width:200px; /*min-height:128vh;*/}
+
+footer						{background:#c1272d; padding:1.2% 0 1.2% 0%; position:relative; z-index:1; bottom:0px; top:87px; width:100%; min-width:980px;}
+footer p					{ width:940px; margin:0 auto; font-size:14px; font-weight:400; color:#d99698;}
+
+.legend_foot		{background:#c1272d; padding:1.2% 0 1.2% 2%; }
+.legend_foot p		{ width:940px; margin:0 auto; font-size:14px; font-weight:400; color:#d99698;}
+
+.two_dates			{  height: 30px;background: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 600;}
+
+
+
+    .displayHidden {
+        display: none;
+    }
+
+    .chatBox {
+        position: fixed;
+        bottom: 0px;
+        right: 4px;
+        width: 300px;
+        height: 400px;
+        border: 1px solid #999;
+        background-color: #f9f9f9;
+    }
+
+
+    .overallchatdiv {
+        background: #fff;
+        width: 310px;
+        font-family: Tahoma, sans-serif, Arial;
+        height: 400px;
+        border: 1px solid #ccc;
+    }
+
+    .chatheader {
+        height: 42px;
+        background: #C1282D;
+        color: #fff;
+    }
+
+    .divchatuname {
+        float: left;
+        padding: 10px;
+    }
+
+    .divclose {
+        float: right;
+    }
+
+    .divchatbox {
+        background: #fff;
+        width: 295px;
+        margin: 0 auto;
+        margin-top: 4px;
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .divleftradius {
+        background: #ccc;
+        margin-top: 4px;
+        min-height: 40px;
+        padding: 6px;
+        display: inline-block;
+        border-radius: 6px 6px;
+    }
+
+    .divcircile {
+        background: #2e2a29;
+        border-radius: 40px 40px;
+        width: 40px;
+        min-height: 40px;
+        float: right;
+        display: block;
+    }
+
+    .divcircileleft {
+        background: #2e2a29;
+        border-radius: 40px 40px;
+        width: 40px;
+        min-height: 40px;
+        float: left;
+        display: block;
+    }
+
+
+    .divchattext {
+        word-break:break-all;
+        float: left;
+        width: 216px;
+        padding: 4px;
+        font-size: 14px;
+    }
+
+    .divsentTimeleft{
+        font-size:10px;
+        float:left;
+        color: #645B5B;
+    }
+
+     .divsentTime{
+        font-size:10px;
+        float:right;
+        color: #645B5B;
+    }
+

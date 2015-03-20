@@ -1,0 +1,247 @@
+﻿
+    .divUploadPics {
+        width: 380px;
+        margin: 0 auto;
+        background: #2E2A29;
+        color: #fff;
+        font-family: Tahoma, sans-serif, Arial;
+    }
+
+    .divpHeader {
+        text-align: left;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .divpsection {
+        margin-top: 20px;
+        color: #ccc;
+        text-align: left;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .divpcontainer {
+        width: 340px;
+        margin-left: 30px;
+    }
+
+    .divprow1 {
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .divgdrive {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divgdriveimg {
+        width: 80px;
+        height: 80px;
+        background: url('../web/images/icon-googledrive.png');
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .dvcurvegdrive {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -50px;
+    }
+
+    .divOneDrive {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divonedriveimg {
+        width: 90px;
+        height: 80px;
+        background: url('../web/images/icon-onedrive.png');
+        background-size: 90px 80px;
+        z-index: 0;
+        margin-left: 20px;
+    }
+
+    .dvcurveonedrive {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -33px;
+    }
+
+    .divrow2 {
+        float: left;
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .divDropBox {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divdropboximg {
+        width: 80px;
+        height: 80px;
+        background: url('../web/images/icon-dropbox.png');
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .dvcurvedropbox {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -50px;
+    }
+
+    .divFBook {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divfbookimg {
+        width: 80px;
+        height: 80px;
+        background: url('../web/images/icon-facebook.png');
+        background-size: cover;
+        z-index: 0;
+        margin-left: 20px;
+    }
+
+    .dvcurvedfb {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -33px;
+    }
+
+    .divrow3 {
+        float: left;
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .divInstagram {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divinstagramimg {
+        width: 80px;
+        height: 80px;
+        background: url('../web/images/icon-instagram.png');
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .dvcurvedinsta {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -50px;
+    }
+
+    .divHardDrive {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .divharddriveimg {
+        width: 80px;
+        height: 80px;
+        background: url('../web/images/icon-harddisk.png');
+        background-size: cover;
+        z-index: 0;
+        margin-left: 20px;
+    }
+
+    .dvcurvedhd {
+        background: url('../web/images/icon-curve.png');
+        width: 180px;
+        float: left;
+        z-index: 2;
+        margin-top: -60px;
+        height: 60px;
+        margin-left: -33px;
+    }
+
+     .instagramImages {
+            height: 327px;
+            position: absolute;
+            width: 500px;
+            display: none;
+            margin-top: -328px;
+            background: #ccc;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+    
+
+
+         .imagescls {
+            float: left;
+            padding: 2px;
+            border: 1px solid #ccc;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .selectimage {
+            background: green;
+        }
+
+
+         .divgdrive:hover img {
+            margin-top: 26px;
+        }
+
+        .divgdrive img {
+            margin-top: 40px;
+        }
+
+        .MarginIcon {
+        }
+
+        .LowMargin {
+            margin-top: 20px;
+        }
+
+        .divprow1 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #divPhotoPreview img {
+            width: 400px;
+        }

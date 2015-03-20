@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProfileCompletion>
+  <each Points="21" link="web/MyProfile#criteria" text="criteria" slab="100">Fill out criteria section</each>
+  <each Points="14" link="web/MyProfile#questions" text="questions" slab="100">Fill out questions section</each>
+  <each Points="24" link="web/MyProfile#photos" text="pictures" slab="70,85,95,100">Add Pictures</each>
+  <each Points="12" link="web/Notifications" text="notifications" slab="100">View notifications</each>
+  <each Points="10" link="web/MyProfile#aboutme" text="written" slab="100">Fill out written section</each>
+  <each Points="9" link="web/EmailVerification" text="email" slab="100">Email verification</each>
+  <each Points="5" link="web/CriteriaPoints" text="weighting" slab="100">Fill out criteria(weighting) section</each>
+  <each Points="3" link="web/Home"  text="facebook" slab="100">Facebook verification</each>
+  <each Points="2" link="web/Home"  text="linkedIn" slab="100">LinkedIn verification</each>
+</ProfileCompletion>

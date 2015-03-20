@@ -1,0 +1,15 @@
+﻿.passport					{ margin:0px auto 20px; border-radius:6px; }
+.passport .student	{width:268px; border:1px solid #bfbfbf; padding:5px; margin:11px 0px 5px 0px;}
+.passport .student .photo	{ float:left; width:70px; margin:0 5px 0 0;}
+.passport .student .photo img{ box-shadow:3px 3px 2px #DBDBDB;}
+.passport .student .photo p{font-size:14px; color:#1c1c1e; font-weight:600;}
+.passport .student .text	{ float:right; width:190px;}
+.passport .student .text ul{ margin:9px 0 28px 0;}
+.passport .student .text ul li{ float:left; line-height:10px; list-style:none;}
+.passport .student .text ul .point{ width:60px;font-size:12px; color:#1c1c1e; font-weight:400;}
+.passport .student .text ul .line_bar{ width:82px; background:#d6d6d6; height:10px; display:inline-block; margin:0px 6px 0px 0px;}
+.passport .student .text ul .line_bar .over{ width:60px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .line_bar .home{ width:30px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .line_bar .exam{ width:50px; background:#333333; display:inline-block; height:10px; margin:0px; padding:0px;}
+.passport .student .text ul .percent{ width:40px;font-size:12px; color:#1c1c1e; font-weight:600;}
+.passport .student  p{font-size:14px; color:#1c1c1e; font-weight:600; line-height:17px;}

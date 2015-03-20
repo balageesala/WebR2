@@ -1,0 +1,454 @@
+﻿
+.divMessageContainer{
+    float:left;
+    width:99.5%;
+	padding-bottom:50px;
+    padding-top:10px;
+  font-size:12px;
+}
+
+.divtotalmsgbox{
+    float:left;
+    width:100%;
+    margin-top:-50px;
+}
+
+.messagesplusmenu{
+    margin-top:20px;
+    float:left;
+    width:82%;
+}
+
+.divoverallmsgs{
+    width: 100%; min-height: 550px;
+    font-size:12px;
+}
+
+.divmsgheader{
+    height: 30px; width: 100%; background-color: #C1282D; 
+}
+
+.divmsgcol1{
+    float: left; width: 400px; color: white; font-size: 14px;
+}
+
+.divpadding16{
+    padding: 4px;
+}
+
+.divmsgcol2{
+    float: left; width: 282px; color: white; font-size: 14px;
+}
+
+.divmsgcol3{
+    float: left; width: 300px; color: white; font-size: 14px;
+}
+
+.divmsgheaderborder{
+    height:4px;border-bottom:2px solid #000;margin-bottom:4px;
+}
+
+.divmsgrow{
+    min-height:120px;width:100%;background-color:#fff;color:#000; border-bottom-left-radius:8px; border-bottom-right-radius:8px; border-bottom:2px solid #BF282D;
+}
+
+.divmsguser{
+    float: left; width: 370px;
+}
+
+.divmsguserbox{
+    width:320px;height:100px;
+}
+
+.dionmsgtext{
+    float: left; width: 282px; color: white; color:#000;cursor:pointer;
+}
+
+.divmsgtime{
+    float: left; width: 280px; color: white; color:#000;
+}
+
+.divtimetext{
+    margin:4px;
+}
+
+.divmsgdelrow{
+    float:left;width:20px;
+}
+
+.divmsgdelicon{
+    margin:20px;margin-top:0px;cursor:pointer;
+}
+
+.margin4{
+    margin:4px;
+    word-break: break-all;
+}
+
+.nomessagesdiv{
+    margin-top: 20px;
+text-align: center;
+min-height: 50px;
+}
+
+.divfiltercol{
+    float: left;
+width: 230px;
+color: white;
+font-size: 14px;
+}
+
+.divfiltermsg{
+    float: left;
+width: 290px;
+color: white;
+font-size: 14px;
+}
+
+.filterTime{
+float: left;
+width: 160px;
+color: white;
+font-size: 14px;
+}
+
+.divmsglastseen{
+    float: left;
+width: 160px;
+color: white;
+font-size: 16px;
+}
+.divmsgstatus{
+        float: left;
+width: 160px;
+color: white;
+font-size: 14px;
+}
+
+.divMesagesBlockBox{
+      float:left;
+    width:20%;
+      background: #2E2A29;
+    min-height: 700px;
+    position:fixed;
+    right:0px;
+}
+
+.divcheckbox{
+    float:left;
+    margin:4px;
+    margin-top:0px;
+}
+
+.divTrash{
+    width:100%;
+
+}
+
+.divTrashmsgheader{
+    height: 30px;
+width: 100%;
+background-color: #C1282D;
+color: #fff;
+padding-top: 6px;
+font-size:14px;
+}
+
+.divtrashmsgcol1{
+    width:30px;
+    float:left;
+}
+
+.divtrashmsgcol2{
+    width:40px;
+    float:left;
+}
+
+.divtrashmsgcol3{
+    width:330px;
+    float:left;
+}
+
+.divtrashmsgcol4{
+    width:100px;
+    float:left;
+    margin-left: 4px;
+}
+
+.divtrashmsgcol5{
+    width:110px;
+    float:left;
+    cursor:pointer;
+     word-break: break-all;
+}
+
+.divtrashmsgcol6{
+    width:110px;
+    float:left;
+     word-break: break-all;
+      cursor:pointer;
+}
+.divtrashmsgcol7{
+    width:100px;
+    float:left;
+}
+
+.divtrashmsgcol8{
+    width:80px;
+    float:left;
+}
+
+.divtrashmsgcol9{
+    width:80px;
+    float:left;
+}
+
+.divtrashmsgcol10{
+    width:20px;
+    float:left;
+    cursor:pointer;
+}
+
+.divtrashheaderborder{
+    height:4px;border-bottom:2px solid #000;margin-bottom:4px;width:100%;
+}
+
+.divtrashrow{
+float:left;
+padding-top:4px;
+width:100%;
+border-bottom:2px solid #C1282D;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+padding-bottom:16px;
+}
+
+
+.divrecivedrow{
+ height:auto;margin-top:4px;width:100%;
+float:left;
+width:100%;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+padding-bottom:16px;
+border-bottom: 2px solid #C1282D;
+}
+
+.divfilterheader{
+width:100%;
+padding-top:6px;
+color:#fff;
+height:30px;
+background:#C1282D;
+font-size:14px;
+}
+
+
+.divfiltercol1{
+     width:30px;
+    float:left;
+}
+
+
+.divfiltercol2{
+     width:340px;
+    float:left;
+}
+
+
+.divfiltercol3{
+     width:180px;
+    float:left;
+    margin-left:4px;
+    
+}
+
+.divfiltercol4{
+     width:300px;
+    float:left;
+    margin-left:4px;
+    cursor:pointer;
+     word-break: break-all;
+}
+.divfiltercol5{
+     width:130px;
+    float:left;
+    margin-left:4px;
+}
+
+.divfiltercol6{
+     width:20px;
+    float:left;
+    margin-left:4px;
+    cursor:pointer;
+}
+
+.divfilterrow{
+     height:auto;margin-top:4px;width:100%;
+float:left;
+width:100%;
+border-bottom:2px solid #C1282D;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+padding-bottom:16px;
+}
+
+
+.divSentmsgheader{
+    height: 30px;
+width: 100%;
+background-color: #C1282D;
+color: #fff;
+padding-top: 6px;
+font-size:14px;
+}
+
+.divsentcol1{
+     width:30px;
+    float:left;
+}
+
+.divsentcol2{
+      width:330px;
+    float:left;
+}
+
+.divsentcol3{
+      width:190px;
+    float:left;
+    margin-left:4px;
+    cursor:pointer;
+     word-break: break-all;
+}
+
+.divsentcol4{
+      width:146px;
+    float:left;
+    margin-left:4px;
+}
+
+.divsentcol5{
+      width:146px;
+    float:left;
+}
+
+
+.divsentcol6{
+      width:132px;
+    float:left;
+}
+
+
+.divsentcol7{
+      width:20px;
+    float:left;
+    cursor:pointer;
+}
+
+.divsentrow{
+     height:auto;margin-top:4px;width:100%;
+float:left;
+width:100%;
+border-bottom:2px solid #C1282D;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+padding-bottom:16px;
+}
+
+
+.divchatheader{
+      height: 30px;
+width: 100%;
+background-color: #C1282D;
+color: #fff;
+padding-top: 6px;
+font-size:14px;
+}
+
+.divchatcol1{
+     width:30px;
+    float:left;
+}
+
+.divchatcol2{
+      width:340px;
+    float:left;
+}
+
+.divchatcol3{
+      width:290px;
+    float:left;
+   cursor:pointer;
+}
+
+.divchatcol4{
+      width:300px;
+    float:left;
+    margin-left:14px;
+}
+
+.divchatcol5{
+      width:20px;
+    float:left;  
+    cursor:pointer;
+}
+
+.divchatrow{
+     height:auto;margin-top:4px;width:100%;
+float:left;
+width:100%;
+border-bottom:2px solid #C1282D;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+padding-bottom:16px;
+}
+.divloadingimg {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+
+.deletebtnenable{
+   padding: 6px 10px;
+border-radius: 3px;
+background-color: #c1272d;
+font-weight: 400;
+color: #fff;
+text-align: center;
+border: none;
+cursor: pointer;
+float: right;
+height: 30px;
+font-size: 14px;
+}
+
+
+.deletebtndisable{
+    font-size: 18px;
+    padding: 4px 18px;
+border-radius: 3px;
+background-color: #CCC;
+font-weight: 400;
+color: #fff;
+text-align: center;
+border: none;
+cursor: pointer;
+float: right;
+height: 30px;
+}
+
+
+.buttonBack{
+     padding: 6px 12px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  
+}

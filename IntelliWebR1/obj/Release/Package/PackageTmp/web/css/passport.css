@@ -1,0 +1,100 @@
+﻿
+.divpassport {
+        height: 100px;
+        width: 310px;
+        border: #d2d2d2 1px solid;
+        padding: 4px;
+        font-size:14px;
+    }
+
+    .divimg {
+        float: left;
+        height: 80px;
+        width: 80px;
+        cursor:pointer;
+    }
+
+        .divimg img {
+            float: left;
+            height: 80px;
+            width: 80px;
+        }
+
+    .divrow {
+        float: left;
+        width: 230px;
+        padding: 4px;
+        margin-left:0px;
+        height:10px;
+        font-size: 13px;
+color: #1c1c1e;
+font-weight: 400;
+margin-top:4px;
+    }
+
+    .divrowlabel {
+        float: left;
+        width: 85px;
+      padding-top:2px;
+    }
+
+    .divgraph {
+        float: left;
+        margin-left: 2px;
+        width: 84px;
+        margin-top: 6px;
+        background-color:#E7E7E7;
+        height:10px;
+    }
+
+    .divOverallp {
+        height: 10px;
+        border-radius: 0px;
+        background: #333333;
+        border: 0px;
+       
+    }
+
+    .divoveralllblp {
+        width: 40px;
+        padding-left: 6px;
+        float: left;
+          padding-top:2px;
+    }
+
+    .divCriteriap {
+        height: 10px;
+        border-radius: 0px;
+       background: #333333;
+        border: 0px;
+    }
+
+    .criterialbl {
+        width: 40px;
+        padding-left: 6px;
+        float: left;
+          padding-top:2px;
+    }
+
+    .divQuestionsp {
+        height: 10px;
+        border-radius: 0px;
+        background: #333333;
+        border: 0px;
+    }
+
+    .divquestionlbl {
+        width: 40px;
+        padding-left: 6px;
+        float: left;
+          padding-top:2px;
+    }
+
+    .divuname {
+        clear: left;
+        padding-left: 2px;
+        font-size: 16px;
+color: #000000;
+font-weight: 600;
+opacity: 0.8;
+    }

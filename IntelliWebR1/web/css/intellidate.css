@@ -1,0 +1,834 @@
+﻿body {
+    background-color: #ECECEC;
+    margin: 0px;
+    font-family: Tahoma, sans-serif, Arial;
+    height: 87vh;
+    overflow-y: scroll;
+}
+
+
+.header {
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    background-color: #C1282D;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1100;
+    /*  -webkit-box-shadow: 0px 2px 60px 0px rgba(5,5,5,1);
+    -moz-box-shadow: 0px 2px 60px 0px rgba(5,5,5,1);
+    box-shadow: 0px 2px 60px 0px rgba(5,5,5,1); */
+}
+
+.headerContainer {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .headerContainer::after {
+        clear: both;
+    }
+
+
+.header::after {
+    clear: both;
+}
+
+.logo {
+    position: relative;
+    color: white;
+    font-size: 34px;
+    margin-top: 16px;
+    float: left;
+}
+
+
+.container {
+    min-height: 100vh;
+}
+
+.containerBox {
+    background-color: #fff;
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.innerContainers {
+    float: left;
+    min-height: 566px;
+}
+
+
+.Spacer50 {
+    height: 50px;
+}
+
+.container:after {
+    clear: both;
+}
+
+.footer {
+    height: 30px;
+    width: 100%;
+    background-color: #C1282D;
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    /*-webkit-box-shadow: 0px -2px 60px 0px rgba(5,5,5,1);
+    -moz-box-shadow: 0px -2px 60px 0px rgba(5,5,5,1);
+    box-shadow: 0px -2px 60px 0px rgba(5,5,5,1);*/
+}
+
+    .footer:before {
+        clear: both;
+    }
+
+    .footer p {
+        padding: 8px;
+        text-align: right;
+    }
+
+.footerInner {
+    padding: 8px;
+}
+
+    .footerInner div {
+        float: left;
+    }
+
+.footerFeedback {
+    margin-left: -8px;
+}
+
+    .footerFeedback div {
+        float: right;
+        margin-top: -6px;
+        margin-right: 10px;
+    }
+
+.fixiconsize {
+    height: 20px;
+    width: 20px;
+}
+
+.divmenu {
+    float: right;
+}
+
+    .divmenu div {
+        float: left;
+    }
+
+.divmenuitems {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.divmenuitemsDiv {
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+}
+
+.divmenuitems div:after {
+    clear: both;
+}
+
+.divmenuitems div span {
+    margin-left: 6px;
+    margin-top: -34px;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background-color: #1C1D22;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+.space30 {
+    margin-left: 100px;
+}
+
+    .space30:hover {
+        margin-left: 100px;
+        background: #B31919;
+        border-radius: 6px 6px;
+        padding-bottom: 6px;
+    }
+
+
+
+.divprofilepic {
+}
+
+    .divprofilepic img {
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+        margin-top:7px;
+    }
+
+.twoItems {
+    margin: 0px;
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+}
+
+.iconSection {
+    margin-left: 4px;
+    cursor: pointer;
+    color: white;
+    padding-left: 4px;
+    padding-bottom: 6px;
+}
+
+    .iconSection:hover {
+        background: #B31919;
+        border-radius: 6px 6px;
+    }
+
+.greyBack {
+    background-color: #ECECEC;
+}
+
+.desableHome{
+    cursor:context-menu;
+}
+
+
+.gradientGrey {
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ECECEC), to(#FFFFFF));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #ECECEC, #FFFFFF);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #ECECEC, #FFFFFF);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #ECECEC, #FFFFFF);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #ECECEC, #FFFFFF);
+}
+
+.gradientLine {
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#090909), to(#FFFFFF));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #090909, #FFFFFF);
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #090909, #FFFFFF);
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #090909, #FFFFFF);
+}
+
+/* Criteria Section */
+.CriteriaDiv {
+    width: 800px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+
+.Spacer120 {
+    height: 120px;
+}
+
+.CriteriaQuestionBox {
+    display: inline-block;
+    width: 800px;
+    min-height: 450px;
+    border: 0px solid;
+    background-color: #fff;
+    border-bottom: 3px solid #E0939D;
+}
+
+.CriteriaGradientBox {
+    height: 150px;
+}
+
+.CriteriaPositionBox {
+    width: 104px;
+    height: 40px;
+    border: 0px solid;
+}
+
+.CriteriaPositionBoxInner {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.CriteriaPositionBoxCricle {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #C1282D;
+    border-radius: 15px 15px;
+    color: white;
+    box-shadow: 0px 0px 4px 4px rgba(193,40,45,1);
+    text-align: center;
+}
+
+.CriteriaPositionBoxText {
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.CriteriaPositionBoxOfText {
+    float: left;
+    width: 24px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.CriteriaDividerLine {
+    height: 2px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.BackButton {
+    width: 100px;
+    height: 40px;
+    background-color: #303030;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .BackButton div {
+        padding-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.SubmitButton {
+    width: 100px;
+    height: 40px;
+    background-color: #C1282D;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .SubmitButton div {
+        padding-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.SubmitButtonSmall {
+    width: 78px;
+    height: 34px;
+    background-color: #C1282D;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .SubmitButtonSmall div {
+        padding-top: 6px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.QuestionText {
+    margin: 20px;
+    color: #B32B3F;
+    font-size: 17px;
+}
+
+.QuestionArea {
+    margin: 20px;
+    min-height: 210px;
+    border: 0px solid;
+    width:760px;
+}
+
+.SelectionArea {
+    float: left;
+    width: 50%;  
+    display: inline-block;
+}
+
+.SelectionQuestion {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+}
+
+.SelectionQuestionMargins {
+    margin-top: 30px;
+}
+
+.ButtonsArea {
+    margin-top: 60px;
+}
+
+.FloatRight {
+    float: right;
+}
+
+.FloatRightmarginTop {
+    float: right;
+    margin-top:30px;
+}
+
+
+.paddingleft6px {
+    padding-left: 6px;
+}
+
+.singleLogOutDiv {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.divmessages {
+    background: url(../web/images/icon_messages.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 4px;
+    margin-top: 8px;
+    width: 12px;
+}
+
+.lblmesage {
+    padding: 2px;
+   background:#000;
+}
+
+
+.superDiv {
+    width: 20px;
+    padding: 0px;
+}
+
+.MarginTop20 {
+    margin-top: 20px;
+}
+
+.CriteriaCombo {
+    background-color: #323232;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px 6px;
+}
+
+    .CriteriaCombo option {
+        padding: 8px;
+    }
+
+.Disabled {
+    background-color: #999;
+}
+
+#lblCriteriaDobError {
+    margin-left: 4px;
+    color: red;
+    font-size: 14px;
+}
+
+.activateLink {
+    background: #B31919;
+    border-radius: 6px 6px;
+}
+
+.activeSettings {
+    margin-left: 100px;
+    background: #B31919;
+    border-radius: 6px 6px;
+    padding-bottom: 6px;
+}
+
+.messageMenu {
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    float:left;
+}
+
+    .messageMenu ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+.linarmal {
+    margin: 0px;
+    cursor: pointer;
+    display: inline;
+    height: 40px;
+    background-color: #1C1D22;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.messageMenu li:hover {
+    background: #C1282D;
+}
+
+
+
+.liactive {
+    background-color: #C1282D;
+}
+
+.userBox {
+    width: 100px;
+    min-height: 120px;
+    border: 1px solid #ccc;
+    padding: 2px 2px;
+    font-family: Tahoma, sans-serif, Arial;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.divWhiteBox {
+    float: left;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom:40px;
+}
+
+.divBlockBox {
+    float: left;
+    width: 40%;
+    background: #2E2A29;
+    min-height: 600px;
+    position: fixed;
+    right: 0px;
+}
+
+.divSettingsBlockBox {
+    float: left;
+    width: 40%;
+    background: #2E2A29;
+    min-height: 780px;
+    position: fixed;
+    right: 0px;
+}
+
+.divHomeBlockBox {
+    float: left;
+    width: 40%;
+    background: #2E2A29;
+    min-height: 780px;
+    color: #fff;
+    position: fixed;
+    right: 0px;
+}
+
+.divmyprofile {
+    margin-top: -50px;
+}
+
+.divHome {
+    margin-top: -50px;
+    width: 100%;
+}
+
+.divprofilepic {
+    height: 70px;
+    width: 70px;
+}
+
+.CriteriaPointsTitles {
+    width: 1010px;
+    margin: 0 auto;
+    min-height: 40px;
+}
+
+.CriteriaPointsTitleDiv {
+    margin: 10px;
+}
+
+.CriteriaPointsTitleText {
+    float: left;
+    width: 75%;
+    font-size: 22px;
+}
+
+.CriteriaPointsAvailableDiv {
+    float: left;
+    text-align: right;
+}
+
+.CriteriaPointsAvailableText {
+    float: left;
+    font-size: 22px;
+}
+
+.CriteriaPointsAvailableTextBoxDiv {
+    float: left;
+    margin-left: 20px;
+    margin-top: -8px;
+}
+
+.CriteriaPointsAvailableTextBox {
+    padding: 4px;
+    width: 60px;
+    height: 38px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px 4px;
+    font-size: 18px;
+}
+
+.CriteriaPointsDiv {
+    width: 1010px;
+    margin: 0 auto;
+    min-height: 300px;
+    background-color: #F2F2F2;
+}
+
+.CriteriaPointsRow {
+    margin: 10px;
+}
+
+.CriteriaPointsEach {
+    float: left;
+    width: 190px;
+    height: 50px;
+    background-color: #DEDEDE;
+    margin: 4px;
+    border-bottom: 8px solid #C1C1C1;
+    margin-top: 10px;
+}
+
+.CriteriaPointsDividerLine {
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.CriteriaPointsRed {
+    color: red;
+}
+
+.DbuttonCancel {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background-color: #787878;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+    height: 34px;
+}
+
+.DbuttonSubmit {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    height: 34px;
+    font-size: 0.85em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+
+.DbuttonChange {
+    padding: 4px 8px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    font-size: 0.85em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.DbuttonChangeDS {
+    padding: 4px 8px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background-color: #787878;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.DbuttonActivate {
+   padding: 8px 28px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    height: 34px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.composeBox {
+    border: 0px;
+    resize: none;
+    width: 576px;
+    font-family: 'Open Sans', 'sans-serif', Arial;
+    font-size: 16px;
+    outline: none;
+    height: 300px;
+    border-radius: 8px 8px;
+    padding: 4px;
+}
+
+.composeSend {
+    padding: 8px 28px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    height: 34px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+
+.disableButton {
+    padding: 8px 28px;
+    border-radius: 3px;
+    background-color: #9d9999;
+    height: 34px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    float: right;
+    cursor:context-menu;
+}
+
+
+
+.BtnviewProfile {
+    padding: 8px 14px;
+    border-radius: 3px;
+    background-color: #c1272d;
+    height: 30px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.displayNone {
+    display: none;
+}
+
+.anchortag{
+    text-decoration:none;
+    color: #fff;
+    float:left;
+    width:100%;
+}
+
+
+.ProfileCompletion_Section{
+margin-bottom: 20px;
+float: left;}
+
+.profileCompletionTitle{
+	font-size: 22px;
+font-weight: 400;
+color: #FFFFFF;
+margin-top: -16px;
+float: left;
+margin-left: 6px;
+}
+
+.profileCompletionPercent{
+float: left;
+line-height: 0.7;
+font-size: 30px;
+font-weight:600;
+margin-left: 30px;
+}
+
+.pcpSmall{
+	
+	font-size: 16px;
+    font-weight: normal;
+height: 20px;
+float: left;
+opacity: 0.8;
+margin-top: 6px;
+width: 100%;
+
+}

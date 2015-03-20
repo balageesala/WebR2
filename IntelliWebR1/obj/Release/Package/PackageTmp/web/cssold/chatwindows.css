@@ -1,0 +1,98 @@
+﻿
+    .displayHidden {
+        display: none;
+    }
+
+    .chatBox {
+        position: fixed;
+        bottom: 0px;
+        right: 4px;
+        width: 300px;
+        height: 400px;
+        border: 1px solid #999;
+        background-color: #f9f9f9;
+    }
+
+
+    .overallchatdiv {
+        background: #fff;
+        width: 310px;
+        font-family: Tahoma, sans-serif, Arial;
+        height: 400px;
+        border: 1px solid #ccc;
+    }
+
+    .chatheader {
+        height: 42px;
+        background: #C1282D;
+        color: #fff;
+    }
+
+    .divchatuname {
+        float: left;
+        padding: 10px;
+    }
+
+    .divclose {
+        float: right;
+    }
+
+    .divchatbox {
+        background: #fff;
+        width: 295px;
+        margin: 0 auto;
+        margin-top: 4px;
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .divleftradius {
+        background: #ccc;
+        margin-top: 4px;
+        min-height: 40px;
+        padding: 6px;
+        display: inline-block;
+        border-radius: 6px 6px;
+    }
+
+    .divcircile {
+        background: #2e2a29;
+        border-radius: 40px 40px;
+        width: 40px;
+        min-height: 40px;
+        float: right;
+        display: block;
+    }
+
+    .divcircileleft {
+        background: #2e2a29;
+        border-radius: 40px 40px;
+        width: 40px;
+        min-height: 40px;
+        float: left;
+        display: block;
+    }
+
+
+    .divchattext {
+        word-break:break-all;
+        float: left;
+        width: 216px;
+        padding: 4px;
+        font-size: 14px;
+    }
+
+    .divsentTimeleft{
+        font-size:10px;
+        float:left;
+        color: #645B5B;
+    }
+
+     .divsentTime{
+        font-size:10px;
+        float:right;
+        color: #645B5B;
+    }

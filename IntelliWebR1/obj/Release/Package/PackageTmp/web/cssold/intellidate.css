@@ -1,0 +1,318 @@
+﻿
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,img		{ margin:0; padding:0;}
+body		{font-family: 'Open Sans', sans-serif;}
+
+a			{ text-decoration:none;}
+ul, li		{ list-style:none;}
+.fl			{ float:left !important;}
+.fr			{ float:right !important;}
+.clear		{ clear:both; display:block;}
+
+
+
+.wrapper			{ width:1024px; }
+section				{}
+header				{ background:#c1272d; padding:1.3% 3% 1.5% 2%;   position:fixed; z-index:100; width:100%; height:87px; min-width:1024px;box-sizing:border-box;}
+.logo				{ float:left; font-family: 'Lobster', cursive;color:#ffffff; font-size:33px;font-family: 'Lobster', cursive; cursor:default;}
+.logo a, .logo a:hover	{ color:#ffffff; font-size:33px;font-family: 'Lobster', cursive;}
+
+.header_min			{ min-width:1024px;}
+
+.disable_logo		{ /*font-family: 'Lobster', cursive;*/ width:530px; margin:0 auto;}
+.disable_logo a		{ color:#ffffff; font-size:33px; font-family: 'Lobster', cursive;}
+.disable_logo p		{ color:#ffffff; font-size:14px; font-weight:400; font-family:arial; opacity:0.5; margin:4% 0 0 0; position:relative; left:19%;}
+
+
+nav					{ float:right; margin:0.5% 0px 0px;}
+nav ul				{}
+nav ul li			{ float:left; display:inline-block; background:url(../web/images/head_nav_sapart.png) no-repeat left center; margin:0 0 0 20px; padding:0 0 0 20px;}
+nav ul li a			{ opacity:1;}
+nav ul li a:hover	{ opacity:1;}
+nav ul .no_bg		{ background:none !important; margin:0px;}
+nav ul .pic			{ margin:-5% 0% -20% !important; background:none !important;}
+nav ul .space		{ margin:0 0 0 50px;}
+nav ul .no_space		{ margin:0 0 0 -5px;}
+
+nav ul li .logout	{ background:url(../web/images/head_nav_logout.png) no-repeat left top; width:27px; height:32px; display:block;}
+nav ul li .logout:hover{ background:url(../web/images/head_nav_logout_hover.png) no-repeat left top; width:27px; height:32px; display:block;}
+nav ul li span		{ position:relative; right:60px; top:1px; color:#ffffff;}
+
+
+
+
+
+
+
+
+.container			{ background:#ececec; width:100%; }
+.middle_content		{ width:96%; margin:0 auto; background:#0f0f0f;}
+.middle_content2	{ width:96%; margin:0px auto 0px; background:#ffffff; padding:1% 0px 12%; }
+
+article				{ float:left; background:#ffffff; width:72.2%;}
+.person				{ margin:12px; display:none;}
+
+
+
+
+
+footer						{background:#c1272d; padding:1.2% 0 1.2% 2.3%; position:relative; z-index:1; bottom:0px; top:87px;}
+footer p					{ font-size:14px; font-weight:400; color:#d99698;}
+
+
+/*Criteria section start */
+
+.CriteriaDiv {
+    width: 800px;
+    min-height: 800px;
+    
+}
+
+.Spacer120 {
+    height: 120px;
+}
+
+.CriteriaSection{
+    width:94%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px 6px;
+    float:left;
+    margin-left:10px;
+    margin-top:20px;
+}
+
+.CriteriaQuestionBox {
+    display: inline-block;
+    width: 800px;
+    min-height: 450px;
+    border: 0px solid;
+    background-color: #fff;
+    border-bottom: 3px solid #E0939D;
+    padding-top: 30px;
+    min-height: 800px;
+    margin-top:50px;
+}
+
+.CriteriaGradientBox {
+    height: 150px;
+}
+
+.CriteriaPositionBox {
+    width: 104px;
+    height: 40px;
+    border: 0px solid;
+}
+
+.CriteriaPositionBoxInner {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.CriteriaPositionBoxCricle {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #C1282D;
+    border-radius: 15px 15px;
+    color: white;
+    box-shadow: 0px 0px 4px 4px rgba(193,40,45,1);
+    text-align: center;
+}
+
+.CriteriaPositionBoxText {
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.CriteriaPositionBoxOfText {
+    float: left;
+    width: 24px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.CriteriaDividerLine {
+    height: 2px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.BackButton {
+    width: 100px;
+    height: 40px;
+    background-color: #303030;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .BackButton div {
+        padding-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.SubmitButton {
+    width: 100px;
+    height: 40px;
+    background-color: #C1282D;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .SubmitButton div {
+        padding-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.SubmitButtonSmall {
+    width: 78px;
+    height: 34px;
+    background-color: #C1282D;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .SubmitButtonSmall div {
+        padding-top: 6px;
+        font-size: 18px;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.QuestionText {
+    margin: 20px;
+    color: #B32B3F;
+    font-size: 17px;
+}
+
+.QuestionArea {
+    margin: 20px;
+    min-height: 210px;
+    border: 0px solid;
+    width:760px;
+}
+
+.SelectionArea {
+    float: left;
+    width: 50%;  
+    display: inline-block;
+}
+
+.SelectionQuestion {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+}
+
+.SelectionQuestionMargins {
+    margin-top: 30px;
+}
+
+.ButtonsArea {
+    margin-top: 0px;
+}
+
+.FloatRight {
+    float: right;
+}
+
+.FloatRightmarginTop {
+    float: right;
+    margin-top:30px;
+}
+
+
+.paddingleft6px {
+    padding-left: 6px;
+}
+
+.singleLogOutDiv {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.divmessages {
+    background: url(../web/images/icon_messages.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 4px;
+    margin-top: 8px;
+    width: 12px;
+}
+
+.lblmesage {
+    padding: 2px;
+   background:#000;
+}
+
+
+.superDiv {
+    width: 20px;
+    padding: 0px;
+}
+
+.MarginTop20 {
+    margin-top: 20px;
+}
+
+.CriteriaCombo {
+    background-color: #323232;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px 6px;
+}
+
+    .CriteriaCombo option {
+        padding: 8px;
+    }
+
+.Disabled {
+    background-color: #999;
+}
+
+#lblCriteriaDobError {
+    margin-left: 4px;
+    color: red;
+    font-size: 14px;
+}
+
+/*Criteria section end */
+
+
+
+
+
+
+

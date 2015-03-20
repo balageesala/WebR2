@@ -1,0 +1,275 @@
+﻿body {
+    background-color: #ECECEC;
+    margin: 0px;
+    font-family: Tahoma, sans-serif, Arial;
+    height: 87vh;
+}
+
+label a {
+    text-decoration: none;
+    color: #FEDEAD;
+}
+
+    label a:visited {
+        text-decoration: none;
+        color: inherit;
+        color: #FEDEAD;
+    }
+
+    label a:active {
+        color: #FEDEAD;
+    }
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: #C1282D;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1001;
+    /*-webkit-box-shadow: 0px 10px 80px 0px rgba(5,5,5,1);
+    -moz-box-shadow: 0px 10px 80px 0px rgba(5,5,5,1);
+    box-shadow: 0px 10px 80px 0px rgba(5,5,5,1);*/
+}
+
+.headerContainer {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .headerContainer::after {
+        clear: both;
+    }
+
+
+.header div {
+    float: left;
+}
+
+.header::after {
+    clear: both;
+}
+
+.logo {
+    position: relative;
+    color: white;
+    font-size: 34px;
+    margin-top: 16px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.container {
+    min-height: 100vh;
+}
+
+.containerBox {
+    background-color: #fff;
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.innerContainers {
+    float: left;
+    min-height: 566px;
+}
+
+.whiteBox {
+    width: 65%;
+}
+
+.blackBox {
+    width: 34%;
+    background-color: #2E2A29; 
+    color: #FEDEAD;
+    min-height: 100vh;
+    position:absolute;
+    right:0px;
+}
+
+.rightLine {
+    border-right: 1px solid #ccc;
+}
+
+.container:after {
+    clear: both;
+}
+
+.photoGridBox {
+    border: 0px solid;
+    margin: 10px;
+    width: 820px;
+    margin-top: 120px;
+    margin-left: 38px;
+}
+
+.photoContainer {
+    float: left;
+    width: 152px;
+    height: 152px;
+}
+
+.gridPhoto {
+    width: 148px;
+    height: 148px;
+    margin: 4px;
+    border-radius: 4px 4px;
+}
+
+.footer {
+    height: 30px;
+    width: 100%;
+    background-color: #C1282D;
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index:1002;
+    /*-webkit-box-shadow: 0px -10px 80px 0px rgba(5,5,5,1);
+    -moz-box-shadow: 0px -10px 80px 0px rgba(5,5,5,1);
+    box-shadow: 0px -10px 80px 0px rgba(5,5,5,1);*/
+}
+
+    .footer:before {
+        clear: both;
+    }
+
+    .footer p {
+        padding: 8px;
+        text-align: right;
+    }
+
+.footerInner {
+    padding: 8px;
+}
+
+    .footerInner div {
+        float: left;
+    }
+/* Photo Grid*/
+
+
+/* Register */
+
+.registerContainer {
+    border-radius: 8px 8px;
+    background-color: #fff;
+    width: 300px;
+    min-height: 360px;
+    margin: 50px;
+}
+
+    .registerContainer div {
+        display: block;
+        padding: 2px;
+    }
+
+    .registerContainer form {
+        padding: 20px;
+    }
+
+.genderDiv {
+    display: block;
+}
+
+    .genderDiv div {
+        float: left;
+        width: 100px;
+    }
+
+        .genderDiv div label {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+    .genderDiv:after {
+        clear: both;
+    }
+
+    .genderDiv:before {
+        clear: both;
+    }
+
+.textField {
+    width: 230px;
+    font-size: 14px;
+}
+
+.divRegister {
+    width: 380px;
+    min-height: 480px;
+    border: 0px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.whiteTitle {
+    color: white;
+    font-size: 28px;
+    margin: 16px;
+    margin-top: 100px;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.fields {
+    margin: 8px;
+    margin-top: 10px;
+}
+
+    .fields div {
+        float: left;
+        margin-right: 4px;
+    }
+
+        .fields div select {
+            border: 0px;
+            font-size: 16px;
+            height: 28px;
+            border-radius: 2px 2px;
+            width: 93px;
+        }
+
+
+    .fields input {
+        border: 0px;
+        font-size: 14px;
+        width: 280px;
+        height: 28px;
+        border-radius: 2px 2px;
+        padding: 4px;
+    }
+
+.checkBoxField {
+    margin: 8px;
+    margin-top: 10px;
+}
+
+.errorDiv {
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+.registerButton {
+    margin: 10px;
+    background-color: #C1282D;
+    border-radius: 6px 6px;
+    padding: 4px;
+    border: 0px solid #fff;
+    height: 26px;
+    width: 160px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: #ccc initial 2px 2px initial;
+    cursor: pointer;
+}

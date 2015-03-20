@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="viewphoto.aspx.cs" Inherits="IntelliWebR1.web.inner.viewphoto" %>
