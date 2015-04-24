@@ -10,7 +10,7 @@
                 &nbsp;
                 <span class="clear"></span>
             </div>
-            <div class="notification_cont" id="DivNotifications" runat="server">
+            <div class="notification_cont" id="DivNotifications" runat="server" style="padding-bottom:30px;">
             </div>
         </div>
     

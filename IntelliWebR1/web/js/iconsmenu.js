@@ -75,7 +75,7 @@ $(document).ready(function () {
     $("#imgCompatibilityReport").click(function () {
 
         var _Reporturl = _SitePath + "web/inner/compatibilityreportcart?RematchID=" + _OtherUserID;
-        SetUrlIntelliWindow(_Reporturl, "620", "410")
+        SetUrlIntelliWindow(_Reporturl, "650", "350")
 
     });
 

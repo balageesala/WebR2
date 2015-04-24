@@ -244,7 +244,7 @@ input		{ border:0 none;}
 .checks					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; width:699px; /*height:475px;*/ margin:0px auto 20px;   border-radius:6px; background-size:cover;}
 .checks .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height:17px; display:block; float:right; margin:4px 4px 4px 0; border-radius:3px;}
 .checks .clear_answer	{ float:left;color:#0f0f0f;font-size:13px; font-weight:400; text-decoration:underline; margin:22px 0 0 29px;}
-.checks .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; text-align:center; line-height:27px; display:block; float:right; margin:0px 28px 28px 0px; border-radius:5px; border:0 none; cursor:pointer; padding:0 11px 0 11px;}
+.checks .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px; text-align:center; line-height:27px; display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px; border:0 none; cursor:pointer; padding:0 11px 0 11px;}
 .checks_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:1px 0 10px 28px; width:610px; padding:10px 10px 18px; min-height:275px;}
 
 .checks .tabs_matter			{ /*width:642px !important;*/ width:611px; border-radius:5px 5px 5px 5px; border:1px solid #ccc; padding:15px; background:#ffffff; margin:0 0 14px 28px;}
@@ -272,12 +272,13 @@ input		{ border:0 none;}
 .buyrematch_cont h3				{ margin:0 0 10px 0px; font-size: 16px; color: #0F0F0F; font-weight: 600; opacity: 0.8;}
 .buyrematch_cont .text			{font-size: 13px; color: #6B6969; font-weight: 400; line-height: 14px; margin: 0px; word-break: break-all; margin:-8px 0px 10px 0px; width:510px;} 
 .buyrematch textarea 		{border:1px solid #b7b7b7; position:relative; width:525px; height:60px; border-radius:2px; padding:10px 10px 10px 10px; font-family: 'Open Sans', sans-serif; font-size:13px; color:#000000; font-weight:400; opacity:0.8; resize:none;line-height:15px;  /*letter-spacing:-1px;*/ word-break:break-all; overflow-y:scroll; }
-.buyrematch_cont .match_detail	{ margin:0 0 7px 0;}
+.buyrematch_cont .match_detail	{ margin:0;}
+.buyrematch_cont .match_detail p{color:#303030;font-size:15px; font-weight:400; margin:10px 0 0px 0;}
 .buyrematch_cont .match_detail img{ float:left; margin:0 10px 0 0;}
 .buyrematch_cont .match_detail .match_detail_type	{ float:left; width:330px;}
 .buyrematch_cont .match_detail .match_detail_type h5{color:#303030;font-size:14px; font-weight:600; margin:0 0 10px 0;}
 .buyrematch_cont .match_detail .match_detail_type ul{}
-.buyrematch_cont .match_detail .match_detail_type ul li{ color:#303030;font-size:14px; font-weight:400; list-style-type:numeric; margin:0px 0px 0px 15px}
+.buyrematch_cont .match_detail .match_detail_type ul li{ color:#303030;font-size:14px; font-weight:400; /*list-style-type:numeric; margin:0px 0px 0px 15px;*/ line-height:17px;}
 
 	/*--------------- Popup-Buy Rematch page end  -------------*/
 
@@ -324,6 +325,25 @@ input		{ border:0 none;}
 
 	/*--------------- Popup-Profile Pic Upload page end  -------------*/
 
+	/*--------------- Popup-Compatibility Popup page Start  -------------*/
+
+.compatible					{ background:url(../images/ChatWithMe_bg_bar.jpg) repeat-x left top; /*width:498px; height:418px;*/ width:635px; margin:0px auto 0px; border-radius:6px; }
+.compatible .close			{ background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; width:20px; height:20px; text-align:center; line-height: 17px; display:block; float:right; margin:4px 4px 4px 0; cursor:pointer; border-radius:3px;}
+.compatible .send			{background:#c1272d; color:#ffffff;font-size:14px; font-weight:400; /*width:90px;*/ height:30px;  line-height:27px;text-align:center; display:block; float:right; margin:0px 28px 28px 0px; border-radius:2px; cursor:pointer; padding:0px 12px 0px 12px;}
+.compatible_cont				{ background:#ffffff; border:1px solid #c5c5c5; border-radius:5px; margin:0px 0 14px 28px; /*width:400px;*/ padding:15px;  width:547px;}
+.compatible_cont h3				{ margin:0 0 10px 0px; font-size: 16px; color: #0F0F0F; font-weight: 600; opacity: 0.8;}
+.compatible_cont .text			{font-size: 13px; color: #6B6969; font-weight: 400; line-height: 14px; margin: 0px; word-break: break-all; margin:-8px 0px 10px 0px; width:510px;} 
+.compatible_cont .match_detail	{ margin:0;}
+.compatible_cont .match_detail p{color:#303030;font-size:15px; font-weight:400; margin:10px 0 0px 0;}
+.compatible_cont .match_detail img{ float:left; margin:0 10px 0 0;}
+.compatible_cont .match_detail .match_detail_type	{ float:left; width:330px;}
+.compatible_cont .match_detail .match_detail_type h5{color:#303030;font-size:14px; font-weight:600; margin:0 0 10px 0;}
+.compatible_cont .match_detail .match_detail_type ul{}
+.compatible_cont .match_detail .match_detail_type ul li{ color:#303030;font-size:14px; font-weight:400; /*list-style-type:numeric; margin:0px 0px -3px 15px;*/ line-height:17px;}
+.compatible_cont .match_detail .match_detail_type ul li span{ margin:0 5px 0 0;}
+
+
+	/*--------------- Popup-Compatibility Popup page end  -------------*/
 
 
 

@@ -18,7 +18,7 @@ namespace IntelliWebR1.web.inner
                 {
                     string _Scripts = "";
                     List<string> _Loadcss = new List<string>();
-                    _Loadcss.Add("web\\css\\intellidate");
+                    _Loadcss.Add("web\\css\\popups");
                     _Scripts = _Scripts + "\n" + Helper.LoadCSS(_Loadcss.ToArray());
 
                     List<string> _LoadMessages = new List<string>();

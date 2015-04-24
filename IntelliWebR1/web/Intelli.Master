@@ -1,6 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Intelli.master.cs" Inherits="IntelliWebR1.web.Intelli" %>
 
-<%@ Register Src="~/web/uc/chatwindows.ascx" TagPrefix="uc1" TagName="chatwindows" %>
 
 
 <!DOCTYPE html>
@@ -51,6 +50,6 @@
             <p>&copy; Copyrights 2014 Intellidate Inc. All Rights Reserved.</p>
         </footer>
     </div>
-    <uc1:chatwindows runat="server" ID="chatwindows" />
+    
 </body>
 </html>

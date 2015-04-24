@@ -18,6 +18,7 @@ namespace IntelliWebR1.web.uc
                 try
                 {
                     LoadUserPhoto();
+                    SetAllItemValues();
                 }
                 catch (Exception ex)
                 {
@@ -70,6 +71,45 @@ namespace IntelliWebR1.web.uc
                 IntellidateR1.Error.LogError(ex, "headermenu LoadUserPhoto");
             }
         }
+
+
+
+        private void SetAllItemValues()
+        {
+            try
+            {
+                int UserID = Convert.ToInt32(HttpContext.Current.User.Identity.Name);
+                var _GetRecivedMessages = new ConversationSnapShot().GetUserReceivedConversationSnapshot(UserID);
+                int _recivedMessagesCiunt = _GetRecivedMessages.Where(x => x.LastConversation.HasRecipientSeen == false && x.LastConversation.IsDeletedByRecipient == false).ToArray().Count();
+                if (_recivedMessagesCiunt > 0)
+                {
+                    lblMsgsCount.Visible = true;
+                    lblMsgsCount.InnerText = _recivedMessagesCiunt.ToString();
+                }
+                else
+                {
+                    lblMsgsCount.Visible = false;
+                }
+
+                int _TotalCount = new IntellidateR1.Notifications().GetUnViewedNotificationsCount(UserID);
+
+                if (_TotalCount > 0)
+                {
+                    lblNotisCount.Visible = true;
+                    lblNotisCount.InnerText = _TotalCount.ToString();
+                }
+                else
+                {
+                    lblNotisCount.Visible = false;
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
 
     }
 }

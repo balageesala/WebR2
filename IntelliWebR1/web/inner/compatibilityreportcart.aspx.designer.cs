@@ -22,15 +22,6 @@ namespace IntelliWebR1.web.inner {
         protected global::System.Web.UI.WebControls.Literal ltScripts;
         
         /// <summary>
-        /// divCanSend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divCanSend;
-        
-        /// <summary>
         /// imgReMatchImage control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace IntelliWebR1.web.inner {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divPayUser;
+        
+        /// <summary>
+        /// lblMessageResponse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMessageResponse;
         
         /// <summary>
         /// divSubscriber control.

@@ -7,8 +7,7 @@
 <ul class="tab-legend2 fr">
     <li>
         <img src="images/15_massage.png" id="imgCompose" alt="massage" title="Compose" /></li>
-    <li>
-        <img src="images/chat-icon.png" style="width: 28px;" id="imgChat" alt="star" title="Chat" /></li>
+   
     <li>
         <img src="images/15_doubt.png" id="imgReport" alt="doubt" title="Report this user" /></li>
     <li>

@@ -5,9 +5,9 @@
         <nav>
             <ul>
                 <li class="no_bg"><a href="MatchHistory" class="rematch"></a></li>
-                <li><a href="Messages" class="envelop"></a></li>
+                <li><a href="Messages" class="envelop"><sup style="float:right;background:#fff; margin-top: -14px;padding: 2px;font-size:10px;" id="lblMsgsCount" runat="server"></sup></a></li>
                 <li><a href="ProfileView" class="viewed"></a></li>
-                <li><a href="Notifications" class="alert"></a></li>
+                <li><a href="Notifications" class="alert"> <sup style="float:right;background:#fff; margin-top: -14px;padding: 2px;font-size:10px;" id="lblNotisCount" runat="server"></sup></a></li>
                 <li><a href="../Subscribe" class="lock" id="lnkSubscribe" runat="server"></a></li>
                 <li class="no_bg space"><a id="lnkHelp" class="legand"></a></li>
                 <li><a href="Settings" class="setting"></a></li>

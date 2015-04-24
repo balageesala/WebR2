@@ -20,7 +20,7 @@
     <div class="chat_one">
         <div class="chat_photo loadPhoto"  data-bind="attr: { id: SenderID, 'data-loadurl': LoadUserPic }"></div>
         <div class="chat_masage">
-            <div class="chat_cont fl" style="width: 510px;">
+            <div class="chat_cont fl" style="width: 710px;">
                 <div class="talking2 fl chat_conv">
                     <div class="loadDiscuss" data-bind="attr: { 'data-loadurl': LoadDiscuss }"></div>
                     <p data-bind="text: MessageText "></p>
@@ -61,7 +61,7 @@
         <div class="chat_photo loadPhoto"  data-bind="attr: { id: SenderID, 'data-loadurl': LoadUserPic }">
         </div>
         <div class="chat_masage">
-            <div class="fl" style="width: 510px;">
+            <div class="fl" style="width: 710px;">
                 <div class="loadDiscuss" data-bind="attr: { 'data-loadurl': LoadDiscuss }"></div>
                 <p class="p_top3" data-bind="text: MessageText "></p>
             </div>

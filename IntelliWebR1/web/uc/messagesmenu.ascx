@@ -10,9 +10,7 @@
 <div class="tab_nav">
     <ul>
         <li><a id="liReceived">Received</a></li>
-        <li><a id="liFiltered">Filtered</a></li>
         <li><a id="liSentBox">Sent</a></li>
-        <li><a id="liInstantMessage">Chats</a></li>
         <li><a id="liTrash">Trash</a></li>
     </ul>
     <span class="clear"></span>

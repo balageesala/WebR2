@@ -66,7 +66,7 @@
 
             $("#btnUpdate").click(function () {
 
-                window.location.href = _SitePath + "web/CriteriaPoints";
+                window.location.href = _SitePath + "web/ChangePoints";
                
             });
 

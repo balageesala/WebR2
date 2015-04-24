@@ -4,50 +4,42 @@
 <asp:literal id="ltScripts" runat="server"></asp:literal>
 
 <form runat="server">
-    <div style="width: 600px; min-height: 310px; border: 0px solid #ccc; margin: 0 auto; font-family: Arial; border-radius: 2px 4px;" id="divCanSend" runat="server" visible="true">
-        <div style="float: right;">
-            <img src="../images/close.png" class="imgClose" style="cursor: pointer;" />
-        </div>
 
-        <div style="float: left; width: 100%;">
-
-            <div style="width: 96%; height: 230px; border: 1px solid #ccc; margin: 0 auto; border-radius: 8px 8px; padding: 10px;">
-                <div>
-                    <div style="float: left; font-weight: bold; padding: 6px; width: 100%; font-family: Arial;">
-                       Compatibility report
-                    </div>
+    <div class="compatible">
+    	<a class="close imgClose">x</a>
+        <span class="clear"></span>
+        <div class="compatible_cont">
+        	<h3>Compatibility Report</h3>
+            <div class="match_detail">
+                <div style="float:left;width:110px;">
+                <img id="imgReMatchImage" class="previousMatch" runat="server"  width="99" height="99" alt=""/>
+                <span id="divRematchName" runat="server"></span>
                 </div>
-                <div style="float: left; margin-left: 20px;">
-                    <div>
-                        <img id="imgReMatchImage" class="previousMatch" runat="server" style="width: 160px; height: 160px; cursor: pointer; margin: 0 auto; border: 1px solid #000; border-radius: 6px 6px;">
-                    </div>
-                    <div style="text-align: center; margin-top: 4px;" id="divRematchName" runat="server"></div>
+                <div class="match_detail_type">
+                <h5>Compatibility report details:</h5>
+                <ul>
+                	<li><span>1.</span>Compatibility report Compatibility report </li>
+                    <li><span>2.</span>Compatibility report</li>
+                    <li><span>3.</span>Compatibility report Compatibility report </li>
+                    <li><span>4.</span>Just 1$ only.</li>
+                </ul>
                 </div>
-                <div style="float: left; text-align: left; margin-top: 10px; margin-left: 20px; width: 374px">
-                    <div><b>Compatibility report details: </b></div>
-                    <br />
-                    <div>1.Compatibility report Compatibility report</div>
-                    <div>2.Compatibility report.</div>
-                    <div>3.Compatibility report Compatibility report .</div>
-                    <div>4.Just 1$ only.</div>
-                </div>
-
+                <span class="clear"></span>
+                <p id="divPayUser" runat="server"></p>
             </div>
+            
+            
+            
         </div>
-        <div style="margin-bottom: 16px; margin-right: 8px; float: right; margin-top: 10px;" id="divPayUser" runat="server">
-            <input type="button" id="btnReport" class="composeSend" value="View/Download report"  />
+        <div id="lblMessageResponse" runat="server" style="min-height: 20px; float: left; padding-top: 10px;">
         </div>
-
-          <div style="margin-bottom: 16px; margin-right: 8px; float: right; margin-top: 10px;" id="divSubscriber" runat="server">
-            <input type="button" id="btnFreeReport" class="composeSend" value="View/Download report"  />
-        </div>
-
-
-        <div id="lblMessageResponse" style="min-height: 20px; float: left; font-family: Arial; font-size: 14px; color: #000; font-weight: bold; margin-left: 20px; padding-top: 10px;">
-        </div>
-
-
+        <div id="divSubscriber" runat="server">
+        <input type="button" class="send" id="btnReport" value="View/Download report"/>
+            </div>
+        <input type="button" class="send"  id="btnFreeReport"  value="View/Download report"/>
+        <span class="clear"></span>
     </div>
+
 </form>
 
 

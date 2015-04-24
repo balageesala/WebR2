@@ -13,7 +13,15 @@ namespace IntelliWebR1.API
 
         public IntellidateR1.User Post([FromBody]AuthenticateUser m_AuthenticateUser)
         {
-            return new IntellidateR1.User().AuthenticateUser(m_AuthenticateUser.LoginName, m_AuthenticateUser.Password);
+            if (m_AuthenticateUser.IsEmail == 1)
+            {
+               return new IntellidateR1.User().AuthenticateUserWithEmail(m_AuthenticateUser.LoginName, m_AuthenticateUser.Password);
+            }
+            else
+            {
+                return new IntellidateR1.User().AuthenticateUser(m_AuthenticateUser.LoginName, m_AuthenticateUser.Password);
+            }
+            
         }
 
     }
@@ -21,5 +29,6 @@ namespace IntelliWebR1.API
     {
         public string LoginName { get; set; }
         public string Password { get; set; }
+        public int IsEmail { get; set; }
     }
 }

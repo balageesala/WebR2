@@ -8,7 +8,7 @@
     <form enctype="multipart/form-data" method="post" id="frmPhotoUpload">
     <div class="center_content">
         <div class="middle_content">
-            <div class="eight">
+            <div class="eight" style="width:740px;">
                 <div class="tab_nav ninth_top_nav">
                     <uc1:myprofilemenu runat="server" ID="myprofilemenu" />
                     <ul class="fr">

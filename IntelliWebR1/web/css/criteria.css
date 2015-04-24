@@ -497,3 +497,21 @@ background: #c1272d;
 .fifth_right .fifth_buttons		{ /*width:230px;*/ width:90px; margin:0 auto; padding:6% 0 20%; }
 .fifth_right .fifth_buttons .skip			{ /*height:38px; width:105px;*/ height:40px !important; width:90px !important; background:#606060;font-size:16px; color:#ffffff; font-weight:400; text-align:center; line-height:38px; text-decoration:none; display:inline-block; border-radius:4px; margin:0 15px 10px 0%; padding:0;}
 .fifth_right .fifth_buttons .upload		{/*height:38px; width:105px;*/ height:40px; width:90px; background:#c1272d;font-size:16px; color:#ffffff; font-weight:400; text-align:center; line-height:38px; text-decoration:none; display:inline-block;border-radius:4px; margin:0% 0 0% 0;}
+
+.hundred {
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    color: #C1272D;
+    width: 95px;
+    text-align: center;
+}
+
+    .hundred span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: #000;
+        text-decoration: underline;
+        cursor: pointer;
+    }

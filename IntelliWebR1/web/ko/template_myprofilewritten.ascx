@@ -12,7 +12,7 @@
         <textarea class="profileAnswer" style="resize: none;" data-bind="event: { keyup: ValidateMaxAnswerLength }, attr: { 'data-questionid': QuestionId, 'maxlength': MaxAnswerLength }"></textarea>
         <div class="seven_button">
             <input type="button" class="update" style="border: 0px; margin-top: 0px; line-height: 0px;" data-bind="event: { click: SaveEdit }, value: SubmitText" />
-            <input type="button" class="cancel" style="border: 0px; margin: 0px; line-height: 0px;" value="Cancel" data-bind="event: { click: CancelEdit }" />
+            <input type="button" class="cancel" style="border: 0px; margin-left: 10px; line-height: 0px;" value="Cancel" data-bind="event: { click: CancelEdit }" />
         </div>
         <!--/ko-->
     </div>

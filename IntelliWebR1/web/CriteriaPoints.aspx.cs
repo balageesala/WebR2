@@ -28,10 +28,25 @@ namespace IntelliWebR1.web
                     Numberleft.InnerText = _ThisPageNo.ToString();
                     NumberRight.InnerText = _OutOfPages.ToString();
                     int UserID = Convert.ToInt32(HttpContext.Current.User.Identity.Name);
-                    decimal _TotalAssignedPoints = new IntellidateR1.CriteriaUserAnswerWeek().GetCreiteriaTotalAssignedPoints(UserID);
-                    decimal _UserAvilablePoints = Convert.ToDecimal(100 - _TotalAssignedPoints);
-                    AvilablePoints.InnerText = _UserAvilablePoints.ToString();
                     IntellidateR1.CriteriaUserAnswerWeek[] _AnswredQuestions = new IntellidateR1.CriteriaUserAnswerWeek().GetCriteriaUserAnswers(UserID);
+                  
+                 //   decimal _TotalAssignedPoints = new IntellidateR1.CriteriaUserAnswerWeek().GetCreiteriaTotalAssignedPoints(UserID);
+                    decimal _PointnsAssigned = 0;
+                    foreach (CriteriaUserAnswerWeek _SingleAnswer in _AnswredQuestions)
+                    {
+                        _PointnsAssigned = _PointnsAssigned + _SingleAnswer.PointsAssigned;
+                    }
+
+
+                    decimal _UserAvilablePoints = Convert.ToDecimal(100 - _PointnsAssigned);
+
+                    if (_UserAvilablePoints == 0)
+                    {
+                        Response.Redirect("Home");
+                    }
+
+
+                    AvilablePoints.InnerText = _UserAvilablePoints.ToString();
                     //bind avilable points here
                     StringBuilder _Sb = new StringBuilder();
                     _Sb.Append("<ul>");

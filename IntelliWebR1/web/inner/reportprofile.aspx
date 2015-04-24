@@ -5,13 +5,13 @@
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <asp:Literal ID="ltScripts" runat="server"></asp:Literal>
 
-<div class="reportuser">
+<div class="reportuser" style="padding-bottom: 10px;">
     	<a style="cursor:pointer;" class="close" id="btnClose">x</a>
         <span class="clear"></span>
         <div class="reportuser_cont">
         	<h3>Report this user</h3>
             <div class="match_detail">
-                <img id="imgPhoto" runat="server" width="99" height="116"  />
+                <img id="imgPhoto" runat="server" width="99" height="99"  />
                 <div class="match_detail_type" id="divReport">
                 <ul>
                 	<li><input type="radio" id="rdoOption_Reason1" value="1" checked="checked" name="rdoOption" /><label for="rdoOption_Reason1">Reason 1</label></li>
@@ -100,8 +100,7 @@
                 $("#divTitle").show();
                 $("#divAlreadyReported").hide();
                 $("#divReport").show();
-                $("#imgPhoto").show();
-               
+                $("#imgPhoto").show();          
             }
 
         });

@@ -21,7 +21,6 @@
                     Vivamus ultricies fermentum mattis. Cras vitae ex nibh. Aliquam facilisis, Cras vitae ex nibh. 
                          Aliquam facilisis, Cras vitae ex nibh. Aliquam facilisis,
                 </p>
-
             </div>
             <div class="fourth_matter" id="divPoints" runat="server">
             </div>

@@ -14,7 +14,7 @@
         <div class="ninth_info" >
         <ul>
             <li class="grade">
-                <div class="points" data-bind="text: UserAssignedPoints, attr: { 'data-criteriaid': Criteria_id }"></div>                
+                <div class="points" data-bind="html: UserPoints, attr: { 'data-criteriaid': Criteria_id }"></div>                
             </li>
             <li class="subject editCriteria" data-bind="text: CriteriaName, attr: { 'data-url': CriteriaEditUrl }" data-width="700" data-height="450"></li>
             <!--ko if:IsNoMyAnswer -->
@@ -36,6 +36,7 @@
                 <!--/ko-->
                 <!--ko if:IsEdited-->
                 <a style="cursor:pointer;"><img src="images/09_cont_calen.png" width="15" height="16" alt="calendar" data-bind="attr: { title: LocalTime }" /></a>
+                <a style="cursor:pointer;"><img src="images/09_cont_calen.png" width="15" height="16" alt="calendar" data-bind="attr: { title: LastEdited }" /></a>
                 <!--/ko-->   
             </li>
         </ul>
@@ -58,6 +59,7 @@
         self.IsAnswred = ko.observable(_ln.IsAnswred);
         self.IsEdited = ko.observable(_ln.IsEdited);
         self.EditableDate = ko.observable(_ln.EditableDate);
+        self.LastEdited = ko.observable(new Date(_ln.LastEdited));
         self.Status = ko.observable(_ln.Status);
         self.HasAllPreferencesSelected = ko.observable(_ln.HasAllPreferencesSelected);
 
@@ -65,8 +67,17 @@
             return new Date(self.EditableDate());
         }, this);
 
+        self.UserPoints = ko.computed(function () {
+            if (self.CriteriaName() == "DOB") {
+                return "&nbsp;";
+            } else {
+                return self.UserAssignedPoints();
+            }
+        }, this);
+
+
         self.CriteriaEditUrl = self.CriteriaEditUrl = ko.computed(function () {
-            return _SitePath + "web/inner/criteriaedit?c=" + self.Criteria_id();
+            return _SitePath + "web/inner/criteriaeditpopup?c=" + self.Criteria_id() + "&points=" + self.UserAssignedPoints();
         }, this);
 
 
@@ -81,7 +92,6 @@
 
         self.UnacceptableAnswersBind = ko.computed(function () {
 
-
             if (self.UnacceptableAnswers() == "" || self.UnacceptableAnswers() == null) {
                 return "<span style='color:#000;'>none</span>";
             } else if (self.HasAllPreferencesSelected()) {
@@ -89,7 +99,10 @@
                   _Answers =  self.UnacceptableAnswers().split(',');
                   var AnswerHtml = "";
                   for (var i = 0; i < _Answers.length; i++) {
-                     
+                      if (_Answers[i] == "none") {
+                          AnswerHtml = "<span style='color:#000;'>none</span>";
+                          break;
+                      }
                           AnswerHtml ="<div>" +AnswerHtml + "</div><div>" + _Answers[i]+"</div>";
                   }
                   return AnswerHtml;
@@ -100,10 +113,16 @@
                 _Answers = self.UnacceptableAnswers().split(',');
                 var AnswerHtml = "";
                 for (var i = 0; i < _Answers.length; i++) {
+                    if (_Answers[i] == "none") {
+                        AnswerHtml = "<span style='color:#000;'>none</span>";
+                        break;
+                    }
                     AnswerHtml = "<div>" + AnswerHtml + "</div><div>" + _Answers[i] + "</div>";
                 }
                 return AnswerHtml;
             }
+
+
         }, this);
 
         self.AcceptableAnswersBind = ko.computed(function () {

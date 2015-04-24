@@ -59,8 +59,7 @@ namespace IntelliWebR1.web
                 }
                 catch (Exception)
                 {
-                    
-                    throw;
+
                 }
             }
         }

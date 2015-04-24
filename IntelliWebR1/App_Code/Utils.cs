@@ -84,6 +84,28 @@ namespace IntelliWebR1
             }
         }
 
+
+        public string GetPhotoPCGTPath(int PhotoID)
+        {
+            try
+            {
+                Photo Photo = new Photo().GetPhoto(PhotoID);
+                string _OrigPhotoPath = ConfigurationManager.AppSettings["PhotosRootPath"].ToString() + Photo.PhotoPath;
+                string _PhotoPath = "";
+                _PhotoPath = GetFolderName(_OrigPhotoPath) + "\\PCGT\\" + GetFileName(_OrigPhotoPath);
+                _PhotoPath = _PhotoPath.Replace(ConfigurationManager.AppSettings["PhotosRootPath"].ToString(), ConfigurationManager.AppSettings["PhotosRootUrl"].ToString());
+                _PhotoPath = _PhotoPath.Replace("\\", "/");
+                _PhotoPath = _PhotoPath + ".jpg";
+                return _PhotoPath;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
+
+
+
         public string GetPhotoFullViewPath(int PhotoID, HttpRequest _Request)
         {
             try
@@ -91,9 +113,7 @@ namespace IntelliWebR1
                 Photo Photo = new Photo().GetPhoto(PhotoID);
                 string _OrigPhotoPath = ConfigurationManager.AppSettings["PhotosRootPath"].ToString() + Photo.PhotoPath;
                 string _PhotoPath = "";
-
                 _PhotoPath = GetFolderName(_OrigPhotoPath) + "\\" + GetFileName(_OrigPhotoPath);
-
                 _PhotoPath = _PhotoPath.Replace(ConfigurationManager.AppSettings["PhotosRootPath"].ToString(), ConfigurationManager.AppSettings["PhotosRootUrl"].ToString());
                 _PhotoPath = _PhotoPath.Replace("\\", "/");
 
@@ -114,7 +134,24 @@ namespace IntelliWebR1
             }
         }
 
-
+        public string GetPhotoFullViewPath(int PhotoID)
+        {
+            try
+            {
+                Photo Photo = new Photo().GetPhoto(PhotoID);
+                string _OrigPhotoPath = ConfigurationManager.AppSettings["PhotosRootPath"].ToString() + Photo.PhotoPath;
+                string _PhotoPath = "";
+                _PhotoPath = GetFolderName(_OrigPhotoPath) + "\\" + GetFileName(_OrigPhotoPath);
+                _PhotoPath = _PhotoPath.Replace(ConfigurationManager.AppSettings["PhotosRootPath"].ToString(), ConfigurationManager.AppSettings["PhotosRootUrl"].ToString());
+                _PhotoPath = _PhotoPath.Replace("\\", "/");            
+                _PhotoPath = _PhotoPath + ".jpg";
+                return _PhotoPath;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
 
         public string GetSmallPPCTPath(int PhotoID)
         {

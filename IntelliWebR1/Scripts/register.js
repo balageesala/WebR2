@@ -247,10 +247,12 @@ $(document).ready(function () {
 
         var _regData = new Object();
         _regData.gr = 1;
+        _regData.grlooking = 2;
         if ($("#rdoGender_Female").is(":checked")) {
             _regData.gr = 2;
+            _regData.grlooking = 1;
         }
-
+       
         _regData.ln = $("#txtLoginName").val();
         _regData.em = $("#txtEmailAddress").val();
         _regData.pwd = $("#txtPassword").val();

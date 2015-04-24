@@ -17,26 +17,27 @@
         <div class="tenth_info">
             <ul>
                 <div style="cursor:pointer;" data-bind="event: { click: EditQuestionAnswer }">
-                <li class="grade"><span data-bind="attr: { 'data-questionid': Question_id, 'data-currentrating': Rating }, text: Rating"></span></li>
+                <li class="grade"><span style="font-size:13px;" data-bind="attr: { 'data-questionid': Question_id, 'data-currentrating': Rating }, text: Rating"></span></li>
                 <li class="subject" data-bind="html: QuestionDetails().QuestionText"></li>
                 <li class="question" data-bind="html: OptionAnswerText"></li>
                 <li class="correct" data-bind="html: PreferenceAnswerTextFixed"></li>
-                <li class="incorrect" data-bind="html: NonPreferenceAnswerTextFixed"></li>
+                <li class="incorrect" style="color:red;" data-bind="html: NonPreferenceAnswerTextFixed"></li>
                 </div>
                 <li class="note">
                     <div class="to_icon">
-                        <img src="images/icon_close.png" alt="" data-bind="event: { click: DeleteQuestionAnswer }" />
+                        <img src="images/icon_close.png" alt="" data-bind="event: { click: DeleteQuestionAnswer }" title="Delete" />
                         <!--ko if:IsEdited-->
                         <img src="images/icon_calender.png" alt="calendar" data-bind="attr: { title: LocalTime }" />
                         <!--/ko-->
                         <!--ko if:CommentAvailable-->
-                        <img src="images/icon_note.png" alt="note" />
+                        <img src="images/icon_note.png" alt="note" title="Comment"/>
                         <!--/ko-->
                         <!--ko if:AnsweredPrivately-->
-                        <img src="images/icon_lock.png" alt="" />
+                        <img src="images/icon_lock.png" alt="" title="Private" />
                         <!--/ko-->
                         <!--ko if:IsSexQuestion-->
-                        <img src="images/icon_save.png" alt="" />
+                        <img src="images/icon_save.png" alt="" title="Sex" />
+                        <img src="images/icon_lock.png" alt="" title="Private" />
                         <!--/ko-->
                     </div>
                 </li>

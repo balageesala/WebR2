@@ -131,6 +131,7 @@
     <Content Include="Default.aspx" />
     <Content Include="EmailVerification.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="images\01_line-shadow.jpg" />
     <Content Include="images\02_back.png" />
     <Content Include="images\05_box_shadows.png" />
@@ -535,7 +536,7 @@
     <Content Include="Scripts\intelliCheckbox.js" />
     <Content Include="Scripts\IntelliPin.js" />
     <Content Include="web\ActivateAccount.aspx" />
-    <Content Include="web\BuyRematchPopup.html" />
+    <Content Include="web\ChangePoints.aspx" />
     <Content Include="web\ChatConversation.aspx" />
     <Content Include="web\ConversationView.aspx" />
     <Content Include="web\Criteria.aspx" />
@@ -566,6 +567,8 @@
     <Content Include="web\css\questionspopup.css" />
     <Content Include="web\css\rating.css" />
     <Content Include="web\css\site.css" />
+    <Content Include="web\FAQ.aspx" />
+    <Content Include="web\Faq.html" />
     <Content Include="web\help\css\circle_style_1.css" />
     <Content Include="web\help\css\circle_style_2.css" />
     <Content Include="web\help\css\criteria.css" />
@@ -914,6 +917,7 @@
     <Content Include="web\inner\addcontact.aspx" />
     <Content Include="web\inner\compatibilityreportcart.aspx" />
     <Content Include="web\inner\confirmsubscription.aspx" />
+    <Content Include="web\inner\criteriaeditpopup.aspx" />
     <Content Include="web\inner\importcontacts.aspx" />
     <Content Include="web\inner\instagrampop.aspx" />
     <Content Include="web\inner\leftrematch.aspx" />
@@ -943,6 +947,7 @@
     <Content Include="web\ko\tempalte_conversationview.ascx" />
     <Content Include="web\ko\template_chatconversation.ascx" />
     <Content Include="web\ko\template_criteria.ascx" />
+    <Content Include="web\ko\template_criteriaeditpopup.ascx" />
     <Content Include="web\ko\template_currentmatchs.ascx" />
     <Content Include="web\ko\template_pastmatchs.ascx" />
     <Content Include="web\ko\template_questionscheck.ascx" />
@@ -951,6 +956,7 @@
     <Content Include="web\LogOut.aspx" />
     <Content Include="web\MatchHistory.aspx" />
     <Content Include="web\MatchProfile.aspx" />
+    <Content Include="web\MB-07-TrashPage.html" />
     <Content Include="web\Messages.aspx" />
     <Content Include="web\MyProfileAboutme.aspx" />
     <Content Include="web\MyProfileCriteria.aspx" />
@@ -981,6 +987,7 @@
     <Content Include="web\uc\headermenu.ascx" />
     <Content Include="web\uc\matchprofilemenu.ascx" />
     <Content Include="web\uc\otheruserpic.ascx" />
+    <Content Include="web\WebForm1.aspx" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
@@ -1244,6 +1251,9 @@
     <Content Include="web\Intelli.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Android\PhotoUploadController.cs" />
+    <Compile Include="API\Android\ReadImageController.cs" />
+    <Compile Include="API\Android\SaveWrittenController.cs" />
     <Compile Include="API\Criteria\AddCriteriaUserAnswerController.cs" />
     <Compile Include="API\Criteria\AsyncCriteriaAnswersController.cs" />
     <Compile Include="API\Criteria\CheckHasUserAnsweredController.cs" />
@@ -1482,6 +1492,13 @@
     <Compile Include="web\ActivateAccount.aspx.designer.cs">
       <DependentUpon>ActivateAccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="web\ChangePoints.aspx.cs">
+      <DependentUpon>ChangePoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\ChangePoints.aspx.designer.cs">
+      <DependentUpon>ChangePoints.aspx</DependentUpon>
+    </Compile>
     <Compile Include="web\ChatConversation.aspx.cs">
       <DependentUpon>ChatConversation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1509,6 +1526,13 @@
     </Compile>
     <Compile Include="web\CriteriaPoints.aspx.designer.cs">
       <DependentUpon>CriteriaPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="web\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1607,6 +1631,13 @@
     </Compile>
     <Compile Include="web\inner\criteriaedit.aspx.designer.cs">
       <DependentUpon>criteriaedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\inner\criteriaeditpopup.aspx.cs">
+      <DependentUpon>criteriaeditpopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\inner\criteriaeditpopup.aspx.designer.cs">
+      <DependentUpon>criteriaeditpopup.aspx</DependentUpon>
     </Compile>
     <Compile Include="web\inner\criteriapoints.aspx.cs">
       <DependentUpon>criteriapoints.aspx</DependentUpon>
@@ -2023,6 +2054,12 @@
     </Compile>
     <Compile Include="web\ko\template_criteriaedit.ascx.designer.cs">
       <DependentUpon>template_criteriaedit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaeditpopup.ascx.cs">
+      <DependentUpon>template_criteriaeditpopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\ko\template_criteriaeditpopup.ascx.designer.cs">
+      <DependentUpon>template_criteriaeditpopup.ascx</DependentUpon>
     </Compile>
     <Compile Include="web\ko\template_criteriapoint.ascx.cs">
       <DependentUpon>template_criteriapoint.ascx</DependentUpon>
@@ -2464,6 +2501,13 @@
     </Compile>
     <Compile Include="web\uc\userphoto.ascx.designer.cs">
       <DependentUpon>userphoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="web\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="IntelliWebR1.web.Site" %>
 
 <%@ Register Src="~/web/uc/headermenu.ascx" TagPrefix="uc1" TagName="headermenu" %>
-<%@ Register Src="~/web/uc/chatwindows.ascx" TagPrefix="uc1" TagName="chatwindows" %>
 
 
 
@@ -43,8 +42,7 @@
             </asp:ContentPlaceHolder>
         </div>
         <!-- Main Content Ends Here -->
-        <uc1:chatwindows runat="server" ID="chatwindows" />
-
+       
         <!-- Footer Starts Here -->
         <footer>
             <p>&copy; Copyrights 2014 Intellidate Inc. All Rights Reserved.</p>

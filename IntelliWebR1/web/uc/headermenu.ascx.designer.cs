@@ -13,6 +13,24 @@ namespace IntelliWebR1.web.uc {
     public partial class headermenu {
         
         /// <summary>
+        /// lblMsgsCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMsgsCount;
+        
+        /// <summary>
+        /// lblNotisCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblNotisCount;
+        
+        /// <summary>
         /// lnkSubscribe control.
         /// </summary>
         /// <remarks>

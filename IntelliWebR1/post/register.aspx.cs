@@ -25,6 +25,7 @@ namespace IntelliWebR1.post
                 try
                 {
                     int m_GenderID = Convert.ToInt32(Request.Form["gr"]);
+                    int m_GenderLookingForID = Convert.ToInt32(Request.Form["grlooking"]);
                     string m_LoginName = Request.Form["ln"].ToString();
                     string m_EmailAddress = Request.Form["em"].ToString();
                     string m_Password = Request.Form["pwd"].ToString();
@@ -40,7 +41,7 @@ namespace IntelliWebR1.post
                     int _Age = new DateTime(DateTime.Now.Subtract(m_DateOfBirth).Ticks).Year - 1;
                     if (_Age >= 21 && _Age <= 99)
                     {
-                        User m_UserDetails = new User().RegisterUser(m_LoginName, m_EmailAddress, m_Password, m_GenderID, m_DateOfBirth);
+                        User m_UserDetails = new User().RegisterUser(m_LoginName, m_EmailAddress, m_Password, m_GenderID,m_GenderLookingForID, m_DateOfBirth);
                         if (m_UserDetails != null)
                         {
                             // Enqueue email

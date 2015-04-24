@@ -2,7 +2,6 @@ C:\IntelliNewVersionOfR1\IntelliWebR1\bin\IntelliWebR1.dll.config
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\IntelliWebR1.dll
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\IntelliWebR1.pdb
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\IntellidateR1.dll
-C:\IntelliNewVersionOfR1\IntelliWebR1\bin\itextsharp.dll
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\Microsoft.Web.Infrastructure.dll
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\Newtonsoft.Json.dll
 C:\IntelliNewVersionOfR1\IntelliWebR1\bin\System.Net.Http.Formatting.dll
